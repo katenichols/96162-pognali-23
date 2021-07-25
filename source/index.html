@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page-body">
@@ -22,7 +23,7 @@
                 <a class="modal-menu__nav-link" href="#">О сервисе </a>
               </li>
               <li class="modal-menu__nav-item">
-                <a class="modal-menu__nav-link" href="#">Направления</a>
+                <a class="modal-menu__nav-link" href="form.html" target="_blank">Направления</a>
               </li>
               <li class="modal-menu__nav-item">
                 <a class="modal-menu__nav-link" href="#">Попутчики</a>
@@ -31,28 +32,28 @@
           </nav>
           <div class="modal-menu__contacts">
             <div class="modal-menu__contacts-wrapper">
-              <div class="modal-menu__contacts-icon modal-menu__contacts-icon-phone"></div>
-              <a class="modal-menu__contacts-link modal-menu__contacts-link-phone" href="tel:88005558628">
+              <div class="modal-menu__contacts-icon modal-menu__contacts-icon--phone"></div>
+              <a class="modal-menu__contacts-link" href="tel:88005558628">
                 8 800 555-86-28
               </a>
             </div>
             <div class="modal-menu__contacts-wrapper">
-              <div class="modal-menu__contacts-icon modal-menu__contacts-email"></div>
-              <a class="modal-menu__contacts-link modal-menu__contacts-link-email" href="mailto:mail@htmlacademy.ru">
+              <div class="modal-menu__contacts-icon modal-menu__contacts--email"></div>
+              <a class="modal-menu__contacts-link" href="mailto:mail@htmlacademy.ru">
                 mail@htmlacademy.ru
               </a>
             </div>
             <a class="modal-menu__contacts-link-signin" href="#">Авторизация</a>
           </div>
-          <ul class="modal-menu__sonets">
-            <li class="modal-menu__sonets-item">
-              <a class="modal-menu__sonets-link" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          <ul class="modal-menu__social social">
+            <li class="social__item">
+              <a class="social__link social__link--modal" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
             </li>
-            <li class="modal-menu__sonets-item">
-              <a class="modal-menu__sonets-link" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <li class="social__item">
+              <a class="social__link social__link--modal" href="https://vk.com/htmlacademy">Вконтакте</a>
             </li>
-            <li class="modal-menu__sonets-item">
-              <a class="modal-menu__sonets-link" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+            <li class="social__item">
+              <a class="social__link social__link--modal" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
             </li>
           </ul>
         </div>
@@ -127,26 +128,26 @@
             Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
           </p>
           <ul class="countries__cards">
-            <li class="countries__cards-item">
-              <div class="countries__cards-info">
-                <span class="countries__cards-title">Таиланд</span>
-                <span class="countries__cards-text">Джунгли зовут!</span>
+            <li class="countries__cards-item cards">
+              <div class="cards__info">
+                <span class="cards__title">Таиланд</span>
+                <span class="cards__text">Джунгли зовут!</span>
               </div>
-              <span class="countries__cards-number">18321</span>
+              <span class="cards__number">18321</span>
             </li>
-            <li class="countries__cards-item">
-              <div class="countries__cards-info">
-                <span class="countries__cards-title">Франция</span>
-                <span class="countries__cards-text">Трэ бьен, манифик!</span>
+            <li class="countries__cards-item cards">
+              <div class="cards__info">
+                <span class="cards__title">Франция</span>
+                <span class="ards__text">Трэ бьен, манифик!</span>
               </div>
-              <span class="countries__cards-number">12518</span>
+              <span class="cards__number">12518</span>
             </li>
-            <li class="countries__cards-item">
-              <div class="countries__cards-info">
-                <span class="countries__cards-title">Чехия</span>
-                <span class="countries__cards-text">Закоулки старой Европы</span>
+            <li class="countries__cards-item cards">
+              <div class="cards__info">
+                <span class="cards__title">Чехия</span>
+                <span class="ards__text">Закоулки старой Европы</span>
               </div>
-              <span class="countries__cards-number">5326</span>
+              <span class="cards__number">5326</span>
             </li>
           </ul>
           <a class="page-main__button countries__link" href="#">Показать все</a>
@@ -181,7 +182,7 @@
                 </li>
               </ul>
               <h3 class="travelers__title">Таня Фирсова</h3>
-              <span class="travelers__tags-list">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
+              <span class="travelers__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
               <ul class="travelers__transports">
                 <li class="travelers__transports-item travelers__transports-item--current">
                   <svg></svg>
@@ -212,7 +213,7 @@
                 </li>
               </ul>
               <h3 class="travelers__title">Петя Демин</h3>
-              <span class="travelers__tags-list">#бургер #бар #футбол #концерт #крафт</span>
+              <span class="travelers__tags">#бургер #бар #футбол #концерт #крафт</span>
               <ul class="travelers__transports">
                 <li class="travelers__transports-item travelers__transports-item--current">
                   <svg></svg>
@@ -286,6 +287,7 @@
       </section>
 
       <section class="page-main__map-block map-block">
+        <h2 class="visually-hidden map-block__title"></h2>
         <div class="map-block">
           <div class="container">
             <div class="map-block__icon"></div>
@@ -304,15 +306,15 @@
         <a class="logo" href="#">
           <img class="logo_image" src="#" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
         </a>
-        <ul class="page-footer__sonets">
-          <li class="page-footer__sonets-item">
-            <a class="page-footer__sonets-link" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--footer" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
           </li>
-          <li class="page-footer__sonets-item">
-            <a class="page-footer__sonets-link" href="https://vk.com/htmlacademy">Вконтакте</a>
+          <li class="social__item">
+            <a class="social__link--footer" href="https://vk.com/htmlacademy">Вконтакте</a>
           </li>
-          <li class="modal-menu__sonets-item">
-            <a class="page-footer__sonets-link" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+          <li class="social__item">
+            <a class="social__link--footer" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
           </li>
         </ul>
         <a class="page-footer__link">
