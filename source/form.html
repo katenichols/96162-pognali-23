@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img class="logo_image" src="#" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <div class="page-header__modal-menu modal-menu">
+          <a class="modal-menu__logo" href="index.html">
+            <img class="modal-menu__logo-image" src="#" width="100" height="15" alt="Сервис поиска попутчиков Погнали"/>
+          </a>
+          <nav class="modal-menu__nav">
+            <ul class="modal-menu__nav-list">
+              <li class="modal-menu__nav-item">
+                <a class="modal-menu__nav-link" href="index.html" target="_blank">О сервисе</a>
+              </li>
+              <li class="modal-menu__nav-item">
+                <a class="modal-menu__nav-link" href="#">Направления</a>
+              </li>
+              <li class="modal-menu__nav-item">
+                <a class="modal-menu__nav-link" href="catalog.html" target="_blank">Попутчики</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="modal-menu__contacts">
+            <div class="modal-menu__contacts-wrapper">
+              <div class="modal-menu__contacts-icon modal-menu__contacts-icon-phone"></div>
+              <a class="modal-menu__contacts-link modal-menu__contacts-link-phone" href="tel:88005558628">
+                8 800 555-86-28
+              </a>
+            </div>
+            <div class="modal-menu__contacts-wrapper">
+              <div class="modal-menu__contacts-icon modal-menu__contacts-email"></div>
+              <a class="modal-menu__contacts-link modal-menu__contacts-link-email" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </div>
+            <a class="modal-menu__contacts-link-signin" href="#">Авторизация</a>
+          </div>
+          <ul class="modal-menu__social social">
+            <li class="social__item">
+              <a class="social__link social__link--modal" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--modal" href="https://vk.com/htmlacademy">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--modal" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+        <h1 class="page-main__title">Направления</h1>
+      </div>
+      <section class="page-user user">
+        <h2 class="visually-hidden">Профиль спутника</h2>
+        <div class="container">
+          <div class="user__wrapper">
+            <div class="user__level-wrapper">
+              <span class="user__level-number">80</span>
+              <span class="user__level-text">level</span>
+            </div>
+            <img class="user__photo" src="#" width="100" height="100" alt="Фото попутчика">
+          </div>
+          <button class="user__button" type="button">Сменить фото</button>
+          <div class="user__field-wrapper">
+            <span class="user__label">Тэги</span>
+            <textarea class="user__tags">#бургер #бар #футбол #концерт #крафт</textarea>
+          </div>
+          <div class="user__field-wrapper">
+            <span class="user__label">Транспорт</span>
+            <ul class="user__transports">
+              <li class="user__transports-item">
+                <svg></svg>
+              </li>
+              <li class="user__transports-item">
+                <svg></svg>
+              </li>
+              <li class="user__transports-item user__transports-item--disabled">
+                <svg></svg>
+              </li>
+              <li class="user__transports-item">
+                <svg></svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-main__plans plans">
+        <div class="container">
+          <h2 class="plans__title">Мои планы:</h2>
+          <article class="plans__item plan-item">
+            <h3 class="visually-hidden">Первый план</h3>
+            <span class="plan-item__number">1.</span>
+            <span class="plan-item__title">Франция, Италия</span>
+            <span class="plan-item__count">3 попутчика</span>
+            <span class="plan-item__dates">26 мар — 29 мар</span>
+            <a class="plan-item__link">Изменить</a>
+          </article>
+          <article class="plans__article plan-item">
+            <h3 class="visually-hidden">Второй план</h3>
+            <span class="plan-item__number">2.</span>
+            <span class="plan-item__title">Таиланд, Индонезия</span>
+            <span class="plan-item__count">1 попутчик</span>
+            <span class="plan-item__dates">1 июл — 15 июл</span>
+            <a class="plan-item__link">Изменить</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-main__add-plan add-plan">
+        <div class="container">
+          <h2 class="add-plan">Добавить план</h2>
+          <ul class="add-plan__markers">
+            <li class="add-plan__markers-item">Даты</li>
+            <li class="add-plan__markers-item">Маршрут</li>
+            <li class="add-plan__markers-item">Развлечения</li>
+          </ul>
+          <form class="add-plan__form plan-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="plan-form__step">
+              <div class="plan-form__step-title-wrapper">
+                <span class="plan-form__step-title">Шаг 1.</span>
+                <span class="plan-form__step-title">Даты пребывания</span>
+              </div>
+              <p class="plan-form__step-text">Укажите предпочтительное количество попутчиков, которых
+                вы хотели бы позвать в поездку, и ее предполагаемую длительность.
+              </p>
+              <div class="plan-form__step-people step">
+                <div class="step__input-wrapper">
+                  <label class="step__label" for="people">Ищу попутчиков:
+                    <span class="step__desc">чел.</span>
+                  </label>
+                  <input class="step__input" type="number" id="people" name="people" value="2">
+                </div>
+                <div class="step__input-wrapper">
+                  <input class="step__input" type="checkbox" id="children" name="children" checked>
+                  <label class="step__label" for="children">Можно с детьми</label>
+                </div>
+                <div class="step__input-wrapper">
+                  <label class="step__label" for="days">Длительность:
+                    <span class="step__desc">дн.</span>
+                  </label>
+                  <input class="step__input" type="number" id="days" name="days" value="3">
+                </div>
+                <div class="step__calendar">
+                  <div class="step__calendar-month-wrapper">
+                    <button class="step__calendar-month-button step__calendar-month-button--left">Предыдущий месяц</button>
+                    <span class="step__calendar-month">Март 2019</span>
+                    <button class="step__calendar-month-button step__calendar-month-button--right">Следующий месяц</button>
+                  </div>
+                  <table class="step__calendar-table calendar-table">
+                    <tr>
+                      <th class="calendar-table__cell calendar-table__cell--title">Пн</th>
+                      <th class="calendar-table__cell calendar-table__cell--title">Вт</th>
+                      <th class="calendar-table__cell calendar-table__cell--title">Ср</th>
+                      <th class="calendar-table__cell calendar-table__cell--title">Чт</th>
+                      <th class="calendar-table__cell calendar-table__cell--title">Пт</th>
+                      <th class="calendar-table__cell calendar-table__cell--title-weekend">Сб</th>
+                      <th class="calendar-table__cell calendar-table__cell--title-weekend">Вс</th>
+                    </tr>
+                    <tr>
+                      <td class="calendar-table__cell calendar-table__cell--past">23</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">24</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">25</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">26</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">27</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">28</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">1</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-table__cell calendar-table__cell--past">2</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">3</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">4</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">5</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">6</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">7</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">8</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-table__cell calendar-table__cell--past">9</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">10</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">11</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">12</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">13</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">14</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">15</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-table__cell calendar-table__cell--past">16</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">17</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">18</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">19</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">20</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">21</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">22</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-table__cell calendar-table__cell--past">23</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">24</td>
+                      <td class="calendar-table__cell calendar-table__cell--past">25</td>
+                      <td class="calendar-table__cell calendar-table__cell--current">26</td>
+                      <td class="calendar-table__cell calendar-table__cell--current">27</td>
+                      <td class="calendar-table__cell calendar-table__cell--current">28</td>
+                      <td class="calendar-table__cell calendar-table__cell--future">29</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-table__cell calendar-table__cell--future">30</td>
+                      <td class="calendar-table__cell calendar-table__cell--future">31</td>
+                      <td class="calendar-table__cell calendar-table__cell--future">1</td>
+                      <td class="calendar-table__cell calendar-table__cell--future">2</td>
+                      <td class="calendar-table__cell calendar-table__cell--future">3</td>
+                      <td class="calendar-table__cell calendar-table__cell--future">4</td>
+                      <td class="calendar-table__cell calendar-table__cell--future">5</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <a class="plan-form__link" href="#">Следующий шаг</a>
+            </div>
+            <div class="plan-form__step">
+              <div class="plan-form__step-title-wrapper">
+                <span class="plan-form__step-title">Шаг 2.</span>
+                <span class="plan-form__step-title">Маршрут</span>
+              </div>
+              <p class="plan-form__step-text">Укажите страны, которые вы хотели бы посетить.
+                Это может быть одна или сразу несколько.
+              </p>
+              <div class="country">
+                <div class="country__marker country__marker--done"></div>
+                <div class="country__input-wrapper">
+                  <input class="country__input" id="country#1" name="country#1" value="Босния и Герцеговина">
+                  <label class="country__label" for="country#1"></label>
+                  <button class="country__button-close">Удалить страну</button>
+                </div>
+                <div class="country__arrow-down"></div>
+                <div class="country__marker country__marker--done"></div>
+                <div class="country__input-wrapper">
+                  <input class="country__input" id="country#2" name="country#2" value="Чехия">
+                  <label class="country__label" for="country#2"></label>
+                  <button class="country__button-close">Удалить страну</button>
+                </div>
+                <div class="country__arrow-down"></div>
+                <div class="country__marker"></div>
+                <span class="country__input country__input--choice">Выберите страну</span>
+                <button class="country__button-close">Удалить страну</button>
+                <div class="country__arrow-down"></div>
+                <div class="country__marker"></div>
+                <span class="country__input country__input--add">Добавить страну</span>
+                <div class="country__modal">
+                  <button class="country__modal-close" type="button">Закрыть окно</button>
+                  <table class="country__table country-table">
+                    <tr>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">А</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="a-letter" name="letters" checked>
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Б</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="b-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">В</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="v-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Г</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="g-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Д</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="d-letter" name="letters">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Е</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="e-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">З</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="z-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">И</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="i-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">К</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="k-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Л</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="l-letter" name="letters">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">М</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="m-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Н</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="n-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">О</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="o-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">П</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="p-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Р</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="r-letter" name="letters">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">С</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="s-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Т</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="t-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">У</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="u-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Ф</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="ph-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Х</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="kh-letter" name="letters">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Ч</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="ch-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Ш</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="sh-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Э</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="ae-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Ю</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="yu-letter" name="letters">
+                      </td>
+                      <td class="country-table__cell">
+                        <label class="" for="a-letter">Я</label>
+                        <input class="visually-hidden country-table__radio" type="radio" id="ya-letter" name="letters">
+                      </td>
+                    </tr>
+                  </table>
+                  <ul class="country__modal-list">
+                    <li class="country__modal-list-item">Австралия</li>
+                    <li class="country__modal-list-item">Австрия</li>
+                    <li class="country__modal-list-item">Азербайджан</li>
+                    <li class="country__modal-list-item">Албания</li>
+                    <li class="country__modal-list-item">Алжир</li>
+                    <li class="country__modal-list-item">Ангола</li>
+                    <li class="country__modal-list-item">Андорра</li>
+                    <li class="country__modal-list-item">Антигуа и Барбуда</li>
+                    <li class="country__modal-list-item">Аргентина</li>
+                    <li class="country__modal-list-item">Армения</li>
+                    <li class="country__modal-list-item">Афганистан</li>
+                  </ul>
+                </div>
+              </div>
+              <a class="plan-form__link" href="#">Следующий шаг</a>
+              <a class="plan-form__link-back" href="#">На шаг назад</a>
+            </div>
+            <div class="plan-form__step">
+              <div class="plan-form__step-title-wrapper">
+                <span class="plan-form__step-title">Шаг 3.</span>
+                <span class="plan-form__step-title">Развлечения</span>
+              </div>
+              <p class="plan-form__step-text">Наконец, расскажите о своих планах времяпровождения.
+                Можно писать в свободной форме и ставить тэги.
+              </p>
+              <div class="plan-form__fun fun">
+                <div class="fun__progress-graph"></div>
+                <div class="fun__input-wrapper">
+                  <label class="fun__label" for="fun-country#1">Босния и Герцеговина</label>
+                  <textarea class="fun__textarea" id="fun-country#1" name="fun-country#1">
+                    План действий
+                  </textarea>
+                </div>
+                <div class="fun__input-wrapper">
+                  <label class="fun__label" for="fun-country#2">Босния и Герцеговина</label>
+                  <textarea class="fun__textarea" id="fun-country#2" name="fun-country#2">
+                    Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                  </textarea>
+                </div>
+              </div>
+            </div>
+            <button class="plan-form__submit" type="submit">Отправить</button>
+            <a class="plan-form__link-back" href="#">На шаг назад</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img class="logo_image" src="#" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--footer" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link--footer" href="https://vk.com/htmlacademy">Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link--footer" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+          </li>
+        </ul>
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__link-text">Разработано</span>
+          <svg></svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

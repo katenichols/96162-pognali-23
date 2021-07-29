@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img class="logo_image" src="#" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <div class="page-header__modal-menu modal-menu">
+          <a class="modal-menu__logo" href="index.html">
+            <img class="modal-menu__logo-image" src="#" width="100" height="15" alt="Сервис поиска попутчиков Погнали"/>
+          </a>
+          <nav class="modal-menu__nav">
+            <ul class="modal-menu__nav-list">
+              <li class="modal-menu__nav-item">
+                <a class="modal-menu__nav-link" href="index.html" target="_blank">О сервисе </a>
+              </li>
+              <li class="modal-menu__nav-item">
+                <a class="modal-menu__nav-link" href="form.html" target="_blank">Направления</a>
+              </li>
+              <li class="modal-menu__nav-item">
+                <a class="modal-menu__nav-link" href="#">Попутчики</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="modal-menu__contacts">
+            <div class="modal-menu__contacts-wrapper">
+              <div class="modal-menu__contacts-icon modal-menu__contacts-icon-phone"></div>
+              <a class="modal-menu__contacts-link modal-menu__contacts-link-phone" href="tel:88005558628">
+                8 800 555-86-28
+              </a>
+            </div>
+            <div class="modal-menu__contacts-wrapper">
+              <div class="modal-menu__contacts-icon modal-menu__contacts-email"></div>
+              <a class="modal-menu__contacts-link modal-menu__contacts-link-email" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </div>
+            <a class="modal-menu__contacts-link-signin" href="#">Авторизация</a>
+          </div>
+          <ul class="modal-menu__social social">
+            <li class="social__item">
+              <a class="social__link social__link--modal" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--modal" href="https://vk.com/htmlacademy">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--modal" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="catalog">
+      <div class="container">
+        <h1 class="catalog__title">Попутчики</h1>
+        <a class="catalog__link" href="index.html">На главную</a>
+      </div>
+      <section class="catalog__filter-country filter-country">
+        <h2 class="visually-hidden">Выберите страну</h2>
+        <div class="container">
+          <form class="filter-country__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="filter-country__choice">
+              <span class="filter-country__title">Фильтрация по странам</span>
+              <button class="filter-country__toggle" type="button">Открыть фильтр</button>
+              <div class="filter-country__letters">
+                <ul class="filter-country__continent-list">
+                  <li class="filter-country__continent-item">Европа</li>
+                  <li class="filter-country__continent-item">Азия</li>
+                  <li class="filter-country__continent-item">Америка</li>
+                  <li class="filter-country__continent-item">Острова</li>
+                </ul>
+                <table class="filter-country__table catalog-table">
+                  <tr>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">А</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="a-letter" name="letters" checked>
+                      <ul class="catalog-table__list catalog-table__list--current">
+                        <li class="catalog-table__list-item">Австралия</li>
+                        <li class="catalog-table__list-item">Австрия</li>
+                        <li class="catalog-table__list-item">Азербайджан</li>
+                        <li class="catalog-table__list-item">Албания</li>
+                        <li class="catalog-table__list-item">Алжир</li>
+                        <li class="catalog-table__list-item">Ангола</li>
+                        <li class="catalog-table__list-item">Андорра</li>
+                        <li class="catalog-table__list-item">Антигуа и Барбуда</li>
+                        <li class="catalog-table__list-item">Аргентина</li>
+                        <li class="catalog-table__list-item">Армения</li>
+                        <li class="catalog-table__list-item">Афганистан</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Б</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="b-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Багамские острова</li>
+                        <li class="catalog-table__list-item">Бангладеш</li>
+                        <li class="catalog-table__list-item">Барбадос</li>
+                        <li class="catalog-table__list-item">Белоруссия</li>
+                        <li class="catalog-table__list-item">Белиз</li>
+                        <li class="catalog-table__list-item">Бельгия</li>
+                        <li class="catalog-table__list-item">Бенин</li>
+                        <li class="catalog-table__list-item">Болгария</li>
+                        <li class="catalog-table__list-item">Боливия</li>
+                        <li class="catalog-table__list-item">Босния и Герцеговина</li>
+                        <li class="catalog-table__list-item">Ботсвана</li>
+                        <li class="catalog-table__list-item">Бразилия</li>
+                        <li class="catalog-table__list-item">Бруней</li>
+                        <li class="catalog-table__list-item">Буркина-Фасо</li>
+                        <li class="catalog-table__list-item">Бурунди</li>
+                        <li class="catalog-table__list-item">Бутан</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">В</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="v-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Вануату</li>
+                        <li class="catalog-table__list-item">Великобритания</li>
+                        <li class="catalog-table__list-item">Венгрия</li>
+                        <li class="catalog-table__list-item">Венесуэла</li>
+                        <li class="catalog-table__list-item">Восточный Тимор</li>
+                        <li class="catalog-table__list-item">Вьетнам</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Г</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="g-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Габон</li>
+                        <li class="catalog-table__list-item">Гаити</li>
+                        <li class="catalog-table__list-item">Гайана</li>
+                        <li class="catalog-table__list-item">Гамбия</li>
+                        <li class="catalog-table__list-item">Гана</li>
+                        <li class="catalog-table__list-item">Гватемала</li>
+                        <li class="catalog-table__list-item">Гвинея</li>
+                        <li class="catalog-table__list-item">Гвинея-Бисау</li>
+                        <li class="catalog-table__list-item">Германия</li>
+                        <li class="catalog-table__list-item">Гондурас</li>
+                        <li class="catalog-table__list-item">Гренада</li>
+                        <li class="catalog-table__list-item">Греция</li>
+                        <li class="catalog-table__list-item">Грузия</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Д</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="d-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Дания</li>
+                        <li class="catalog-table__list-item">Джибути</li>
+                        <li class="catalog-table__list-item">Доминика</li>
+                        <li class="catalog-table__list-item">Доминикана</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Е</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="e-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Египт</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">З</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="z-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Замбия</li>
+                        <li class="catalog-table__list-item">Зимбабве</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">И</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="i-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Израиль</li>
+                        <li class="catalog-table__list-item">Индия</li>
+                        <li class="catalog-table__list-item">Индонезия</li>
+                        <li class="catalog-table__list-item">Иордания</li>
+                        <li class="catalog-table__list-item">Ирак</li>
+                        <li class="catalog-table__list-item">Иран</li>
+                        <li class="catalog-table__list-item">Ирландия</li>
+                        <li class="catalog-table__list-item">Исландия</li>
+                        <li class="catalog-table__list-item">Испания</li>
+                        <li class="catalog-table__list-item">Италия</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">К</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="k-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Кабо-Верде</li>
+                        <li class="catalog-table__list-item">Казахстан</li>
+                        <li class="catalog-table__list-item">Камбоджа</li>
+                        <li class="catalog-table__list-item">Камерун</li>
+                        <li class="catalog-table__list-item">Канада</li>
+                        <li class="catalog-table__list-item">Катар</li>
+                        <li class="catalog-table__list-item">Кения</li>
+                        <li class="catalog-table__list-item">Кипр</li>
+                        <li class="catalog-table__list-item">Киргизия</li>
+                        <li class="catalog-table__list-item">Кирибати</li>
+                        <li class="catalog-table__list-item">Китай</li>
+                        <li class="catalog-table__list-item">Колумбия</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Л</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="l-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Лаос</li>
+                        <li class="catalog-table__list-item">Латвия</li>
+                        <li class="catalog-table__list-item">Лесото</li>
+                        <li class="catalog-table__list-item">Либерия</li>
+                        <li class="catalog-table__list-item">Ливан</li>
+                        <li class="catalog-table__list-item">Ливия</li>
+                        <li class="catalog-table__list-item">Литва</li>
+                        <li class="catalog-table__list-item">Лихтенштейн</li>
+                        <li class="catalog-table__list-item">Люксембург</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">М</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="m-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Маврикий</li>
+                        <li class="catalog-table__list-item">Мавритания</li>
+                        <li class="catalog-table__list-item">Мадагаскар</li>
+                        <li class="catalog-table__list-item">Малави</li>
+                        <li class="catalog-table__list-item">Малайзия</li>
+                        <li class="catalog-table__list-item">Мали</li>
+                        <li class="catalog-table__list-item">Мальдивы</li>
+                        <li class="catalog-table__list-item">Мальта</li>
+                        <li class="catalog-table__list-item">Марокко</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Н</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="n-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Намибия</li>
+                        <li class="catalog-table__list-item">Науру</li>
+                        <li class="catalog-table__list-item">Непал</li>
+                        <li class="catalog-table__list-item">Нигер</li>
+                        <li class="catalog-table__list-item">Нигерия</li>
+                        <li class="catalog-table__list-item">Нидерланды</li>
+                        <li class="catalog-table__list-item">Никарагуа</li>
+                        <li class="catalog-table__list-item">Новая Зеландия</li>
+                        <li class="catalog-table__list-item">Норвегия</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">О</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="o-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">ОАЭ</li>
+                        <li class="catalog-table__list-item">Оман</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">П</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="p-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Пакистан</li>
+                        <li class="catalog-table__list-item">Палау</li>
+                        <li class="catalog-table__list-item">Панама</li>
+                        <li class="catalog-table__list-item">Папуа - Новая Гвинея</li>
+                        <li class="catalog-table__list-item">Парагвай</li>
+                        <li class="catalog-table__list-item">Перу</li>
+                        <li class="catalog-table__list-item">Польша</li>
+                        <li class="catalog-table__list-item">Португалия</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Р</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="r-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Руанда</li>
+                        <li class="catalog-table__list-item">Румыния</li>
+                        <li class="catalog-table__list-item">Россия</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">С</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="s-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Сальвадор</li>
+                        <li class="catalog-table__list-item">Самоа</li>
+                        <li class="catalog-table__list-item">Сан-Марино</li>
+                        <li class="catalog-table__list-item">Саудовская Аравия</li>
+                        <li class="catalog-table__list-item">Сейшелы</li>
+                        <li class="catalog-table__list-item">Сенегал</li>
+                        <li class="catalog-table__list-item">Сербия</li>
+                        <li class="catalog-table__list-item">Сингапур</li>
+                        <li class="catalog-table__list-item">Сирия</li>
+                        <li class="catalog-table__list-item">Словакия</li>
+                        <li class="catalog-table__list-item">Словения</li>
+                        <li class="catalog-table__list-item">США</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Т</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="t-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Таджикистан</li>
+                        <li class="catalog-table__list-item">Таиланд</li>
+                        <li class="catalog-table__list-item">Танзания</li>
+                        <li class="catalog-table__list-item">Того</li>
+                        <li class="catalog-table__list-item">Тонга</li>
+                        <li class="catalog-table__list-item">Тринидад и Тобаго</li>
+                        <li class="catalog-table__list-item">Тувалу</li>
+                        <li class="catalog-table__list-item">Тунис</li>
+                        <li class="catalog-table__list-item">Туркмения</li>
+                        <li class="catalog-table__list-item">Турция</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">У</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="u-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Уганда</li>
+                        <li class="catalog-table__list-item">Узбекистан</li>
+                        <li class="catalog-table__list-item">Украина</li>
+                        <li class="catalog-table__list-item">Уругвай</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Ф</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="ph-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Фиджи</li>
+                        <li class="catalog-table__list-item">Филиппины</li>
+                        <li class="catalog-table__list-item">Финляндия</li>
+                        <li class="catalog-table__list-item">Франция</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Х</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="kh-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Хорватия</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Ч</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="ch-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Чад</li>
+                        <li class="catalog-table__list-item">Черногория</li>
+                        <li class="catalog-table__list-item">Чехия</li>
+                        <li class="catalog-table__list-item">Чили</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Ш</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="sh-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Швейцария</li>
+                        <li class="catalog-table__list-item">Швеция</li>
+                        <li class="catalog-table__list-item">Шри-Ланка</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Э</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="ae-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Эквадор</li>
+                        <li class="catalog-table__list-item">Эритрея</li>
+                        <li class="catalog-table__list-item">Эсватини</li>
+                        <li class="catalog-table__list-item">Эстония</li>
+                        <li class="catalog-table__list-item">Эфиопия</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Ю</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="yu-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">ЮАР</li>
+                        <li class="catalog-table__list-item">Южный Судан</li>
+                      </ul>
+                    </td>
+                    <td class="catalog-table__cell">
+                      <label class="" for="a-letter">Я</label>
+                      <input class="visually-hidden catalog-table__radio" type="radio" id="ya-letter" name="letters">
+                      <ul class="visually-hidden catalog-table__list">
+                        <li class="catalog-table__list-item">Ямайка</li>
+                        <li class="catalog-table__list-item">Япония</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <button class="filter-country__button filter-country__button--hide" type="button">Свернуть</button>
+            </div>
+            <div class="filter-country__user-choice user-choice">
+              <h2 class="user-choice__title">Подберите идеального попутчика</h2>
+              <div class="user-choice__field">
+                <div class="user-choice__field-wrapper">
+                  <span class="user-choice__field-title">Хобби:</span>
+                  <fieldset class="user-choice__fieldset">
+                    <legend class="visually-hidden"></legend>
+                    <input class="user-choice__checkbox" type="checkbox" id="gym" name="gym" checked>
+                    <label class="user-choice__label" for="gym">Спортзал</label>
+                    <input class="user-choice__checkbox" type="checkbox" id="hookah" name="hookah">
+                    <label class="user-choice__label" for="hookah">Кальян</label>
+                    <input class="user-choice__checkbox" type="checkbox" id="sofa" name="sofa">
+                    <label class="user-choice__label" for="sofa">Диван</label>
+                  </fieldset>
+                </div>
+                <div class="user-choice__field-wrapper">
+                  <span class="user-choice__field-title">Музыка:</span>
+                  <fieldset class="user-choice__fieldset">
+                    <legend class="visually-hidden"></legend>
+                    <input class="user-choice__checkbox" type="checkbox" id="rock" name="rock" checked>
+                    <label class="user-choice__label" for="rock">Тяжелый рок</label>
+                    <input class="user-choice__checkbox" type="checkbox" id="rap" name="rap">
+                    <label class="user-choice__label" for="rap">Русский рэп</label>
+                    <input class="user-choice__checkbox" type="checkbox" id="eurodance" name="eurodance">
+                    <label class="user-choice__label" for="eurodance">Евроденс</label>
+                  </fieldset>
+                </div>
+                <div class="user-choice__field-wrapper">
+                  <span class="user-choice__field-title">Еда:</span>
+                  <fieldset class="user-choice__fieldset">
+                    <legend class="visually-hidden"></legend>
+                    <input class="user-choice__checkbox" type="checkbox" id="meet" name="meet" checked>
+                    <label class="user-choice__label" for="meet">Мясоед</label>
+                    <input class="user-choice__checkbox" type="checkbox" id="nutrition" name="nutrition">
+                    <label class="user-choice__label" for="nutrition">Сидит на ПП</label>
+                    <input class="user-choice__checkbox" type="checkbox" id="vegan" name="vegan">
+                    <label class="user-choice__label" for="vegan">Веган-сыроед</label>
+                  </fieldset>
+                </div>
+                <div class="user-choice__field-wrapper">
+                  <span class="user-choice__field-title">Транспорт:</span>
+                  <fieldset class="user-choice__fieldset">
+                    <legend class="visually-hidden"></legend>
+                    <label class="user-choice__label" for="plane">Самолет</label>
+                    <input class="visually-hidden user-choice__checkbox" type="checkbox" id="plane" name="plane" checked>
+                    <label class="user-choice__label" for="bus">Автобус</label>
+                    <input class="visually-hidden user-choice__checkbox" type="checkbox" id="bus" name="bus" checked>
+                    <label class="user-choice__label" for="bike">Велосипед</label>
+                    <input class="visually-hidden user-choice__checkbox" type="checkbox" id="bike" name="bike">
+                    <label class="user-choice__label" for="hike">Пешком</label>
+                    <input class="visually-hidden user-choice__checkbox" type="checkbox" id="hike" name="hike" checked>
+                  </fieldset>
+                </div>
+                <div class="user-choice__field-wrapper">
+                  <span class="user-choice__field-title">Левел:</span>
+                  <div class="user-choice__level-graph level-graph">
+                    <div class="level-graph__general-line"></div>
+                    <div class="level-graph__active-line"></div>
+                    <div class="level-graph__marker level-graph__marker--left"></div>
+                    <div class="level-graph__marker level-graph__marker--right"></div>
+                  </div>
+                  <div class="user-choice__level-range level-range">
+                    <input class="level-range__input level-range__input--min" type="text" id="level-min" name="level-min" value="30">
+                    <label class="visually-hidden" for="level-min"></label>
+                    <div class="level-range__separatop">      </div>
+                    <input class="level-range__input level-range__input--max" type="text" id="level-max" name="level-max" value="100">
+                    <label class="visually-hidden" for="level-max"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="filter-country__button filter-country__button--show" type="submit">Показать</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="catalog__user-call user-call">
+        <h2 class="visually-hidden">Выбрать попутчика</h2>
+        <article class="user-call__card user-card">
+          <div class="user-card__name-wrapper">
+            <img class="user-card__photo" src="#" width="70" height="70" alt="Фото попутчика">
+            <h3 class="user-card__title">Таня Фирсова</h3>
+          </div>
+          <span class="user-card__tags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</span>
+          <div class="user-card__country-wrapper">
+            <span class="user-card__label">Хочет посетить:</span>
+            <ul class="user-card__country-list">
+              <li class="user-card__country-item">Шри-Ланка</li>
+              <li class="user-card__country-item">Таиланд</li>
+              <li class="user-card__country-item">Сейшелы</li>
+            </ul>
+          </div>
+          <div class="user-card__transport-wrapper">
+            <div class="user-card__transport">
+              <span class="user-card__label">Транспорт:</span>
+              <ul class="user-card__transport-list">
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon user-card__icon--current">Самолет</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon">Автобус</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon">Велосипед</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon">Пешком</span>
+                </li>
+              </ul>
+            </div>
+            <div class="user-card__level">
+              <span class="user-card__label">Левел:</span>3
+              <span class="user-card__number-level">99</span>
+            </div>
+          </div>
+          <div class="user-card__link-wrapper">
+            <a class="filter-country__button user-card__link" href="">Позвать!</a>
+            <span class="user-card__likes">1,5 M</span>
+          </div>
+        </article>
+
+        <article class="user-call__card user-card">
+          <div class="user-card__name-wrapper">
+            <img class="user-card__photo" src="#" width="70" height="70" alt="Фото попутчика">
+            <h3 class="user-card__title">Петя Демин</h3>
+          </div>
+          <span class="user-card__tags">#бургер #бар #футбол #концерт #крафт</span>
+          <div class="user-card__country-wrapper">
+            <span class="user-card__label">Хочет посетить:</span>
+            <ul class="user-card__country-list">
+              <li class="user-card__country-item">Бельгия</li>
+              <li class="user-card__country-item">Чехия</li>
+            </ul>
+          </div>
+          <div class="user-card__transport-wrapper">
+            <div class="user-card__transport">
+              <span class="user-card__label">Транспорт:</span>
+              <ul class="user-card__transport-list">
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon user-card__icon--current">Самолет</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon user-card__icon--current">Автобус</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon">Велосипед</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon user-card__icon--current">Пешком</span>
+                </li>
+              </ul>
+            </div>
+            <div class="user-card__level">
+              <span class="user-card__label">Левел:</span>
+              <span class="user-card__number-level">80</span>
+            </div>
+          </div>
+          <div class="user-card__link-wrapper">
+            <a class="filter-country__button user-card__link" href="#">Позвать!</a>
+            <span class="user-card__likes">1500</span>
+          </div>
+        </article>
+
+        <article class="user-call__card user-card">
+          <div class="user-card__name-wrapper">
+            <img class="user-card__photo" src="#" width="70" height="70" alt="Фото попутчика">
+            <h3 class="user-card__title">Марк Смолов</h3>
+          </div>
+          <span class="user-card__tags">#рэп #тату #хайпбист #кроссовки #суприм</span>
+          <div class="user-card__country-wrapper">
+            <span class="user-card__label">Хочет посетить:</span>
+            <ul class="user-card__country-list">
+              <li class="user-card__country-item">США</li>
+              <li class="user-card__country-item">Австралия</li>
+              <li class="user-card__country-item">Доминика</li>
+            </ul>
+          </div>
+          <div class="user-card__transport-wrapper">
+            <div class="user-card__transport">
+              <span class="user-card__label">Транспорт:</span>
+              <ul class="user-card__transport-list">
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon user-card__icon--current">Самолет</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon">Автобус</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon user-card__icon--current">Велосипед</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon">Пешком</span>
+                </li>
+              </ul>
+            </div>
+            <div class="user-card__level">
+              <span class="user-card__label">Левел:</span>3
+              <span class="user-card__number-level">25</span>
+            </div>
+          </div>
+          <div class="user-card__link-wrapper">
+            <a class="filter-country__button user-card__link" href="#">Позвать!</a>
+            <span class="user-card__likes">170</span>
+          </div>
+        </article>
+
+        <article class="user-call__card user-card">
+          <div class="user-card__name-wrapper">
+            <img class="user-card__photo" src="#" width="70" height="70" alt="Фото попутчика">
+            <h3 class="user-card__title">Лариса Роговая</h3>
+          </div>
+          <span class="user-card__tags">#образование #карьера #учеба #линкедин</span>
+          <div class="user-card__country-wrapper">
+            <span class="user-card__label">Хочет посетить:</span>
+            <ul class="user-card__country-list">
+              <li class="user-card__country-item">Великобритания</li>
+              <li class="user-card__country-item">Германия</li>
+            </ul>
+          </div>
+          <div class="user-card__transport-wrapper">
+            <div class="user-card__transport">
+              <span class="user-card__label">Транспорт:</span>
+              <ul class="user-card__transport-list">
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon user-card__icon--current">Самолет</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon user-card__icon--current">Автобус</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon">Велосипед</span>
+                </li>
+                <li class="user-card__transport-item">
+                  <span class="user-card__icon">Пешком</span>
+                </li>
+              </ul>
+            </div>
+            <div class="user-card__level">
+              <span class="user-card__label">Левел:</span>3
+              <span class="user-card__number-level">50</span>
+            </div>
+          </div>
+          <div class="user-card__link-wrapper">
+            <a class="filter-country__button user-card__link" href="#">Позвать!</a>
+            <span class="user-card__likes">23</span>
+          </div>
+        </article>
+        <a class="user-call__button" href="#">Показать еще</a>
+        <div class="user-call__pagination">
+          <ul class="visually-hidden user-call__pagination-list">
+            <li class="user-call__pagination-item user-call__pagination-item--current">1</li>
+            <li class="user-call__pagination-item">2</li>
+            <li class="user-call__pagination-item">3</li>
+            <li class="user-call__pagination-item">4</li>
+          </ul>
+          <button class="user-call__pagination-button user-call__pagination-button--prev">Назад</button>
+          <button class="user-call__pagination-button user-call__pagination-button--next">Вперед</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img class="logo_image" src="#" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--footer" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link--footer" href="https://vk.com/htmlacademy">Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link--footer" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+          </li>
+        </ul>
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__link-text">Разработано</span>
+          <svg></svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
