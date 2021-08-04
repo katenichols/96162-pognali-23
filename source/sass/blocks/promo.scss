@@ -1,0 +1,13 @@
+.promo__title {
+  margin: 0;
+  margin-bottom: 245px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 101px;
+  }
+}

@@ -9,7 +9,7 @@
   <body class="page-body">
     <header class="page-header">
       <div class="container">
-        <div class="logo-wrapper">
+        <div class="logo-wrapper logo-wrapper--non-modal">
           <a class="logo" href="#">
             <img class="logo_image" src="img/logo-mobile.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
           </a>
@@ -17,11 +17,14 @@
         </div>
       </div>
       <div class="page-header__modal-menu modal-menu">
-        <div class="container">
-          <a class="modal-menu__logo" href="#">
-            <img class="modal-menu__logo-image" src="img/logo-mobile-modal.svg" width="100" height="15"
-              alt="Сервис поиска попутчиков Погнали"/>
-          </a>
+        <div class="container container--modal">
+          <div class="logo-wrapper">
+            <a class="modal-menu__logo" href="#">
+              <img class="modal-menu__logo-image" src="img/logo-mobile-modal.svg" width="100" height="15"
+                alt="Сервис поиска попутчиков Погнали"/>
+            </a>
+            <button class="page-header__toggle" type="button">Закрыть меню</button>
+          </div>
           <nav class="modal-menu__nav">
             <ul class="modal-menu__nav-list">
               <li class="modal-menu__nav-item">
@@ -81,7 +84,7 @@
       </div>
 
       <section class="page-main__promo promo">
-        <div class="container">
+        <div class="container container--promo">
           <h1 class="promo__title">В путешествие с крутыми попутчиками!</h1>
           <div class="promo__wrapper">
             <q class="promo__wrapper-quote">Лучшее приложение, что я видел в жизни!</q>
@@ -115,19 +118,19 @@
       </section>
 
       <section class="page-main__about about">
-        <div class="container">
+        <div class="container container--about">
           <h2 class="about__title">О сервисе</h2>
           <p class="about__lead">Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
             Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
           </p>
           <p class="about__text">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
           </p>
-          <a class="visually-hidden about__link" href="#">Подробне</a>
+          <a class="about__link" href="#">Подробне</a>
         </div>
       </section>
 
       <section class="page-main__countries countries">
-        <div class="container">
+        <div class="container container--countries">
           <h2 class="countries__title">Направления</h2>
           <p class="countries__text">Мы не продаем туры и ничего не рекламируем.
             Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
@@ -155,12 +158,12 @@
               <span class="cards__number">5326</span>
             </li>
           </ul>
-          <a class="page-main__button countries__link" href="catalog.html" target="_blank">Показать все</a>
+          <a class="page-main__button countries__link" href="form.html" target="_blank">Показать все</a>
         </div>
       </section>
 
       <section class="page-main__travelers travelers">
-        <div class="container">
+        <div class="container container--travelers">
           <div class="travelers__text-wrapper">
             <h2 class="travelers__title">Попутчики</h2>
             <p class="travelers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
@@ -235,7 +238,7 @@
               </ul>
             </div>
           </div>
-          <a class="page-main__button travelers__link" href="form.html" target="_blank">Показать всех</a>
+          <a class="page-main__button travelers__link" href="catalog.html" target="_blank">Показать всех</a>
         </div>
       </section>
 
@@ -289,7 +292,7 @@
       </section>
 
       <section class="page-main__feedback feedback">
-        <div class="container">
+        <div class="container container--feedback">
           <h2 class="feedback__title">Заинтересовались?</h2>
           <p class="feedback__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
             Тогда скорее <span class="feedback__text-accent">авторизуйтесь</span>.
@@ -324,12 +327,12 @@
             </a>
           </div>
         </div>
-        <div class="map-block__map"></div>
+        <div class="map-block__map">Здесь будет карта</div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container container--footer">
         <a class="logo" href="">
           <img class="logo_image" src="img/logo-mobile-modal.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
         </a>

@@ -1,3 +1,18 @@
 .feedback {
+  padding-top: 72px;
+  padding-right: 0;
+  padding-bottom: 44px;
+  padding-left: 0;
+
   background-color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 109px;
+    padding-bottom: 132px;
+  }
 }
