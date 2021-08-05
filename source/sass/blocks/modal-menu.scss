@@ -1,3 +1,28 @@
 .modal-menu {
+  position: absolute;
+  top: 0;
+
+  display: none;
+  min-width: 100%;
+  padding-top: 19px;
+
+  color: $basic-text-color;
+
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    display: block;
+    flex-direction: row;
+    padding-top: 46px;
+    padding-bottom: 110px;
+
+    background-color: transparent;
+  }
 }

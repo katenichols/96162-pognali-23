@@ -1,7 +1,119 @@
 .container {
   display: block;
-  // margin-right: auto;
-  // margin-left: auto;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 25px;
   padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+.container--modal {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.container--promo {
+  padding-top: 48px;
+  padding-right: 50px;
+  padding-bottom: 29px;
+  padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-right: 72px;
+    padding-bottom: 211px;
+    padding-left: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 83px;
+    padding-bottom: 0;
+    padding-left: 127px;
+  }
+}
+
+.container--about {
+  padding-top: 0;
+  padding-right: 60px;
+  padding-bottom: 0;
+  padding-left: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+  }
+}
+
+.container--countries {
+  padding-top: 71px;
+  padding-right: 55px;
+  padding-bottom: 34px;
+  padding-left: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 73px;
+    padding-left: 73px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 166px;
+    padding-left: 131px;
+    padding-bottom: 138px;
+  }
+}
+
+.container--travelers {
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-right: 74px;
+    padding-bottom: 0;
+    padding-left: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 60px;
+    padding-left: 130px;
+  }
+}
+
+.container--feedback {
+  @media (min-width: $tablet-width) {
+    padding-right: 76px;
+    padding-left: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 133px;
+    padding-left: 133px;
+  }
+}
+
+.container--footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

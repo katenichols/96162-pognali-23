@@ -1,4 +1,40 @@
 .map-block__wrapper {
+  padding-top: 33px;
+  padding-right: 0;
+  padding-bottom: 35px;
+  padding-left: 0;
+
   color: $special-dark-color;
+
   background-color: $basic-contrast-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+    padding-right: 75px;
+    padding-bottom: 84px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-right: 135px;
+    padding-bottom: 61px;
+    padding-left: 283px;
+  }
+}
+
+.map-block__map {
+  display: block;
+  height: 262px;
+  text-align: center;
+
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    height: 464px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 396px;
+  }
 }

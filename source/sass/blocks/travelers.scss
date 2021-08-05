@@ -1,3 +1,25 @@
 .travelers {
+  padding-top: 68px;
+  padding-right: 0;
+  padding-bottom: 31px;
+  padding-left: 0;
+
   background-color: $basic-dark;
+}
+
+.travelers__text-wrapper {
+  padding-top: 0;
+  padding-right: 29px;
+  padding-bottom: 54px;
+  padding-left: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-bottom: 59px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 85px;
+  }
 }

@@ -1,0 +1,17 @@
+.logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: auto;
+  }
+}
+
+.logo-wrapper--non-modal {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

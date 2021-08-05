@@ -1,9 +1,31 @@
 .page-header {
+  position: relative;
+
   margin: 0;
-  // padding-right: 25px;
-  // padding-left: 25px;
+  padding-top: 19px;
+  padding-right: 0;
+  padding-bottom: 60px;
+  padding-left: 0;
 
   color: $basic-white;
 
   background-color: $header-background;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 11px;
+  }
+}
+
+.page-header__toggle {
+  color: $basic-white;
+}
+
+.page-header__toggle:active + .modal-menu {
+  display: block;
 }
