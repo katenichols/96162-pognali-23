@@ -2,6 +2,21 @@
   color: $basic-color;
 }
 
+.page-form__title-wrapper {
+  position: relative;
+  z-index: 100;
+
+  width: 100%;
+
+  background-color: $header-background;
+}
+
 .page-form__title {
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 12px;
+  padding-left: 0;
+
   color: $basic-white;
 }

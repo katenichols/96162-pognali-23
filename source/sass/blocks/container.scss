@@ -117,3 +117,40 @@
     justify-content: space-between;
   }
 }
+
+.container--title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 12px;
+
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 126px;
+    padding-left: 126px;
+  }
+}
+
+.container--plans {
+  @media (min-width: $tablet-width) {
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 124px;
+  }
+}
+
+.container--add-plan {
+  @media (min-width: $tablet-width) {
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+}

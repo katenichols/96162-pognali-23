@@ -1,3 +1,24 @@
 .plans {
+  position: relative;
+  z-index: 10;
+
+  margin-top: -29px;
+  padding-top: 28px;
+  padding-right: 0;
+  padding-bottom: 59px;
+  padding-left: 0;
+
   background-color: $special-light-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 105px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 119px;
+  }
+}
+
+.plans__title {
+  margin-top: 0;
 }

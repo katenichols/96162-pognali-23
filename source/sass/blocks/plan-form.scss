@@ -1,6 +1,25 @@
 .plan-form__step {
+  margin-bottom: 10px;
+  padding-top: 24px;
   padding-right: 26px;
+  padding-bottom: 23px;
   padding-left: 24px;
 
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 56px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+    padding-top: 98px;
+    padding-right: 160px;
+    padding-bottom: 90px;
+    padding-left: 160px;
+  }
 }

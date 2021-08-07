@@ -1,0 +1,7 @@
+.country__modal-list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
