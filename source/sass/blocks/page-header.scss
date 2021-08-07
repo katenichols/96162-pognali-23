@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  z-index: 100;
 
   margin: 0;
   padding-top: 19px;
@@ -19,6 +20,16 @@
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 11px;
+  }
+}
+
+.page-header--modif {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 134px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 24px;
   }
 }
 

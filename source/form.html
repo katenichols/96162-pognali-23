@@ -7,9 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header--modif">
       <div class="container">
-        <div class="logo-wrapper">
+        <div class="logo-wrapper logo-wrapper--non-modal">
           <a class="logo" href="index.html">
             <img class="logo_image" src="img/logo-mobile.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
           </a>
@@ -17,20 +17,21 @@
         </div>
       </div>
       <div class="page-header__modal-menu modal-menu">
-        <div class="container">
+        <div class="container container--modal">
           <div class="logo-wrapper">
             <a class="modal-menu__logo" href="index.html">
-              <img class="modal-menu__logo-image" src="img/logo-mobile-modal.svg" width="100" height="15" alt="Сервис поиска попутчиков Погнали"/>
+              <img class="modal-menu__logo-image" src="img/logo-mobile-modal.svg" width="100" height="15"
+                alt="Сервис поиска попутчиков Погнали"/>
             </a>
             <button class="page-header__toggle" type="button">Закрыть меню</button>
           </div>
           <nav class="modal-menu__nav">
             <ul class="modal-menu__nav-list">
               <li class="modal-menu__nav-item">
-                <a class="modal-menu__nav-link" href="index.html" target="_blank">О сервисе</a>
+                <a class="modal-menu__nav-link" href="#">О сервисе </a>
               </li>
               <li class="modal-menu__nav-item">
-                <a class="modal-menu__nav-link" href="#">Направления</a>
+                <a class="modal-menu__nav-link" href="#" target="_blank">Направления</a>
               </li>
               <li class="modal-menu__nav-item">
                 <a class="modal-menu__nav-link" href="catalog.html" target="_blank">Попутчики</a>
@@ -39,14 +40,14 @@
           </nav>
           <div class="modal-menu__contacts">
             <div class="modal-menu__contacts-wrapper">
-              <div class="modal-menu__contacts-icon modal-menu__contacts-icon-phone"></div>
-              <a class="modal-menu__contacts-link modal-menu__contacts-link-phone" href="tel:88005558628">
-                8 800 555-86-28
+              <div class="modal-menu__contacts-icon modal-menu__contacts-icon--phone"></div>
+              <a class="modal-menu__contacts-link" href="tel:88005558628">
+                8 800 555-86-28
               </a>
             </div>
             <div class="modal-menu__contacts-wrapper">
-              <div class="modal-menu__contacts-icon modal-menu__contacts-email"></div>
-              <a class="modal-menu__contacts-link modal-menu__contacts-link-email" href="mailto:mail@htmlacademy.ru">
+              <div class="modal-menu__contacts-icon modal-menu__contacts--email"></div>
+              <a class="modal-menu__contacts-link" href="mailto:mail@htmlacademy.ru">
                 mail@htmlacademy.ru
               </a>
             </div>
@@ -68,8 +69,10 @@
     </header>
 
     <main class="page-form">
-      <div class="container">
-        <h1 class="page-form__title">Направления</h1>
+      <div class="page-form__title-wrapper">
+        <div class="container container--title">
+          <h1 class="page-form__title">Направления</h1>
+        </div>
       </div>
       <section class="page-user user">
         <h2 class="visually-hidden">Профиль спутника</h2>
@@ -107,35 +110,45 @@
       </section>
 
       <section class="page-form__plans plans">
-        <div class="container">
+        <div class="container container--plans">
           <h2 class="plans__title">Мои планы:</h2>
           <article class="plans__item plan-item">
             <h3 class="visually-hidden">Первый план</h3>
-            <span class="plan-item__number">1.</span>
-            <span class="plan-item__title">Франция, Италия</span>
-            <span class="plan-item__count">3 попутчика</span>
-            <span class="plan-item__dates">26 мар — 29 мар</span>
-            <a class="plan-item__link">Изменить</a>
+            <div class="plan-item__title-wrapper">
+              <span class="plan-item__number">1.</span>
+              <span class="plan-item__title">Франция, Италия</span>
+            </div>
+            <div class="plan-item__wrapper">
+              <span class="plan-item__count">3 попутчика</span>
+              <span class="plan-item__dates">26 мар — 29 мар</span>
+              <a class="plan-item__link">Изменить</a>
+            </div>
           </article>
           <article class="plans__article plan-item">
             <h3 class="visually-hidden">Второй план</h3>
-            <span class="plan-item__number">2.</span>
-            <span class="plan-item__title">Таиланд, Индонезия</span>
-            <span class="plan-item__count">1 попутчик</span>
-            <span class="plan-item__dates">1 июл — 15 июл</span>
-            <a class="plan-item__link">Изменить</a>
+            <div class="plan-item__title-wrapper">
+              <span class="plan-item__number">2.</span>
+              <span class="plan-item__title">Таиланд, Индонезия</span>
+            </div>
+            <div class="plan-item__wrapper">
+              <span class="plan-item__count">1 попутчик</span>
+              <span class="plan-item__dates">1 июл — 15 июл</span>
+              <a class="plan-item__link">Изменить</a>
+            </div>
           </article>
         </div>
       </section>
 
       <section class="page-form__add-plan add-plan">
-        <div class="container">
-          <h2 class="add-plan">Добавить план</h2>
-          <ul class="add-plan__markers">
-            <li class="add-plan__markers-item">Даты</li>
-            <li class="add-plan__markers-item">Маршрут</li>
-            <li class="add-plan__markers-item">Развлечения</li>
-          </ul>
+        <div class="container container--add-plan">
+          <div class="add-plan__title-wrapper">
+            <h2 class="add-plan__title">Добавить план</h2>
+            <ul class="add-plan__markers">
+              <li class="add-plan__markers-item">Даты</li>
+              <li class="add-plan__markers-item">Маршрут</li>
+              <li class="add-plan__markers-item">Развлечения</li>
+            </ul>
+          </div>
           <form class="add-plan__form plan-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="plan-form__step">
               <div class="plan-form__step-title-wrapper">
@@ -245,7 +258,7 @@
               <p class="plan-form__step-text">Укажите страны, которые вы хотели бы посетить.
                 Это может быть одна или сразу несколько.
               </p>
-              <div class="country">
+              <div class="plan-form__country country">
                 <div class="country__marker country__marker--done"></div>
                 <div class="country__input-wrapper">
                   <input class="country__input" id="country#1" name="country#1" value="Босния и Герцеговина">
@@ -430,8 +443,8 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
-        <a class="logo" href="index.html">
+      <div class="container container--footer">
+        <a class="logo" href="">
           <img class="logo_image" src="img/logo-mobile-modal.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
         </a>
         <ul class="page-footer__social social">
@@ -445,7 +458,7 @@
             <a class="social__link--footer" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
           </li>
         </ul>
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__link">
           <span class="page-footer__link-text">Разработано</span>
           <svg></svg>
         </a>

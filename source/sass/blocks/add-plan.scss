@@ -1,3 +1,43 @@
 .add-plan {
+  position: relative;
+  z-index: 30;
+
+  margin-top: -29px;
+  padding-top: 30px;
+  padding-right: 0;
+  padding-bottom: 72px;
+  padding-left: 0;
+
   background-color: $special-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -53px;
+    padding-top: 54px;
+  }
+}
+
+.add-plan__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 69px;
+  }
+}
+
+.add-plan__title {
+  margin-top: 0;
+}
+
+.add-plan__markers {
+  display: flex;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }

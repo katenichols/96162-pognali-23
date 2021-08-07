@@ -1,0 +1,18 @@
+.user-call {
+  position: relative;
+}
+
+.user-call__pagination {
+  @media (min-width: $desktop-width) {
+    margin-right: 371px;
+  }
+}
+
+.user-call__pagination-list {
+  display: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

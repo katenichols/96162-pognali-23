@@ -1,0 +1,26 @@
+.plan-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-top: 24px;
+  padding-right: 25px;
+  padding-bottom: 23px;
+  padding-left: 25px;
+
+  background-color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.plan-item__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
