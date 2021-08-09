@@ -1,6 +1,7 @@
 .logo-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 
   width: 100%;
 
@@ -11,7 +12,17 @@
 }
 
 .logo-wrapper--non-modal {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.logo-wrapper--no-js {
+  display: none;
 }

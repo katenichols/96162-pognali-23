@@ -3,7 +3,7 @@
   z-index: 100;
 
   margin: 0;
-  padding-top: 19px;
+  padding-top: 0;
   padding-right: 0;
   padding-bottom: 60px;
   padding-left: 0;
@@ -23,6 +23,10 @@
   }
 }
 
+.page-header--nojs {
+  padding-bottom: 0;
+}
+
 .page-header--modif {
   @media (min-width: $tablet-width) {
     padding-bottom: 134px;
@@ -34,9 +38,22 @@
 }
 
 .page-header__toggle {
-  color: $basic-white;
+  position: relative;
+
+  width: 25px;
+  height: 19px;
 }
 
-.page-header__toggle:active + .modal-menu {
-  display: block;
+.logo-wrapper--non-modal .page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 25px;
+  height: 3px;
+
+  background-color: $basic-white;
+  border-radius: 1.5px;
+  box-shadow: 0 8px 0 0 $basic-white;
 }
