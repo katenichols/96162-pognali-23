@@ -25,6 +25,10 @@
 
 .page-header--nojs {
   padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .page-header--modif {
@@ -35,25 +39,4 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 24px;
   }
-}
-
-.page-header__toggle {
-  position: relative;
-
-  width: 25px;
-  height: 19px;
-}
-
-.logo-wrapper--non-modal .page-header__toggle::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 0;
-
-  width: 25px;
-  height: 3px;
-
-  background-color: $basic-white;
-  border-radius: 1.5px;
-  box-shadow: 0 8px 0 0 $basic-white;
 }

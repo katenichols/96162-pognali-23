@@ -1,7 +1,7 @@
 .logo-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 
   width: 100%;
 
@@ -23,6 +23,6 @@
   }
 }
 
-.logo-wrapper--no-js {
+.logo-wrapper--nojs {
   display: none;
 }

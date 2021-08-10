@@ -1,0 +1,86 @@
+.logo-image {
+  width: 96px;
+  height: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+.logo__toggle {
+  position: relative;
+
+  width: 25px;
+  height: 19px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.logo__toggle--closed::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 25px;
+  height: 3px;
+
+  background-color: $basic-white;
+  border-radius: 1.5px;
+  box-shadow: 0 8px 0 0 $basic-white;
+}
+
+.logo__toggle--opened::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 24px;
+  height: 2px;
+
+  background-color: $close-button-color;
+  border-radius: 1.5px;
+
+  transform: rotate(45deg);
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+  }
+}
+
+.logo__toggle--opened::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 24px;
+  height: 2px;
+
+  background-color: $close-button-color;
+  border-radius: 1.5px;
+
+  transform: rotate(-45deg);
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+  }
+}
