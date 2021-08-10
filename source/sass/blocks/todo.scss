@@ -4,7 +4,7 @@
 
 .todo__list {
   display: block;
-  background-color: $todo-background-color;
+  background-color: $dark-invert-color;
 
   @media (min-width: $tablet-width) {
     display: grid;

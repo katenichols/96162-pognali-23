@@ -17,7 +17,7 @@
               <img class="logo-image" src="img/logo-mobile.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
             </picture>
           </a>
-          <button class="logo__toggle logo__toggle--closed" type="button">
+          <button class="logo__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -33,7 +33,7 @@
                 <img class="logo-image" src="img/logo-mobile-modal.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
               </picture>
             </a>
-            <button class="logo__toggle logo__toggle--opened" type="button">
+            <button class="logo__toggle-modal" type="button">
               <span class="visually-hidden">Закрыть меню</span>
             </button>
           </div>
@@ -85,13 +85,15 @@
 
       <div class="page-main__contacts">
         <div class="container">
-          <a class="page-main__contacts-link page-main__contacts-link-phone" href="tel:88005558628">
-            8 800 555-86-28
-          </a>
-          <a class="page-main__contacts-link page-main__contacts-link-email" href="mailto:mail@htmlacademy.ru">
-            mail@htmlacademy.ru
-          </a>
-          <a class="page-main__contacts-link-signin" href="#">Авторизация</a>
+          <div class="page-main__contacts-wrapper">
+            <a class="page-main__contacts-link page-main__contacts-link-phone" href="tel:88005558628">
+              <span class="visually-hidden">8 800 555-86-28</span>
+            </a>
+            <a class="page-main__contacts-link page-main__contacts-link-email" href="mailto:mail@htmlacademy.ru">
+              <span class="visually-hidden">mail@htmlacademy.ru</span>
+            </a>
+            <a class="page-main__contacts-link-signin" href="#">Авторизация</a>
+          </div>
         </div>
       </div>
 
@@ -100,7 +102,7 @@
           <h1 class="promo__title">В путешествие с крутыми попутчиками!</h1>
           <div class="promo__wrapper">
             <q class="promo__wrapper-quote">Лучшее приложение, что я видел в жизни!</q>
-            <cite class="promo__wrapper-cite">Мурат Эльтазин<br />главный редактор газеты «гаджетлайф»</cite>
+            <cite class="promo__wrapper-cite">Мурат Эльтазин<br />главный редактор газеты «Гаджетлайф»</cite>
           </div>
         </div>
       </section>
