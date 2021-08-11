@@ -37,3 +37,358 @@
 .modal-menu--opened {
   display: block;
 }
+
+.modal-menu__contacts {
+  position: relative;
+
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+
+.modal-menu__contacts-link-signin {
+  display: block;
+  margin-bottom: 66px;
+  padding-top: 12px;
+  padding-right: 81px;
+  padding-bottom: 8px;
+  padding-left: 78px;
+
+  font-family: "Blogger Sans Bold", "Trebuchet MS", "Helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $basic-color;
+
+  background-color: $light-invert-color;
+  border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    height: 50px;
+    margin-bottom: 0;
+    padding-top: 16px;
+    padding-right: 28px;
+    padding-left: 29px;
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: $invert-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $basic-color-fade;
+  }
+}
+
+.modal-menu__contacts-link-signin--double {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 16px;
+    padding-right: 28px;
+    padding-bottom: 14px;
+    padding-left: 29px;
+
+    font-family: "Blogger Sans Bold", "Trebuchet MS", "Helvetica", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $basic-color;
+
+    background-color: $light-invert-color;
+    border-radius: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $invert-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $basic-color-fade;
+  }
+}
+
+.modal-menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 51px;
+  padding: 0;
+
+  font-family: "Blogger Sans Medium", "Trebuchet MS", "Helvetica", sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-bottom: 169px;
+    padding-left: 57px;
+
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-bottom: 0;
+    padding-top: 16px;
+    padding-left: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.modal-menu__nav-item {
+  @media (min-width: $desktop-width) {
+    margin-right: 34px;
+  }
+}
+
+.modal-menu__nav-link {
+  color: $basic-dark;
+
+  &:hover,
+  &:visited {
+    color: $basic-dark;
+  }
+
+  &:active {
+    color: $basic-dark-fade;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+
+    &:visited {
+      color: $basic-white;
+    }
+
+    &:hover {
+      color: $light-invert-color;
+    }
+
+    &:active {
+      color: $light-invert-color-fade;
+    }
+  }
+}
+
+.modal-menu__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.modal-menu__contacts-link {
+  position: relative;
+
+  display: block;
+  margin-left: 61px;
+  margin-bottom: 27px;
+
+  font-family: "Blogger Sans Bold", "Trebuchet MS", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 148px;
+    margin-bottom: 39px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.modal-menu__contacts-link--phone {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -61px;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: $icon-color;
+    background-image: url("../../img/icons/icon_call-invert.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: -23px;
+      left: -91px;
+
+      width: 68px;
+      height: 68px;
+
+      background-image: url("../../img/icons/icon_call-invert-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: -100px;
+
+      width: 50px;
+      height: 50px;
+
+      background-color: $dark-invert-color;
+      background-image: url("../../img/icons/icon_call.svg");
+    }
+  }
+
+  &:hover,
+  &:visited {
+    color: $basic-dark;
+  }
+
+  &:hover::before {
+    cursor: pointer;
+
+    @media (min-width: $desktop-width) {
+      background-color: $extra-dark-invert-color;
+    }
+  }
+
+  &:active {
+    color: $basic-dark-fade;
+  }
+
+  &:active::before {
+    background-color: $basic-dark-fade;
+
+    @media (min-width: $desktop-width) {
+      background-color: $extra-dark-invert-color;
+      background-image: url("../../img/icons/icon_call-active.svg");
+    }
+  }
+}
+
+.modal-menu__contacts-link--email {
+  margin-bottom: 53px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 149px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -61px;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: $icon-color;
+    background-image: url("../../img/icons/icon_mail-invert.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: -23px;
+      left: -91px;
+
+      width: 68px;
+      height: 68px;
+
+      background-image: url("../../img/icons/icon_mail-invert-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: -50px;
+
+      width: 50px;
+      height: 50px;
+
+      background-color: $invert-color;
+      background-image: url("../../img/icons/icon_mail.svg");
+    }
+  }
+
+  &:hover,
+  &:visited {
+    color: $basic-dark;
+  }
+
+  &:hover::before {
+    cursor: pointer;
+
+    @media (min-width: $desktop-width) {
+      background-color: $dark-invert-color;
+    }
+  }
+
+  &:active {
+    color: $basic-dark-fade;
+  }
+
+  &:active::before {
+    background-color: $basic-dark-fade;
+
+    @media (min-width: $desktop-width) {
+      background-color: $dark-invert-color;
+      background-image: url("../../img/icons/icon_mail-active.svg");
+    }
+  }
+}
+
+.modal-menu__contacts-link-text {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.modal-menu__social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

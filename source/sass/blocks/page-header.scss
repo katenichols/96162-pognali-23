@@ -40,3 +40,124 @@
     padding-bottom: 24px;
   }
 }
+
+.page-header__contacts {
+  position: absolute;
+  top: 360px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+  }
+}
+
+.page-header__contacts-link {
+  position: relative;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__contacts-link-phone {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: $dark-invert-color;
+    background-image: url("../../img/icons/icon_call.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &:hover::before {
+    background-color: $extra-dark-invert-color;
+    cursor: pointer;
+  }
+
+  &:active::before {
+    background-image: url("../../img/icons/icon_call-active.svg");
+  }
+}
+
+.page-header__contacts-link-email {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40px;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: $invert-color;
+    background-image: url("../../img/icons/icon_mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &:hover::before {
+    background-color: $dark-invert-color;
+    cursor: pointer;
+  }
+
+  &:active::before {
+    background-image: url("../../img/icons/icon_mail-active.svg");
+  }
+}
+
+.page-header__contacts-link-signin {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 80px;
+  padding-top: 12px;
+  padding-right: 39px;
+  padding-bottom: 8px;
+  padding-left: 40px;
+
+  font-family: "Blogger Sans Bold", "Trebuchet MS", "Helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $basic-color;
+
+  background-color: $light-invert-color;
+  border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-top: 16px;
+    padding-right: 28px;
+    padding-bottom: 14px;
+    padding-left: 29px;
+
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: $invert-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $basic-color-fade;
+  }
+}
+

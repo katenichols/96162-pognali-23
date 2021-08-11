@@ -1,4 +1,31 @@
+.logo {
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 145px;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      left: 240px;
+      top: 26px;
+
+      display: block;
+      width: 60px;
+      height: 2px;
+
+      background-color: $basic-white;
+    }
+  }
+}
+
 .logo-image {
+  position: relative;
+
   width: 96px;
   height: 15px;
 
@@ -20,17 +47,18 @@
   width: 25px;
   height: 19px;
 
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 50%;
-  }
-
   @media (min-width: $desktop-width) {
     display: none;
   }
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.logo__toggle-modal {
+  @media (min-width: $tablet-width) {
+    margin-left: calc(50% - 188px);
   }
 }
 

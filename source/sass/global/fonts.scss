@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: "Blogger Sans Medium";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/bloggersans-medium.woff2") format("woff2"),
+    url("../fonts/bloggersans-medium.woff") format("woff");
+}
+
+@font-face {
   font-family: "Blogger Sans Bold";
   font-style: normal;
   font-weight: 700;
