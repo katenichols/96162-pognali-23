@@ -24,3 +24,32 @@
   src: url("../fonts/bloggersans-bold.woff2") format("woff2"),
     url("../fonts/bloggersans-bold.woff") format("woff");
 }
+
+@mixin font-group-bold ($size, $height) {
+  font-family: "Blogger Sans Bold", "Trebuchet MS", "Helvetica", sans-serif;
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-weight: bold;
+}
+
+@mixin font-group-medium ($size, $height) {
+  font-family: "Blogger Sans Medium", "Trebuchet MS", "Helvetica", sans-serif;
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-weight: 400;
+}
+
+@mixin font-group ($size, $height) {
+  font-family: "Blogger Sans", "Trebuchet MS", "Helvetica", sans-serif;
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-weight: 300;
+}
+
+@mixin font-group-small ($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}

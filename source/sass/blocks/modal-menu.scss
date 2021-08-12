@@ -13,7 +13,6 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
-    padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,10 +58,7 @@
   padding-bottom: 8px;
   padding-left: 78px;
 
-  font-family: "Blogger Sans Bold", "Trebuchet MS", "Helvetica", sans-serif;
-  font-size: 17px;
-  line-height: 30px;
-  font-weight: bold;
+  @include font-group-bold($size-17, $line-30);
   text-transform: uppercase;
   color: $basic-color;
 
@@ -82,8 +78,7 @@
     padding-left: 29px;
     text-align: center;
 
-    font-size: 20px;
-    line-height: 20px;
+    @include font-group-small($size-20, $line-20);
   }
 
   &:hover {
@@ -108,10 +103,7 @@
     padding-bottom: 14px;
     padding-left: 29px;
 
-    font-family: "Blogger Sans Bold", "Trebuchet MS", "Helvetica", sans-serif;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: bold;
+    @include font-group-bold($size-20, $line-20);
     text-transform: uppercase;
     color: $basic-color;
 
@@ -142,10 +134,7 @@
   margin-bottom: 51px;
   padding: 0;
 
-  font-family: "Blogger Sans Medium", "Trebuchet MS", "Helvetica", sans-serif;
-  font-size: 30px;
-  line-height: 35px;
-  font-weight: 400;
+  @include font-group-medium($size-30, $line-35);
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -153,8 +142,7 @@
     margin-bottom: 169px;
     padding-left: 57px;
 
-    font-size: 60px;
-    line-height: 71px;
+    @include font-group-small($size-60, $line-71);
   }
 
   @media (min-width: $desktop-width) {
@@ -163,8 +151,7 @@
     padding-top: 16px;
     padding-left: 0;
 
-    font-size: 20px;
-    line-height: 20px;
+    @include font-group-small($size-20, $line-20);
   }
 }
 
@@ -219,10 +206,7 @@
   margin-left: 61px;
   margin-bottom: 27px;
 
-  font-family: "Blogger Sans Bold", "Trebuchet MS", "Helvetica", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
+  @include font-group-bold($size-16, $line-18);
   text-transform: uppercase;
   color: $basic-dark;
 
@@ -230,8 +214,7 @@
     margin-left: 148px;
     margin-bottom: 39px;
 
-    font-size: 28px;
-    line-height: 28px;
+    @include font-group-small($size-28, $line-28);
   }
 
   @media (min-width: $desktop-width) {
@@ -384,11 +367,21 @@
 }
 
 .modal-menu__social {
-  display: flex;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 41px;
 
-  @media (min-width: $desktop-width) {
-    display: none;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 91px;
   }
+}
+
+.modal-menu__social .social__item {
+  margin-right: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
+  }
+}
+
+.modal-menu__social .social__item:last-child {
+  margin-right: 0;
 }

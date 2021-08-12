@@ -23,12 +23,6 @@
 
 .container--modal {
   @media (min-width: $desktop-width) {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // align-items: flex-start;
-    // flex-wrap: nowrap;
-
     display: grid;
     grid-template-columns: min-content 1fr min-content;
 
@@ -37,10 +31,10 @@
 }
 
 .container--promo {
-  padding-top: 48px;
-  padding-right: 50px;
-  padding-bottom: 29px;
-  padding-left: 50px;
+  // padding-top: 0;
+  // padding-right: 50px;
+  // padding-bottom: 29px;
+  // padding-left: 50px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;

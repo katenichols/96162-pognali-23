@@ -2,11 +2,7 @@
   min-width: 320px;
   margin: 0;
 
-  font-family: "Blogger Sans", "Trebuchet MS", "Helvetica", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
+  @include font-group($size-16, $line-22);
   color: $basic-text-color;
 
   background-color: $body-background;

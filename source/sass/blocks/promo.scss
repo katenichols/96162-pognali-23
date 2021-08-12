@@ -1,7 +1,20 @@
+.promo {
+  width: 100%;
+
+  background-image: url("../../img/global-back-desktop.jpg");
+  background-repeat: no-repeat;
+  // background-size: 350%;
+  background-position: -280px 40px;
+  background-size: cover;
+}
+
 .promo__title {
   margin: 0;
-  margin-bottom: 245px;
+  margin-bottom: 12px;
   text-align: center;
+
+  @include font-group-bold($size-36, $line-40);
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 86px;
@@ -10,4 +23,26 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 101px;
   }
+}
+
+.promo__traveler {
+  display: block;
+  width: 192px;
+  height: 255px;
+  margin-right: 23px;
+  margin-left: auto;
+
+  background-image: url("../../img/traveller-mobile.png");
+}
+
+.promo__wrapper {
+  display: block;
+  padding-top: 46px;
+  padding-right: 84px;
+  padding-left: 25px;
+}
+
+.promo__wrapper-quote {
+  display: block;
+  margin-bottom: 18px;
 }
