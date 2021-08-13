@@ -1,10 +1,16 @@
 .todo {
+  position: relative;
   color: $basic-color;
 }
 
 .todo__list {
   display: block;
-  background-color: $dark-invert-color;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-image: $todo-gradient-modal;
+  border-radius: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -15,4 +21,57 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.todo__list-item {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+  padding-top: 22px;
+  padding-right: 21px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+
+  border-radius: 10px;
+
+  &:first-of-type {
+    z-index: 0;
+
+    margin-top: 0;
+
+    background-color: $dark-invert-color;
+  }
+
+  &:nth-of-type(2) {
+    z-index: 10;
+
+    background-color: $invert-unique-color;
+  }
+
+  &:nth-of-type(3) {
+    z-index: 20;
+
+    background-color: $invert-color;
+  }
+
+  &:last-of-type {
+    z-index: 30;
+
+    padding-bottom: 22px;
+
+    background-color: $light-invert-color;
+  }
+}
+
+.todo__list-text {
+  width: 150px;
+
+  @include font-group-bold($size-18, $line-18);
+}
+
+.todo__list-number {
+  @include font-group-bold($size-18, $line-18);
+  color: $basic-white;
 }

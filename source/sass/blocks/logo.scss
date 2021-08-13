@@ -49,18 +49,16 @@
   width: 25px;
   height: 19px;
 
+  @media (min-width: $tablet-width) {
+    margin-left: calc(50% - 202px);
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
 
   &:hover {
     cursor: pointer;
-  }
-}
-
-.logo__toggle-modal {
-  @media (min-width: $tablet-width) {
-    margin-left: calc(50% - 202px);
   }
 }
 
