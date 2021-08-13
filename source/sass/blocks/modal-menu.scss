@@ -21,7 +21,7 @@
     display: block;
     flex-direction: row;
     padding-top: 46px;
-    padding-bottom: 110px;
+    padding-bottom: 9px;
 
     background-color: transparent;
   }
@@ -49,7 +49,6 @@
   }
 }
 
-
 .modal-menu__contacts-link-signin {
   display: block;
   margin-bottom: 66px;
@@ -72,8 +71,9 @@
   @media (min-width: $desktop-width) {
     display: block;
     height: 50px;
+    margin-top: 2px;
     margin-bottom: 0;
-    padding-top: 16px;
+    padding-top: 15px;
     padding-right: 28px;
     padding-left: 29px;
     text-align: center;
@@ -98,9 +98,9 @@
     display: block;
     margin-right: 0;
     margin-left: auto;
-    padding-top: 16px;
+    padding-top: 14px;
     padding-right: 28px;
-    padding-bottom: 14px;
+    padding-bottom: 16px;
     padding-left: 29px;
 
     @include font-group-bold($size-20, $line-20);
@@ -131,7 +131,7 @@
   text-align: center;
   flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 51px;
+  margin-bottom: 53px;
   padding: 0;
 
   @include font-group-medium($size-30, $line-35);
@@ -139,7 +139,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin-bottom: 169px;
+    margin-bottom: 155px;
     padding-left: 57px;
 
     @include font-group-small($size-60, $line-71);
@@ -148,7 +148,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     margin-bottom: 0;
-    padding-top: 16px;
+    padding-top: 19px;
     padding-left: 0;
 
     @include font-group-small($size-20, $line-20);
@@ -196,6 +196,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    margin-top: 2px;
   }
 }
 
@@ -212,13 +213,13 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 148px;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
 
     @include font-group-small($size-28, $line-28);
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin: 0;
   }
 }
 
@@ -294,6 +295,10 @@
     margin-bottom: 149px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -310,7 +315,7 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      top: -23px;
+      top: -21px;
       left: -91px;
 
       width: 68px;
@@ -367,10 +372,10 @@
 }
 
 .modal-menu__social {
-  margin-bottom: 41px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 91px;
+    margin-bottom: 84px;
   }
 }
 
@@ -378,7 +383,7 @@
   margin-right: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 35px;
+    margin-right: 28px;
   }
 }
 

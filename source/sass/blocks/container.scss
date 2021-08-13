@@ -30,29 +30,6 @@
   }
 }
 
-.container--promo {
-  // padding-top: 0;
-  // padding-right: 50px;
-  // padding-bottom: 29px;
-  // padding-left: 50px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-right: 72px;
-    padding-bottom: 211px;
-    padding-left: 72px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-
-    padding-right: 83px;
-    padding-bottom: 0;
-    padding-left: 127px;
-  }
-}
-
 .container--about {
   padding-top: 0;
   padding-right: 60px;

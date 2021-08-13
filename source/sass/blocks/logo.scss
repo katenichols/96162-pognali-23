@@ -1,6 +1,6 @@
 .logo {
   @media (min-width: $tablet-width) {
-    // margin-right: 22px;
+    margin-right: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +28,7 @@
 
   width: 96px;
   height: 15px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     width: 166px;
@@ -37,6 +38,7 @@
   @media (min-width: $desktop-width) {
     width: 200px;
     height: 50px;
+    margin-top: 0;
   }
 }
 
@@ -58,7 +60,7 @@
 
 .logo__toggle-modal {
   @media (min-width: $tablet-width) {
-    margin-left: calc(50% - 188px);
+    margin-left: calc(50% - 202px);
   }
 }
 
@@ -79,7 +81,7 @@
 .logo__toggle-modal::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 6px;
   left: 0;
 
   width: 24px;
@@ -91,14 +93,15 @@
   transform: rotate(45deg);
 
   @media (min-width: $tablet-width) {
-    top: 5px;
+    top: 7px;
+    width: 27px;
   }
 }
 
 .logo__toggle-modal::after {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 6px;
   left: 0;
 
   width: 24px;
@@ -110,6 +113,7 @@
   transform: rotate(-45deg);
 
   @media (min-width: $tablet-width) {
-    top: 5px;
+    top: 7px;
+    width: 27px;
   }
 }

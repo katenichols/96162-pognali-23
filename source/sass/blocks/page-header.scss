@@ -14,14 +14,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
-    padding-bottom: 72px;
-
-    background-color: $header-background;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
-    padding-bottom: 11px;
+    padding-bottom: 0;
   }
 }
 
@@ -45,7 +43,7 @@
 
 .page-header__contacts {
   position: absolute;
-  top: 455px;
+  top: 457px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -142,9 +140,9 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
-    padding-top: 16px;
+    padding-top: 14px;
     padding-right: 28px;
-    padding-bottom: 14px;
+    padding-bottom: 16px;
     padding-left: 29px;
 
     font-size: 20px;

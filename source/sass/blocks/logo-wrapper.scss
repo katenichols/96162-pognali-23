@@ -14,23 +14,23 @@
 }
 
 .logo-wrapper--modal {
-  margin-bottom: 74px;
+  margin-bottom: 68px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     margin-right: 22px;
-    margin-bottom: 109px;
+    margin-bottom: 88px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    margin-right: 145px;
+    margin-right: 123px;
     margin-bottom: 0;
   }
 }
 
 .logo-wrapper--non-modal {
-  padding-top: 15px;
+  padding-top: 18px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
