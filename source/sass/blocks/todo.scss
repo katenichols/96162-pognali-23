@@ -1,10 +1,24 @@
 .todo {
   position: relative;
+
+  padding-bottom: 39px;
+
   color: $basic-color;
+
+  background-color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .todo__list {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -13,13 +27,25 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    margin-top: -169px;
+
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
+    position: absolute;
+    top: -231px;
+    left: 0;
+    z-index: 20;
+
     grid-template-columns: repeat(4, 1fr);
+    width: 1320px;
+    margin-top: 0;
+    margin-left: calc(50% - 660px);
+
+    background-image: $todo-gradient-desktop;
   }
 }
 
@@ -34,34 +60,76 @@
   padding-bottom: 32px;
   padding-left: 24px;
 
+  background-color: $light-invert-color;
   border-radius: 10px;
 
   &:first-of-type {
-    z-index: 0;
-
     margin-top: 0;
 
     background-color: $dark-invert-color;
   }
 
-  &:nth-of-type(2) {
-    z-index: 10;
-
+  &:nth-of-type(2n) {
     background-color: $invert-unique-color;
   }
 
-  &:nth-of-type(3) {
-    z-index: 20;
-
+  &:nth-of-type(3n) {
     background-color: $invert-color;
   }
 
   &:last-of-type {
-    z-index: 30;
-
     padding-bottom: 22px;
 
     background-color: $light-invert-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+    padding-top: 29px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 33px;
+
+    border-radius: 0;
+
+    &:first-of-type {
+      padding-bottom: 22px;
+
+      border-top-left-radius: 20px;
+    }
+
+    &:nth-child(2n) {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    &:nth-child(3n) {
+      padding-bottom: 24px;
+
+      border-bottom-left-radius: 20px;
+    }
+
+    &:last-of-type {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-top: 28px;
+    padding-bottom: 22px;
+    padding-right: 34px;
+
+    border-radius: 20px;
+
+    &:nth-child(3n) {
+      padding-bottom: 22px;
+    }
   }
 }
 
@@ -69,9 +137,27 @@
   width: 150px;
 
   @include font-group-bold($size-18, $line-18);
+
+  @media (min-width: $tablet-width) {
+    width: 211px;
+
+    @include font-group-small($size-24, $line-24);
+
+    &:first-of-type {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .todo__list-number {
   @include font-group-bold($size-18, $line-18);
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    @include font-group-bold($size-30, $line-30);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-group-bold($size-24, $line-24);
+  }
 }

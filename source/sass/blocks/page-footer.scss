@@ -16,8 +16,11 @@
 }
 
 .page-footer__social {
+  display: flex;
+  justify-content: flex-start;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    // display: flex;
     flex-direction: row;
   }
 }

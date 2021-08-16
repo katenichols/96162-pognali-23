@@ -15,8 +15,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    z-index: 20;
+    margin-bottom: 0;
     padding-bottom: 0;
 
+    background-color: $basic-color;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
   }

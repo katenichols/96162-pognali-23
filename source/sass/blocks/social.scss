@@ -41,3 +41,18 @@
     height: 28px;
   }
 }
+
+.social__image-footer {
+  width: 23px;
+  height: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30px;
+    height: 28px;
+  }
+}

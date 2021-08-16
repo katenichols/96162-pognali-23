@@ -30,35 +30,23 @@
   }
 }
 
-.container--about {
-  padding-top: 0;
-  padding-right: 60px;
-  padding-bottom: 0;
-  padding-left: 49px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 130px;
-  }
-}
-
 .container--countries {
-  padding-top: 71px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 99px;
   padding-right: 55px;
   padding-bottom: 34px;
   padding-left: 49px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 73px;
+    padding-top: 130px;
     padding-left: 73px;
     padding-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 166px;
+    flex-direction: row-reverse;
+    padding-top: 223px;
     padding-left: 131px;
     padding-bottom: 138px;
   }

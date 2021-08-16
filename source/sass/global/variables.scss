@@ -7,7 +7,7 @@ $basic-dark: #192144;
 $basic-dark-halffade: rgb(10%, 13%, 27%, 0.6);
 $basic-dark-fade: rgb(10%, 13%, 27%, 0.3);
 $body-background: #edeff6;
-$header-background: #182044;
+$alt-background: #182044;
 $basic-text-color: #444444;
 $extra-dark-invert-color: #f26926;
 $invert-unique-color: #ffa530;
@@ -22,7 +22,23 @@ $special-light-color: #dfe3f0;
 $special-color: #d4d9eb;
 $special-light-light-color: #e2e5f2;
 $close-button-color: #cccccc;
-$todo-gradient-modal: linear-gradient(to bottom, #ff8d30 0%, #ff8d30 50%, #ffbd30 50%, #ffbd30 100%);
+$todo-gradient-modal: linear-gradient(
+  to bottom,
+  #ff8d30 0%,
+  #ff8d30 50%,
+  #ffbd30 50%,
+  #ffbd30 100%
+);
+$todo-gradient-desktop: linear-gradient(
+  to right,
+  #ff8d30 0%,
+  #ff8d30 30%,
+  #ffa530 30%,
+  #ffa530 60%,
+  #ffbd30 60%,
+  #ffbd30 100%
+);
+$promo-background: linear-gradient(to bottom, #161c35 0%, #192144 100%);
 $tablet-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
@@ -38,6 +54,7 @@ $line-70: 70px;
 $line-33: 33px;
 $line-25: 25px;
 $line-24: 24px;
+$line-45: 45px;
 $size-17: 17px;
 $size-20: 20px;
 $size-30: 30px;
@@ -47,3 +64,5 @@ $size-28: 28px;
 $size-36: 36px;
 $size-21: 21px;
 $size-18: 18px;
+$size-24: 24px;
+$size-45: 45px;
