@@ -33,22 +33,25 @@
 .container--countries {
   display: flex;
   flex-direction: column;
-  padding-top: 99px;
-  padding-right: 55px;
+  padding-top: 100px;
   padding-bottom: 34px;
-  padding-left: 49px;
 
   @media (min-width: $tablet-width) {
     padding-top: 130px;
-    padding-left: 73px;
     padding-bottom: 80px;
+
+    background-image: url("../../img/flags-background.png");
+    background-repeat: no-repeat;
+    background-position: top 140px right 40px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row-reverse;
-    padding-top: 223px;
+    padding-top: 148px;
     padding-left: 131px;
     padding-bottom: 138px;
+
+    background-position: top 148px right 60px;
   }
 }
 

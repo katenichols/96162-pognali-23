@@ -144,5 +144,17 @@
       background-image: url("../../img/icons/icon-arrow-right.svg");
       background-repeat: no-repeat;
     }
+
+    &:hover {
+      background-color: $invert-color;
+    }
+
+    &:active {
+      color: $special-dark-color-fade;
+    }
+
+    &:active::before {
+      background-image: url("../../img/icons/icon-arrow-right-active.svg")
+    }
   }
 }
