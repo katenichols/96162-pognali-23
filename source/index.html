@@ -12,9 +12,9 @@
         <div class="logo-wrapper logo-wrapper--non-modal logo-wrapper--nojs">
           <a class="logo" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg">
-              <source media="(max-width: 767px)" srcset="img/icons/logo-mobile.svg">
-              <img class="logo-image" src="img/icons/logo-mobile.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
+              <source media="(min-width: 768px)" srcset="img/icons/logo_tablet.svg">
+              <source media="(max-width: 767px)" srcset="img/icons/logo_mobile.svg">
+              <img class="logo-image" src="img/icons/logo_mobile.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
             </picture>
           </a>
           <button class="logo__toggle" type="button">
@@ -36,10 +36,10 @@
           <div class="logo-wrapper logo-wrapper--modal">
             <a class="logo" href="#">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/icons/logo-tablet.svg">
-                <source media="(min-width: 768px)" srcset="img/icons/logo-tablet-modal.svg">
-                <source media="(max-width: 767px)" srcset="img/icons/logo-mobile-modal.svg">
-                <img class="logo-image logo-image--modal" src="img/icons/logo-mobile-modal.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
+                <source media="(min-width: 1440px)" srcset="img/icons/logo_tablet.svg">
+                <source media="(min-width: 768px)" srcset="img/icons/logo_tablet-modal.svg">
+                <source media="(max-width: 767px)" srcset="img/icons/logo_mobile-modal.svg">
+                <img class="logo-image logo-image--modal" src="img/icons/logo_mobile-modal.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
               </picture>
             </a>
             <button class="logo__toggle-modal" type="button">
@@ -178,7 +178,7 @@
               <div class="cards__wrapper cards__wrapper--france">
                 <div class="cards__info">
                   <span class="cards__title">Франция</span>
-                  <span class="ards__text">Трэ бьен, манифик!</span>
+                  <span class="cards__text">Трэ бьен, манифик!</span>
                 </div>
                 <span class="cards__number">12518</span>
               </div>
@@ -187,9 +187,9 @@
               <div class="cards__wrapper cards__wrapper--czech">
                 <div class="cards__info">
                   <span class="cards__title">Чехия</span>
-                  <span class="ards__text">Закоулки старой Европы</span>
+                  <span class="cards__text">Закоулки старой Европы</span>
                 </div>
-                <span class="cards__number">5326</span>
+                <p class="cards__number">5326</p>
               </div>
             </li>
           </ul>
@@ -202,72 +202,78 @@
           <div class="travelers__text-wrapper">
             <h2 class="travelers__title">Попутчики</h2>
             <p class="travelers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-              Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+              Одному нужен пляж и коктейль, <br class="travelers__br">а другому маршрут для хайкинга.
             </p>
-            <span class="travelers__note">Теперь можно легко найти единомышленников!</span>
+            <span class="travelers__note">Теперь можно легко <br class="travelers__br">найти единомышленников!</span>
           </div>
           <div class="travelers__cards">
-            <div class="travelers__card">
-              <img class="travelers__photo" src="#" alt="Самый популярный попутчик">
-              <div class="travelers__level-wrapper">
-                <span class="travelers__level-number">90</span>
-                <span class="travelers__level-text">level</span>
+            <div class="travelers__cards-item user-block">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/user-image-tablet1.jpg">
+                <img class="user-block__photo" src="img/user-image-mobile1.jpg" alt="Самый популярный попутчик">
+              </picture>
+              <div class="user-block__level-wrapper">
+                <span class="user-block__level-number">90</span>
+                <span class="user-block__level-text">level</span>
               </div>
-              <ul class="travelers__countries">
-                <li class="travelers__countries-item">
+              <ul class="user-block__countries">
+                <li class="user-block__countries-item">
                   <svg></svg>
                 </li>
-                <li class="travelers__countries-item">
+                <li class="user-block__countries-item">
                   <svg></svg>
                 </li>
-                <li class="travelers__countries-item">
+                <li class="user-block__countries-item">
                   <svg></svg>
                 </li>
               </ul>
-              <h3 class="travelers__title">Таня Фирсова</h3>
-              <span class="travelers__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
-              <ul class="travelers__transports">
-                <li class="travelers__transports-item travelers__transports-item--current">
+              <h3 class="user-block__title">Таня Фирсова</h3>
+              <span class="user-block__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
+              <ul class="user-block__transports">
+                <li class="user-block__transports-item user-block__transports-item--current">
                   <svg></svg>
                 </li>
-                <li class="travelers__transports-item">
+                <li class="user-block__transports-item">
                   <svg></svg>
                 </li>
-                <li class="travelers__transports-item">
+                <li class="user-block__transports-item">
                   <svg></svg>
                 </li>
-                <li class="travelers__transports-item">
+                <li class="user-block__transports-item">
                   <svg></svg>
                 </li>
               </ul>
             </div>
-            <div class="travelers__card">
-              <img class="travelers__photo" src="#" alt="Популярный попутчик">
-              <div class="travelers__level-wrapper">
-                <span class="travelers__level-number">80</span>
-                <span class="travelers__level-text">level</span>
+            <div class="travelers__cards-item user-block">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/user-image-tablet2.jpg">
+                <img class="user-block__photo" src="img/user-image-mobile2.jpg" alt="Популярный попутчик">
+              </picture>
+              <div class="user-block__level-wrapper">
+                <span class="user-block__level-number">80</span>
+                <span class="user-block__level-text">level</span>
               </div>
-              <ul class="travelers__countries">
-                <li class="travelers__countries-item">
+              <ul class="user-block__countries">
+                <li class="user-block__countries-item">
                   <svg></svg>
                 </li>
-                <li class="travelers__countries-item">
+                <li class="user-block__countries-item">
                   <svg></svg>
                 </li>
               </ul>
-              <h3 class="travelers__title">Петя Демин</h3>
-              <span class="travelers__tags">#бургер #бар #футбол #концерт #крафт</span>
-              <ul class="travelers__transports">
-                <li class="travelers__transports-item travelers__transports-item--current">
+              <h3 class="user-block__title">Петя Демин</h3>
+              <span class="user-block__tags">#бургер #бар #футбол #концерт #крафт</span>
+              <ul class="user-block__transports">
+                <li class="user-block__transports-item user-block__transports-item--current">
                   <svg></svg>
                 </li>
-                <li class="travelers__transports-item travelers__transports-item--current">
+                <li class="user-block__transports-item user-block__transports-item--current">
                   <svg></svg>
                 </li>
-                <li class="travelers__transports-item">
+                <li class="user-block__transports-item">
                   <svg></svg>
                 </li>
-                <li class="travelers__transports-item travelers__transports-item--current">
+                <li class="user-block__transports-item user-block__transports-item--current">
                   <svg></svg>
                 </li>
               </ul>
@@ -369,7 +375,7 @@
     <footer class="page-footer">
       <div class="container container--footer">
         <a class="logo" href="">
-          <img class="logo_image" src="img/logo-mobile-modal.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
+          <img class="logo_image" src="img/icons/logo_mobile-modal.svg" width="96" height="15" alt="Сервис поиска попутчиков Погнали"/>
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">

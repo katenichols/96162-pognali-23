@@ -63,14 +63,14 @@
   margin-right: 48px;
   margin-left: auto;
 
-  background-image: url("../../img/traveller-mobile.png");
+  background-image: url("../../img/traveler-mobile.png");
 
   @media (min-width: $tablet-width) {
     width: 372px;
     height: 451px;
     margin-right: 111px;
 
-    background-image: url("../../img/traveller-tablet.png");
+    background-image: url("../../img/traveler-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +79,7 @@
     margin-right: auto;
     margin-left: 81px;
 
-    background-image: url("../../img/traveller-desktop.png");
+    background-image: url("../../img/traveler-desktop.png");
   }
 }
 

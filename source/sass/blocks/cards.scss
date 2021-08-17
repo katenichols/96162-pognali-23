@@ -21,6 +21,24 @@
     margin-bottom: 0;
 
     background-image: url("../../img/back-czech-mobile.png");
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 30;
+
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 81px;
+
+        background-image: url("../../img/fade.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -80,7 +98,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-top: 26px;
+  padding-top: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -99,57 +117,74 @@
     height: 24px;
 
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+      left: 398px;
+
+      width: 70px;
+      height: 47px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 23px;
+      left: 338px;
+    }
+  }
+
+  &--czech {
+    padding-bottom: 5px;
   }
 
   &--thailand::before {
     background-image: url("../../img/flag-thailand-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/flag-thailand-tablet.png");
+    }
   }
 
   &--france::before {
     background-image: url("../../img/flag-france-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/flag-france-tablet.png");
+    }
   }
 
   &--czech::before {
     background-image: url("../../img/flag-czech-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/flag-czech-tablet.png");
+    }
   }
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     justify-content: flex-start;
     width: 432px;
+    padding-top: 28px;
+    padding-left: 30px;
+    padding-bottom: 24px;
 
     border-top-left-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 20px;
-  }
 
-  &::before {
-    top: 17px;
-    left: 398px;
-
-    width: 70px;
-    height: 47px;
-  }
-
-  &--thailand::before {
-    background-image: url("../../img/flag-thailand-tablet.png");
-  }
-
-  &--france::before {
-    background-image: url("../../img/flag-france-tablet.png");
-  }
-
-  &--czech::before {
-    background-image: url("../../img/flag-czech-tablet.png");
+    &--czech {
+      padding-bottom: 4px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 374px;
+    padding-top: 22px;
+    padding-bottom: 25px;
 
-    &::before {
-      top: 23px;
-      left: 337px;
+    &--czech {
+      padding-bottom: 4px;
     }
   }
 }
@@ -157,8 +192,90 @@
 .cards__info {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
-// .cards_title {
+.cards__title {
+  margin-bottom: 2px;
 
-// }
+  @include font-group-bold($size-21, $line-21);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+
+    @include font-group-small($size-24, $line-24);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
+  }
+}
+
+.cards__text {
+  width: 135px;
+
+  @include font-group-medium($size-16, $line-18);
+  color: $basic-text-color-fade;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+
+    @include font-group-small($size-20, $line-20);
+  }
+}
+
+.cards__number {
+  position: relative;
+
+  width: 42px;
+  margin-top: 2px;
+  text-align: left;
+
+  @include font-group-medium($size-16, $line-20);
+  color: $basic-text-color-fade;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 3px;
+    left: -19px;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("../../img/icons/icon_people-mobile.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: -32px;
+
+      width: 24px;
+      height: 24px;
+
+      background-image: url("../../img/icons/icon_people-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -31px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 29px;
+
+    @include font-group-small($size-20, $line-20);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+  }
+}

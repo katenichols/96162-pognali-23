@@ -1,10 +1,29 @@
 .travelers {
-  padding-top: 68px;
+  position: relative;
+
+  padding-top: 66px;
   padding-right: 0;
   padding-bottom: 31px;
   padding-left: 0;
 
   background-color: $basic-dark;
+  background-image: url("../../img/travelers-back-mobile.png");
+  background-position: top 34px right 25px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 137px;
+
+    background-image: url("../../img/travelers-back-tablet.png");
+    background-position: top 71px right 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 126px;
+
+    background-image: url("../../img/travelers-back-desktop.png");
+    background-position: top 70px right 750px;
+  }
 }
 
 .travelers__text-wrapper {
@@ -21,5 +40,67 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 85px;
+  }
+}
+
+.travelers__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @include font-group-bold($size-24, $line-24);
+  color: $dark-invert-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+
+    @include font-group-small($size-45, $line-45);
+  }
+}
+
+.travelers__text {
+  margin-top: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 430px;
+    margin-bottom: 39px;
+
+    @include font-group($size-28, $line-34);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+
+    line-height: 33px;
+  }
+}
+
+.travelers__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.travelers__note {
+  display: block;
+
+  @include font-group-bold($size-16, $line-22);
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+
+    @include font-group-small($size-21, $line-24);
+  }
+}
+
+.travelers__cards {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

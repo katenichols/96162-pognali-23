@@ -30,6 +30,8 @@
     padding-bottom: 0;
 
     background-image: none;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
   }
 }
 
@@ -154,7 +156,7 @@
     }
 
     &:active::before {
-      background-image: url("../../img/icons/icon-arrow-right-active.svg")
+      background-image: url("../../img/icons/icon-arrow-right-active.svg");
     }
   }
 }
