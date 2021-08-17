@@ -10,16 +10,22 @@
   background-image: url("../../img/travelers-back-mobile.png");
   background-position: top 34px right 25px;
   background-repeat: no-repeat;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 137px;
+    padding-bottom: 88px;
 
     background-image: url("../../img/travelers-back-tablet.png");
     background-position: top 71px right 74px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 126px;
+    padding-bottom: 53px;
 
     background-image: url("../../img/travelers-back-desktop.png");
     background-position: top 70px right 750px;
@@ -29,12 +35,12 @@
 .travelers__text-wrapper {
   padding-top: 0;
   padding-right: 29px;
-  padding-bottom: 54px;
+  padding-bottom: 55px;
   padding-left: 24px;
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
-    padding-bottom: 59px;
+    padding-bottom: 60px;
     padding-left: 0;
   }
 
@@ -59,7 +65,7 @@
 
 .travelers__text {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 430px;
@@ -96,11 +102,101 @@
 }
 
 .travelers__cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 270px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr  1fr;
+    column-gap: 50px;
+    width: 620px;
+    margin-bottom: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 60px;
+    width: 630px;
+    margin-top: 8px;
+  }
+}
+
+.travelers__link {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  padding-left: 23px;
+
+  @include font-group-bold($size-18, $line-18);
+  color: $special-dark-color;
+
+  background-color: $light-invert-color;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 23px;
+    right: 20px;
+
+    width: 13px;
+    height: 13px;
+
+    background-image: url("../../img/icons/icon_arrow-right.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 34px;
+      right: 35px;
+
+      width: 14px;
+      height: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 33px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 27px;
+    padding-bottom: 29px;
+    padding-left: 32px;
+
+    @include font-group-small($size-24, $line-24);
+
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 411px;
+    right: auto;
+    left: 131px;
+
+    width: 280px;
+    margin-bottom: 0;
+    padding-top: 27px;
+  }
+
+  &:hover {
+    background-color: $invert-color;
+  }
+
+  &:active {
+    color: $special-dark-color-fade;
+  }
+
+  &:active::before {
+    background-image: url("../../img/icons/icon_arrow-right-active.svg");
   }
 }
