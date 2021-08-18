@@ -1,5 +1,6 @@
 .travelers {
   position: relative;
+  z-index: 30;
 
   padding-top: 66px;
   padding-right: 0;
@@ -10,8 +11,8 @@
   background-image: url("../../img/travelers-back-mobile.png");
   background-position: top 34px right 25px;
   background-repeat: no-repeat;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 137px;

@@ -1,7 +1,9 @@
 .profile {
   position: relative;
+  z-index: 25;
 
-  padding-top: 53px;
+  margin-top: -30px;
+  padding-top: 81px;
   padding-right: 0;
   padding-bottom: 38px;
   padding-left: 0;
@@ -9,19 +11,99 @@
   color: $basic-text-color;
 
   background-color: $profile-background-color;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 74px;
+    margin-top: -60px;
+    padding-top: 129px;
     padding-bottom: 85px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 107px;
+    padding-top: 163px;
     padding-bottom: 187px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 67px;
+    right: 25px;
+    z-index: 30;
+
+    width: 100px;
+    height: 100px;
+
+    background-image: url("../../img/profile-rates-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      top: auto;
+      right: 85px;
+      bottom: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 133px;
+      bottom: 265px;
+
+      width: 198px;
+      height: 198px;
+
+      background-image: url("../../img/profile-rates-desktop.png");
+    }
   }
 }
 
+.profile__title {
+  width: 110px;
+  margin-top: 0;
+  margin-bottom: 43px;
+
+  @include font-group-bold($size-24, $line-24);
+  color: $dark-invert-color;
+
+  @media (min-width: $tablet-width) {
+    width: 490px;
+    margin-right: auto;
+    margin-bottom: 73px;
+    margin-left: auto;
+
+    @include font-group-small($size-45, $line-45);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
+  }
+}
+
+.profile__list {
+  margin-top: 0;
+  margin-bottom: 31px;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+  }
+}
+
+.profile__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding-top: 13px;
+  padding-bottom: 18px;
+
+  border-top: 1px solid $profile-border-color;
+}
+
 .profile__modal {
+  display: block;
   padding-top: 34px;
   padding-bottom: 18px;
 
@@ -40,4 +122,8 @@
     padding-top: 54px;
     padding-bottom: 0;
   }
+}
+
+.profile__modal--closed {
+  display: none;
 }
