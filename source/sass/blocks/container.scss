@@ -70,18 +70,6 @@
   }
 }
 
-.container--profile {
-  padding-left: 50px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 60px;
-  }
-}
-
 .container--feedback {
   @media (min-width: $tablet-width) {
     padding-right: 76px;
