@@ -58,6 +58,11 @@
   }
 }
 
+.countries__title-title {
+  display: block;
+  width: 100%;
+}
+
 .countries__text {
   width: 200px;
   margin-top: 0;
@@ -91,6 +96,7 @@
   display: block;
   width: 100%;
   padding-top: 22px;
+  padding-right: 40px;
   padding-bottom: 22px;
   padding-left: 23px;
 
