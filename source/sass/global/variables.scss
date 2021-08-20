@@ -9,10 +9,13 @@ $basic-dark-fade: rgb(10%, 13%, 27%, 0.3);
 $body-background: #edeff6;
 $alt-background: #182044;
 $basic-text-color: #444444;
-$basic-text-color-fade: #e6e6e6;
+$basic-text-color-halffade: #a2a2a2;
+$basic-text-color-fade: #c7c7c7;
+$light-text-color: #e6e6e6;
 $extra-dark-invert-color: #f26926;
 $invert-unique-color: #ffa530;
 $dark-invert-color: #ff8d30;
+$dark-invert-color-fade: rgba(255, 141, 48, 0.3);
 $invert-color: #ffbd30;
 $light-invert-color: #ffd74b;
 $light-invert-color-fade: rgb(100%, 84%, 29%, 0.3);
@@ -39,6 +42,9 @@ $profile-border-color: #e1e3e9;
 $profile-business-border-color: rgba(0, 0, 0, 0.05);
 $profile-business-button-color: #f3f4f8;
 $modal-shadow-color: rgba(29, 46, 91, 0.18);
+$error-text-color: #ff0000;
+$error-background-color: #ffefef;
+$error-border-color: #f47e7e;
 $todo-gradient-modal: linear-gradient(
   to bottom,
   #ff8d30 0%,
@@ -70,6 +76,7 @@ $line-24: 24px;
 $line-25: 25px;
 $line-28: 28px;
 $line-30: 30px;
+$line-32: 32px;
 $line-33: 33px;
 $line-34: 34px;
 $line-35: 35px;

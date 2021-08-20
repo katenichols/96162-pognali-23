@@ -222,7 +222,7 @@
   width: 135px;
 
   @include font-group-medium($size-16, $line-18);
-  color: $basic-text-color-fade;
+  color: $light-text-color;
 
   @media (min-width: $tablet-width) {
     width: 250px;
@@ -239,7 +239,7 @@
   text-align: left;
 
   @include font-group-medium($size-16, $line-20);
-  color: $basic-text-color-fade;
+  color: $light-text-color;
 
   &::before {
     content: "";

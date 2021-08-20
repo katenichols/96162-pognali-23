@@ -33,8 +33,10 @@ logoToggleModal.addEventListener("click", () => {
 
 profileButton.addEventListener("click", () => {
   profileModal.classList.remove("profile__modal--closed");
+  profileButton.setAttribute("disabled", true);
 });
 
 profileButtonModal.addEventListener("click", () => {
   profileModal.classList.add("profile__modal--closed");
+  profileButton.setAttribute("disabled", false);
 });

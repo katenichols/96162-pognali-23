@@ -340,13 +340,15 @@
       <section class="page-main__feedback feedback">
         <div class="container container--feedback">
           <h2 class="feedback__title">Заинтересовались?</h2>
-          <p class="feedback__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
-            Тогда скорее <span class="feedback__text-accent">авторизуйтесь</span>.
+          <p class="feedback__text">Зарегистрируйтесь, <br class="feedback__text-br">это быстро и бесплатно!<br>Уже зарегистрированы?
+            Тогда скорее<a class="feedback__text-link" href="#"> авторизуйтесь</a>.
           </p>
           <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="feedback-email"></label>
-            <input type="text" id="feedback-email" name="feedback-email" placeholder="E-mail">
-            <button class="feedback__button" type="submit" value="Подписаться на рассылку">Подписаться</button>
+            <input class="feedback__input" type="text" id="feedback-email" name="feedback-email" placeholder="E-mail">
+            <button class="feedback__button" type="submit">
+              <span class="feedback__button-text">Регистрация</span>
+            </button>
           </form>
           <span class="feedback__text">Остались вопросы? Мы с радостью на них ответим!</span>
           <div class="feedback__wrapper">
