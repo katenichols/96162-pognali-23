@@ -82,11 +82,30 @@
   }
 }
 
-.container--footer {
+.container--map-block {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 135px;
+    padding-left: 285px;
+  }
+}
+
+.container--footer {
+  display: grid;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

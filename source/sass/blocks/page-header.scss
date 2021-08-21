@@ -43,7 +43,7 @@
 
 .page-header__contacts {
   position: absolute;
-  top: 460px;
+  top: 457px;
 
   margin-left: calc(50% - 135px);
 
@@ -143,6 +143,7 @@
   border-radius: 25px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -3px;
     margin-left: 0;
     padding-top: 14px;
     padding-right: 28px;

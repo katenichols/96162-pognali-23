@@ -147,6 +147,12 @@
       margin-bottom: 10px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &:first-of-type {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .todo__list-number {

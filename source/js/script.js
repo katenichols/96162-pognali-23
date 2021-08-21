@@ -6,6 +6,8 @@ let logoToggleModal = document.querySelector(".logo__toggle-modal");
 let profileModal = document.querySelector(".profile__modal");
 let profileButton = document.querySelector(".profile__button");
 let profileButtonModal = document.querySelector(".profile__modal-button");
+let feedbackInput = document.querySelector(".feedback__input");
+let feedbackForm = document.querySelector(".feedback__form");
 
 pageHeader.classList.remove("page-header--nojs");
 logoWrapper.classList.remove("logo-wrapper--nojs");
@@ -40,3 +42,32 @@ profileButtonModal.addEventListener("click", () => {
   profileModal.classList.add("profile__modal--closed");
   profileButton.setAttribute("disabled", false);
 });
+
+feedbackForm.addEventListener("submit", (evt) => {
+  if (feedbackInput.value === "") {
+    evt.preventDefault();
+    feedbackInput.placeholder = "Введите email";
+    feedbackInput.classList.add("feedback__input--invalid");
+  }
+});
+
+feedbackInput.addEventListener("click", () => {
+  feedbackInput.placeholder = "E-mail";
+  if (feedbackInput.classList.contains("feedback__input--invalid")) {
+    feedbackInput.classList.remove("feedback__input--invalid");
+  }
+});
+
+function initMap() {
+  let coordinates = { lat: 59.938635, lng: 30.323118 },
+    map = new google.maps.Map(document.querySelector("map-block__map"), {
+      center: coordinates,
+    }),
+    image = "../img/icons/icon_baloon.svg",
+    marker = new google.maps.Marker({
+      position: coordinates,
+      map: map,
+      icon: image,
+      animation: google.maps.Animation.BOUNCE,
+    });
+}
