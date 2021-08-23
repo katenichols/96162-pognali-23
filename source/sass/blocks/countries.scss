@@ -24,6 +24,8 @@
 }
 
 .countries__wrapper {
+  position: relative;
+
   padding-bottom: 44px;
   padding-left: 24px;
 
@@ -75,14 +77,33 @@
 }
 
 .countries__cards {
+  position: relative;
+
   margin-top: 0;
-  margin-bottom: 27px;
-  padding: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
 
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
+    padding-left: 35px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 10;
+
+      top: -38px;
+      left: 0;
+
+      width: 140px;
+      height: 141px;
+
+      background-color: $special-light-light-color;
+      border-radius: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -91,10 +112,14 @@
 }
 
 .countries__link {
-  position: relative;
+  position: absolute;
+  z-index: 30;
+  bottom: 34px;
 
   display: block;
-  width: 100%;
+  width: calc(100% - 50px);
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 22px;
   padding-right: 40px;
   padding-bottom: 22px;
@@ -133,9 +158,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 70px);
-    margin-right: auto;
-    margin-left: auto;
+    bottom: 80px;
+
+    // width: calc(100% - 160px);
+    width: 70%;
+    // margin-right: auto;
+    // margin-left: auto;
     padding-top: 29px;
     padding-bottom: 29px;
     padding-left: 33px;
@@ -146,9 +174,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 592px;
-    right: 301px;
+    position: relative;
+    // top: 592px;
+    // right: 301px;
 
     width: 276px;
     padding-top: 27px;

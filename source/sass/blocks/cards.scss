@@ -43,8 +43,8 @@
 
   @media (min-width: $tablet-width) {
     width: 618px;
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
     padding-top: 0;
 
     background-position: top right;
@@ -53,20 +53,20 @@
       background-image: url("../../img/back-thailand-tablet.png");
     }
 
-    &:first-of-type::after {
-      content: "";
-      position: absolute;
-      z-index: 10;
+    // &:first-of-type::after {
+    //   content: "";
+    //   position: absolute;
+    //   z-index: 10;
 
-      top: -38px;
-      left: -36px;
+    //   top: -38px;
+    //   left: -36px;
 
-      width: 140px;
-      height: 141px;
+    //   width: 140px;
+    //   height: 141px;
 
-      background-color: $special-light-light-color;
-      border-radius: 20px;
-    }
+    //   background-color: $special-light-light-color;
+    //   border-radius: 20px;
+    // }
 
     &:nth-of-type(2) {
       background-image: url("../../img/back-france-tablet.png");

@@ -6,8 +6,9 @@ let logoToggleModal = document.querySelector(".logo__toggle-modal");
 let profileModal = document.querySelector(".profile__modal");
 let profileButton = document.querySelector(".profile__button");
 let profileButtonModal = document.querySelector(".profile__modal-button");
-let feedbackInput = document.querySelector(".feedback__input");
 let feedbackForm = document.querySelector(".feedback__form");
+let feedbackInput = feedbackForm.querySelector(".feedback__input");
+let feedbackButton = document.querySelector(".feedback__button");
 
 pageHeader.classList.remove("page-header--nojs");
 logoWrapper.classList.remove("logo-wrapper--nojs");
@@ -44,9 +45,12 @@ profileButtonModal.addEventListener("click", () => {
 });
 
 feedbackForm.addEventListener("submit", (evt) => {
-  if (feedbackInput.value === "") {
+  let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+
+  if (re.test(feedbackInput.value) === false) {
     evt.preventDefault();
     feedbackInput.placeholder = "Введите email";
+    feedbackInput.value = "";
     feedbackInput.classList.add("feedback__input--invalid");
   }
 });
