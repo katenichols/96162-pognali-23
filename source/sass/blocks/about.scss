@@ -2,7 +2,7 @@
   position: relative;
   z-index: 40;
 
-  padding-top: 32px;
+  padding-top: 31px;
   padding-right: 0;
   padding-bottom: 83px;
   padding-left: 0;
@@ -15,7 +15,7 @@
   border-bottom-right-radius: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 38px;
+    padding-top: 37px;
     padding-bottom: 89px;
 
     background-image: url("../../img/about-back-tablet.png");
@@ -62,13 +62,13 @@
   color: $dark-invert-color;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
 
     @include font-group-small($size-45, $line-45);
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 57px;
+    margin-bottom: 58px;
   }
 }
 
@@ -163,6 +163,15 @@
 
     &:active::before {
       background-image: url("../../img/icons/icon-arrow-right-active.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 274px;
+    margin-left: 1px;
+
+    &::before {
+      right: 32px;
     }
   }
 }

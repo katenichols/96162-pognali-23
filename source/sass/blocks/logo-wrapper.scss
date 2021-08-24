@@ -14,7 +14,7 @@
 }
 
 .logo-wrapper--modal {
-  margin-bottom: 68px;
+  margin-bottom: 67px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
@@ -24,6 +24,7 @@
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
+    margin-top: 1px;
     margin-right: 123px;
     margin-bottom: 0;
   }

@@ -48,7 +48,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row-reverse;
     padding-top: 148px;
-    padding-bottom: 105px;
+    padding-bottom: 84px;
 
     background-position: top 148px right 60px;
   }
@@ -66,7 +66,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-right: 60px;
-    padding-left: 130px;
+    padding-left: 60px;
   }
 }
 

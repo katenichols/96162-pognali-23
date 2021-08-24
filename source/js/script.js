@@ -41,7 +41,7 @@ profileButton.addEventListener("click", () => {
 
 profileButtonModal.addEventListener("click", () => {
   profileModal.classList.add("profile__modal--closed");
-  profileButton.setAttribute("disabled", false);
+  profileButton.removeAttribute("disabled");
 });
 
 feedbackForm.addEventListener("submit", (evt) => {
@@ -62,16 +62,16 @@ feedbackInput.addEventListener("click", () => {
   }
 });
 
-function initMap() {
-  let coordinates = { lat: 59.938635, lng: 30.323118 },
-    map = new google.maps.Map(document.querySelector("map-block__map"), {
-      center: coordinates,
-    }),
-    image = "../img/icons/icon_baloon.svg",
-    marker = new google.maps.Marker({
-      position: coordinates,
-      map: map,
-      icon: image,
-      animation: google.maps.Animation.BOUNCE,
-    });
-}
+// function initMap() {
+//   let coordinates = { lat: 59.938635, lng: 30.323118 },
+//     map = new google.maps.Map(document.querySelector("map-block__map"), {
+//       center: coordinates,
+//     }),
+//     image = "../img/icons/icon_baloon.svg",
+//     marker = new google.maps.Marker({
+//       position: coordinates,
+//       map: map,
+//       icon: image,
+//       animation: google.maps.Animation.BOUNCE,
+//     });
+// }
