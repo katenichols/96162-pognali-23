@@ -46,6 +46,7 @@
 .logo__toggle-modal {
   position: relative;
 
+  display: block;
   width: 25px;
   height: 19px;
 
@@ -64,6 +65,14 @@
 
 .logo__toggle {
   margin-top: 4px;
+}
+
+.logo__toggle-modal--nojs {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .logo__toggle::before {

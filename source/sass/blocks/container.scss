@@ -21,6 +21,25 @@
   }
 }
 
+.container--promo {
+  position: relative;
+
+  padding-bottom: 9px;
+
+  color: $basic-color;
+
+  background-color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    background-color: transparent;
+  }
+}
+
 .container--modal {
   @media (min-width: $desktop-width) {
     display: grid;

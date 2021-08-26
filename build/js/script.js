@@ -13,6 +13,7 @@ let feedbackButton = document.querySelector(".feedback__button");
 pageHeader.classList.remove("page-header--nojs");
 logoWrapper.classList.remove("logo-wrapper--nojs");
 modalMenu.classList.remove("modal-menu--nojs");
+logoToggleModal.classList.remove("logo__toggle-modal-nojs");
 profileModal.classList.remove("profile__modal--nojs");
 profileModal.classList.add("profile__modal--closed");
 profileButton.classList.remove("profile__button--nojs");
