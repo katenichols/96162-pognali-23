@@ -1,0 +1,45 @@
+.social {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    margin-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.social__link {
+  &--modal {
+    position: relative;
+
+    fill: $basic-dark;
+
+    &:hover {
+      fill: $basic-dark-halffade;
+    }
+
+    &:active {
+      fill: $basic-dark-fade;
+    }
+  }
+}
+
+.social__image-modal {
+  width: 23px;
+  height: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 31px;
+    height: 28px;
+  }
+}

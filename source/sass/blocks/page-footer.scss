@@ -1,24 +1,141 @@
 .page-footer {
-  padding-top: 37px;
+  position: relative;
+  z-index: 20;
+
+  margin-top: -30px;
+  padding-top: 36px;
   padding-bottom: 17px;
 
   background-color: $basic-white;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 46px;
-    padding-bottom: 32px;
-  }
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    padding-top: 47px;
+    padding-bottom: 32px;
+
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-top: 47px;
     padding-bottom: 43px;
   }
 }
 
 .page-footer__social {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 37px;
+  margin-left: auto;
+  padding-left: 0;
+
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: row;
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__social-link {
+  display: block;
+  width: 45px;
+  height: 45px;
+
+  background-color: $light-invert-color;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $invert-color;
+  }
+
+  &--fb {
+    background-image: url("../../img/icons/icon_fb-footer-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:active {
+      background-image: url("../../img/icons/icon_fb-footer-mobile-active.svg");
+    }
+  }
+
+  &--vk {
+    background-image: url("../../img/icons/icon_vk-footer-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:active {
+      background-image: url("../../img/icons/icon_vk-footer-mobile-active.svg");
+    }
+  }
+
+  &--insta {
+    background-image: url("../../img/icons/icon_insta-footer-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:active {
+      background-image: url("../../img/icons/icon_insta-footer-mobile-active.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
+
+    &--fb {
+      background-image: url("../../img/icons/icon_fb-footer-tablet.svg");
+
+      &:active {
+        background-image: url("../../img/icons/icon_fb-footer-tablet-active.svg");
+      }
+    }
+
+    &--vk {
+      background-image: url("../../img/icons/icon_vk-footer-tablet.svg");
+
+      &:active {
+        background-image: url("../../img/icons/icon_vk-footer-tablet-active.svg");
+      }
+    }
+
+    &--insta {
+      background-image: url("../../img/icons/icon_insta-footer-tablet.svg");
+
+      &:active {
+        background-image: url("../../img/icons/icon_insta-footer-tablet-active.svg");
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--fb {
+      background-image: url("../../img/icons/icon_fb-footer-desktop.svg");
+
+      &:active {
+        background-image: url("../../img/icons/icon_fb-footer-desktop-active.svg");
+      }
+    }
+
+    &--vk {
+      background-image: url("../../img/icons/icon_vk-footer-desktop.svg");
+
+      &:active {
+        background-image: url("../../img/icons/icon_vk-footer-desktop-active.svg");
+      }
+    }
+
+    &--insta {
+      background-image: url("../../img/icons/icon_insta-footer-desktop.svg");
+
+      &:active {
+        background-image: url("../../img/icons/icon_insta-footer-desktop-active.svg");
+      }
+    }
   }
 }
 
@@ -26,4 +143,52 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 19px;
+
+  @include font-group($size-16, $line-16);
+  color: $basic-text-color;
+
+  border-top: 1px solid $extra-light-color;
+
+  &:hover {
+    color: $basic-text-color-halffade;
+
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $basic-text-color-fade;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-top: -6px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    border-top: none;
+
+    @include font-group-small($size-20, $line-20);
+  }
+}
+
+.page-footer__link:hover .page-footer__link-image {
+  opacity: 0.6;
+}
+
+.page-footer__link:active .page-footer__link-image {
+  opacity: 0.3;
+}
+
+.page-footer__link-image {
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+    margin-left: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+  }
 }

@@ -22,6 +22,17 @@ const styles = () => {
 
 exports.styles = styles;
 
+// Scripts
+
+const scripts = () => {
+  return gulp
+    .src("source/js/script.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+};
+
+exports.scripts = scripts;
+
 // Server
 
 const server = (done) => {
@@ -43,6 +54,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/js/*.js", gulp.series("scripts"));
 };
 
-exports.default = gulp.series(styles, server, watcher);
+exports.default = gulp.series(styles, scripts, server, watcher);

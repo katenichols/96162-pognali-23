@@ -1,0 +1,275 @@
+.cards {
+  position: relative;
+  z-index: 20;
+
+  width: 100%;
+  margin-bottom: 11px;
+  padding-top: 99px;
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  border-radius: 10px;
+
+  &:first-of-type {
+    background-image: url("../../img/back-thailand-mobile.png");
+  }
+
+  &:nth-of-type(2) {
+    background-image: url("../../img/back-france-mobile.png");
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+
+    background-image: url("../../img/back-czech-mobile.png");
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 30;
+
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 81px;
+
+        background-image: url("../../img/fade.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    padding-top: 0;
+
+    background-position: top right;
+    background-size: auto;
+
+    &:first-of-type {
+      background-image: url("../../img/back-thailand-tablet.png");
+    }
+
+    &:nth-of-type(2) {
+      background-image: url("../../img/back-france-tablet.png");
+    }
+
+    &:last-of-type {
+      background-image: url("../../img/back-czech-tablet.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    margin-bottom: 10px;
+
+    &:first-of-type::after {
+      top: -71px;
+      left: -70px;
+
+      width: 140px;
+      height: 140px;
+    }
+  }
+}
+
+.cards__wrapper {
+  position: relative;
+  z-index: 30;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+
+  background-color: $basic-white;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: -13px;
+    left: 25px;
+
+    width: 35px;
+    height: 24px;
+
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+      left: 398px;
+
+      width: 70px;
+      height: 47px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 23px;
+      left: 338px;
+    }
+  }
+
+  &--czech {
+    padding-bottom: 5px;
+  }
+
+  &--thailand::before {
+    background-image: url("../../img/flag-thailand-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/flag-thailand-tablet.png");
+    }
+  }
+
+  &--france::before {
+    background-image: url("../../img/flag-france-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/flag-france-tablet.png");
+    }
+  }
+
+  &--czech::before {
+    background-image: url("../../img/flag-czech-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/flag-czech-tablet.png");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 432px;
+    padding-top: 28px;
+    padding-left: 30px;
+    padding-bottom: 24px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 20px;
+
+    &--czech {
+      padding-bottom: 4px;
+
+      &::before {
+        top: 15px;
+        left: 397px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 374px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+
+    &--czech {
+      &::before {
+        top: 24px;
+        left: 338px;
+      }
+    }
+  }
+}
+
+.cards__info {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.cards__title {
+  margin-bottom: 2px;
+
+  @include font-group-bold($size-21, $line-21);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+
+    @include font-group-small($size-24, $line-24);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
+  }
+}
+
+.cards__text {
+  width: 135px;
+
+  @include font-group-medium($size-16, $line-18);
+  color: $light-text-color;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+
+    @include font-group-small($size-20, $line-20);
+  }
+}
+
+.cards__number {
+  position: relative;
+
+  width: 42px;
+  margin-top: 2px;
+  text-align: left;
+
+  @include font-group-medium($size-16, $line-20);
+  color: $light-text-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 3px;
+    left: -19px;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("../../img/icons/icon_people-mobile.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: -32px;
+
+      width: 24px;
+      height: 24px;
+
+      background-image: url("../../img/icons/icon_people-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -31px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 29px;
+
+    @include font-group-small($size-20, $line-20);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+  }
+}

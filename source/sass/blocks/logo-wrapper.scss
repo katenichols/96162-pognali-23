@@ -1,6 +1,9 @@
 .logo-wrapper {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   width: 100%;
 
@@ -10,8 +13,35 @@
   }
 }
 
+.logo-wrapper--modal {
+  margin-bottom: 67px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    margin-right: 22px;
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    margin-top: 1px;
+    margin-right: 123px;
+    margin-bottom: 0;
+  }
+}
+
 .logo-wrapper--non-modal {
+  padding-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.logo-wrapper--nojs {
+  display: none;
 }

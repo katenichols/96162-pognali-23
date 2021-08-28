@@ -1,25 +1,221 @@
 .travelers {
-  padding-top: 68px;
+  position: relative;
+  z-index: 30;
+
+  padding-top: 66px;
   padding-right: 0;
   padding-bottom: 31px;
   padding-left: 0;
 
   background-color: $basic-dark;
+  background-image: url("../../img/travelers-back-mobile.png");
+  background-position: top 34px right 25px;
+  background-repeat: no-repeat;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 137px;
+    padding-bottom: 87px;
+
+    background-image: url("../../img/travelers-back-tablet.png");
+    background-position: top 71px right 74px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 126px;
+    padding-bottom: 53px;
+
+    background-image: url("../../img/travelers-back-desktop.png");
+    background-position: top 70px right 750px;
+    border-bottom-right-radius: 56px;
+    border-bottom-left-radius: 56px;
+  }
 }
 
 .travelers__text-wrapper {
   padding-top: 0;
   padding-right: 29px;
-  padding-bottom: 54px;
+  padding-bottom: 55px;
   padding-left: 24px;
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
-    padding-bottom: 59px;
+    padding-bottom: 61px;
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 85px;
+    padding-bottom: 0;
+    padding-left: 70px;
+  }
+}
+
+.travelers__title {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+
+  @include font-group-bold($size-24, $line-24);
+  color: $dark-invert-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+    margin-left: -1px;
+
+    @include font-group-small($size-45, $line-45);
+  }
+}
+
+.travelers__title-text {
+  display: block;
+  width: 100%;
+}
+
+.travelers__text {
+  margin-top: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 430px;
+    margin-bottom: 39px;
+
+    @include font-group($size-28, $line-34);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+
+    line-height: 33px;
+  }
+}
+
+.travelers__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.travelers__note {
+  display: block;
+
+  @include font-group-bold($size-16, $line-22);
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+
+    @include font-group-small($size-21, $line-24);
+  }
+}
+
+.travelers__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 270px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 20px;
+    width: 620px;
+    margin-bottom: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 60px;
+    width: 630px;
+    margin-top: 8px;
+    margin-right: 0;
+  }
+}
+
+.travelers__link {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 23px;
+  padding-left: 23px;
+
+  @include font-group-bold($size-18, $line-18);
+  color: $special-dark-color;
+
+  background-color: $light-invert-color;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 23px;
+    right: 20px;
+
+    width: 13px;
+    height: 13px;
+
+    background-image: url("../../img/icons/icon_arrow-right.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 34px;
+      right: 35px;
+
+      width: 14px;
+      height: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 33px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 4px);
+    margin-right: auto;
+    margin-left: 0;
+    padding-top: 25px;
+    padding-bottom: 31px;
+    padding-left: 32px;
+
+    @include font-group-small($size-24, $line-24);
+
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 411px;
+    right: auto;
+    left: 131px;
+
+    width: 280px;
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 29px;
+    padding-left: 33px;
+  }
+
+  &:hover {
+    background-color: $invert-color;
+  }
+
+  &:active {
+    color: $special-dark-color-fade;
+  }
+
+  &:active::before {
+    background-image: url("../../img/icons/icon_arrow-right-active.svg");
   }
 }

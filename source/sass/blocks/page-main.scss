@@ -3,22 +3,5 @@
 
   color: $basic-white;
 
-  background-color: $basic-color;
-}
-
-.page-main__contacts {
-  position: absolute;
-  top: 245px;
-
-  outline: 5px solid rgba(255, 0, 0, 0.5);
-  outline-offset: -5px;
-
-  @media (min-width: $tablet-width) {
-    top: -96px;
-    right: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+  background-color: $basic-dark;
 }
