@@ -1,4 +1,7 @@
 .page-form {
+  position: relative;
+  z-index: 1;
+
   color: $basic-color;
 }
 
@@ -7,16 +10,79 @@
   z-index: 100;
 
   width: 100%;
+  height: auto;
 
   background-color: $alt-background;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-bottom: 55px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    border-bottom-right-radius: 56px;
+    border-bottom-left-radius: 56px;
+  }
 }
 
+
 .page-form__title {
+  position: relative;
+
   margin: 0;
   padding-top: 0;
   padding-right: 0;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
   padding-left: 0;
 
+  @include font-group-bold($size-36, $line-36);
   color: $basic-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+
+    display: block;
+    width: 214px;
+    height: 5px;
+
+    background-color: $dark-invert-color;
+    border-radius: 4px;
+
+    @media (min-width: $tablet-width) {
+      width: 358px;
+      height: 8px;
+
+      bottom: -59px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 358px;
+      height: 8px;
+
+      bottom: -4px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+
+    @include font-group-small($size-60, $line-60);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 69px;
+    margin-left: 64px;
+    padding-bottom: 0;
+  }
 }

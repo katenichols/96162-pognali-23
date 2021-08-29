@@ -342,6 +342,7 @@
   width: 150px;
 
   @include font-group-bold($size-18, $line-18);
+  color: $basic-color;
 
   @media (min-width: $tablet-width) {
     width: 211px;

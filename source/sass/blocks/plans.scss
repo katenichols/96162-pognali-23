@@ -3,22 +3,44 @@
   z-index: 10;
 
   margin-top: -29px;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-right: 0;
   padding-bottom: 59px;
   padding-left: 0;
 
   background-color: $special-light-color;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 54px;
     padding-bottom: 105px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 119px;
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+    padding-bottom: 117px;
+
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
   }
 }
 
 .plans__title {
   margin-top: 0;
+  margin-bottom: 31px;
+
+  @include font-group-bold($size-24, $line-24);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+    margin-left: -1px;
+
+    @include font-group-small($size-36, $line-36);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    margin-left: 74px;
+  }
 }

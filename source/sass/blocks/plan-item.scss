@@ -3,24 +3,143 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 10px;
-  padding-top: 24px;
+  padding-top: 23px;
   padding-right: 25px;
-  padding-bottom: 23px;
-  padding-left: 25px;
+  padding-bottom: 21px;
+  padding-left: 24px;
 
   background-color: $basic-white;
+  border-radius: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+    padding-top: 38px;
+    padding-right: 24px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
+    margin-left: 66px;
+    margin-bottom: 15px;
+    padding-top: 34px;
+    padding-right: 0;
+    padding-bottom: 39px;
+    padding-left: 41px;
+
+    &:last-of-type {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.plan-item__title-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  @include font-group-bold($size-16, $line-16);
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 53px;
+
+    @include font-group-small($size-24, $line-24);
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+}
+
+.plan-item__number {
+  @media (min-width: $desktop-width) {
+    margin-right: 26px;
   }
 }
 
 .plan-item__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
+  @include font-group-medium($size-16, $line-16);
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+
+    @include font-group-small($size-22, $line-22);
+    letter-spacing: 0.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+  }
+}
+
+.plan-item__count {
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 177px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 177px;
+  }
+}
+
+.plan-item__dates {
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    &--second {
+      padding-left: 2px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 305px;
+
+    &--second {
+      padding-left: 0;
+    }
+  }
+}
+
+.plan-item__link {
+  color: $basic-black-fade;
+
+  @media (min-width: $tablet-width) {
+    justify-items: end;
+    margin-right: 16px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-items: start;
+    width: 149px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &:hover {
+    color: $basic-black-halffade;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $basic-black-fullfade;
   }
 }

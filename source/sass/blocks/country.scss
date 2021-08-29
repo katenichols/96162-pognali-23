@@ -1,7 +1,338 @@
-.country__modal-list {
-  display: none;
+.country {
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
 
-  @media (min-width: $desktop-width) {
-    display: block;
+    border-top: 1px solid $profile-border-color;
   }
+}
+
+.country__wrapper {
+  position: relative;
+  z-index: 0;
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 48px;
+    bottom: -17px;
+    z-index: 25;
+
+    width: 8px;
+    height: 11px;
+
+    background-image: url("../../img/icons/icon_arrow-down-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:last-of-type {
+    margin-bottom: 25px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+
+    &--first {
+      margin-bottom: 16px;
+    }
+
+    &--second {
+      margin-bottom: 15px;
+    }
+
+    &--third {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+.country__input {
+  position: relative;
+  z-index: 1;
+
+  width: auto;
+  padding-top: 11px;
+  padding-right: 40px;
+  padding-bottom: 11px;
+  padding-left: 10px;
+
+  @include font-group-medium($size-14, $line-18);
+  color: $special-dark-color;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+
+  border: 1px solid $form-border-color;
+  border-radius: 4px;
+
+  &:hover {
+    border-color: $form-border-dark-color;
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+    height: 70px;
+
+    padding-left: 25px;
+
+    @include font-group-small($size-20, $line-20);
+    letter-spacing: 2px;
+  }
+}
+
+.country__button-list {
+  position: absolute;
+  top: 13px;
+  right: 28%;
+  z-index: 20;
+
+  width: 16px;
+  height: 15px;
+
+  background-image: url("../../img/icons/icon_arrow-back-mobile.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 27px;
+    right: auto;
+    left: 324px;
+
+    background-image: url("../../img/icons/icon_arrow-back-tablet.svg");
+  }
+}
+
+.country__input-fade {
+  position: absolute;
+  top: 2px;
+  right: 26%;
+  z-index: 10;
+
+  display: block;
+  width: 45px;
+  height: 38px;
+
+  background-image: $form-input-gradient;
+
+  @media (min-width: $tablet-width) {
+    right: auto;
+    left: 295px;
+
+    width: 70px;
+    height: 66px;
+  }
+}
+
+.country__label {
+  position: relative;
+
+  display: block;
+  width: 55px;
+  height: 42px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid $form-border-color;
+  border-radius: 4px;
+
+  &--country1 {
+    background-image: url("../../img/flag-bosnia-mobile.jpg");
+  }
+
+  &--country2 {
+    background-image: url("../../img/flag-czech-mobile.png");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: -6px;
+    z-index: 25;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: $basic-white;
+    border: 1px solid $form-border-color;
+    border-radius: 50%;
+  }
+
+  &--chosen::before {
+    background-color: $special-dark-color;
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 111px;
+    height: 70px;
+
+    margin-right: 24px;
+
+    &--country1 {
+      background-image: url("../../img/flag-bosnia-tablet.jpg");
+    }
+
+    &--country2 {
+      background-image: url("../../img/flag-czech-tablet.png");
+    }
+  }
+}
+
+.country__button-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../../img/icons/icon_button-close-mobile.svg");
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  &:hover {
+    background-image: url("../../img/icons/icon_button-close-mobile-hover.svg");
+    cursor: pointer;
+  }
+
+  &:active {
+    background-image: url("../../img/icons/icon_button-close-mobile-active.svg");
+  }
+}
+
+.country__button-choice {
+  position: relative;
+
+  width: 100%;
+  height: 42px;
+  text-align: left;
+  padding-left: 11px;
+
+  @include font-group-medium($size-14, $line-18);
+  color: $special-dark-color;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  border: 1px solid $form-border-color;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 47px;
+    z-index: 25;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: $basic-white;
+    border: 1px solid $form-border-color;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    z-index: 20;
+
+    width: 16px;
+    height: 15px;
+
+    background-image: url("../../img/icons/icon_arrow-back-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    border-color: $form-border-dark-color;
+  }
+
+  &:active {
+    padding-left: 11px;
+
+    color: $basic-white;
+    background-color: $special-dark-color;
+    border-color: $special-dark-color;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.country__button-choice:active + .country__button-close {
+  display: none;
+}
+
+.country__button-add {
+  position: relative;
+
+  width: 100%;
+  height: 42px;
+  text-align: left;
+  padding-left: 12px;
+
+  @include font-group-medium($size-14, $line-18);
+  color: $special-dark-color;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  background-color: $body-background;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 13px;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("../../img/icons/icon_plus-mobile.svg");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 47px;
+    z-index: 25;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: transparent;
+    border: 1px solid $form-border-color;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    background-color: $special-light-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    padding-left: 11px;
+  }
+}
+
+.country__modal--closed {
+  display: none;
 }

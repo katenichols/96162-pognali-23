@@ -1,11 +1,14 @@
 $basic-white: #ffffff;
-$basic-white-fade: rgb(100%, 100%, 100%, 0.3);
+$basic-white-fade: rgba(255, 255, 255, 0.3);
 $basic-black: #000000;
+$basic-black-halffade: rgba(0, 0, 0, 0.6);
+$basic-black-fade: rgba(0, 0, 0, 0.3);
+$basic-black-fullfade: rgba(0, 0, 0, 0.1);
 $basic-color: #161c35;
-$basic-color-fade: rgb(9%, 11%, 21%, 0.3);
+$basic-color-fade: rgba(22, 28, 53, 0.3);
 $basic-dark: #192144;
-$basic-dark-halffade: rgb(10%, 13%, 27%, 0.6);
-$basic-dark-fade: rgb(10%, 13%, 27%, 0.3);
+$basic-dark-halffade: rgba(25, 33, 68, 0.6);
+$basic-dark-fade: rgba(25, 33, 68, 0.3);
 $body-background: #edeff6;
 $alt-background: #182044;
 $basic-text-color: #444444;
@@ -18,19 +21,20 @@ $dark-invert-color: #ff8d30;
 $dark-invert-color-fade: rgba(255, 141, 48, 0.3);
 $invert-color: #ffbd30;
 $light-invert-color: #ffd74b;
-$light-invert-color-fade: rgb(100%, 84%, 29%, 0.3);
+$light-invert-color-fade: rgba(255, 215, 75, 0.3);
 $icon-color: #121936;
 $icon-color-fade: rgba(18, 25, 54, 0.3);
 $profile-background-color: #e6e8f1;
 $special-dark-color: #1d2e5b;
-$special-dark-color-halffade: rgb(11%, 18%, 36%, 0.6);
-$special-dark-color-fade: rgb(11%, 18%, 36%, 0.3);
+$special-dark-color-halffade: rgba(29, 46, 91, 0.6);
+$special-dark-color-fade: rgba(29, 46, 91, 0.3);
 $special-light-color: #dfe3f0;
 $special-color: #d4d9eb;
 $special-light-light-color: #e2e5f2;
 $special-button-color: #132576;
 $special-button-color-halffade: rgba(19, 37, 118, 0.7);
 $special-button-color-fade: rgba(19, 37, 118, 0.3);
+$extra-color: #d1d7e9;
 $extra-light-color: #f2f2f2;
 $close-button-color: #cccccc;
 $level-background: rgba(0, 0, 0, 0.6);
@@ -44,30 +48,24 @@ $profile-border-color: #e1e3e9;
 $profile-business-border-color: rgba(0, 0, 0, 0.05);
 $profile-business-button-color: #f3f4f8;
 $modal-shadow-color: rgba(29, 46, 91, 0.18);
+$contrast-color: #ff5c23;
 $error-text-color: #ff0000;
 $error-background-color: #ffefef;
 $error-border-color: #f47e7e;
-$todo-gradient-modal: linear-gradient(
-  to bottom,
-  #ff8d30 0%,
-  #ff8d30 50%,
-  #ffbd30 50%,
-  #ffbd30 100%
-);
-$todo-gradient-desktop: linear-gradient(
-  to right,
-  #ff8d30 0%,
-  #ff8d30 30%,
-  #ffa530 30%,
-  #ffa530 60%,
-  #ffbd30 60%,
-  #ffbd30 100%
-);
-$promo-background: linear-gradient(to bottom, #161c35 0%, #192144 100%);
+$form-border-color: #cbced9;
+$form-border-dark-color: #959bb2;
+$form-border-light-color: #e2e5f1;
+$form-icon-off-color: #d9d9d9;
+$form-icon-off-hover-color: #b2b2b2;
+$form-calendar-border: #d6d9e6;
+$promo-background: linear-gradient(to bottom, #161c35, #192144);
+$form-input-gradient: linear-gradient(to left, #ffffff 80%, transparent);
+$die-color: #c4c4c4;
 $tablet-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $line-14: 14px;
+$line-15: 15px;
 $line-16: 16px;
 $line-18: 18px;
 $line-20: 20px;
@@ -82,11 +80,15 @@ $line-32: 32px;
 $line-33: 33px;
 $line-34: 34px;
 $line-35: 35px;
+$line-36: 36px;
+$line-38: 38px;
 $line-40: 40px;
 $line-45: 45px;
+$line-60: 60px;
 $line-70: 70px;
 $line-71: 71px;
 $size-14: 14px;
+$size-15: 15px;
 $size-16: 16px;
 $size-17: 17px;
 $size-18: 18px;
@@ -97,5 +99,6 @@ $size-24: 24px;
 $size-28: 28px;
 $size-30: 30px;
 $size-36: 36px;
+$size-38: 38px;
 $size-45: 45px;
 $size-60: 60px;
