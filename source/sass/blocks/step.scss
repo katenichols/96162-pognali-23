@@ -177,7 +177,7 @@
   }
 
   &:hover::before {
-    border-color: $form-border-dark-color;
+    border-color: $form-border-color-fade;
   }
 
   &:active::before {
@@ -238,7 +238,7 @@
   border-radius: 4px;
 
   &:hover {
-    border-color: $form-border-dark-color;
+    border-color: $form-border-color-fade;
   }
 
   &:active,

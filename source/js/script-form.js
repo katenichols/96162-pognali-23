@@ -5,6 +5,12 @@ const logoToggle = document.querySelector(".logo__toggle");
 const logoToggleModal = document.querySelector(".logo__toggle-modal");
 const userTransportsIcon = document.querySelectorAll(".user__transports-icon");
 const anchors = document.querySelectorAll("scroll-to");
+const buttonChoice = document.querySelector(".country__button-choice");
+const countryButtonClose = document.querySelector(
+  ".country__button-close--third"
+);
+const countryModal = document.querySelector(".country__modal");
+const countryModalClose = document.querySelector(".country__modal-close");
 
 pageHeader.classList.remove("page-header--nojs");
 logoWrapper.classList.remove("logo-wrapper--nojs");
@@ -51,3 +57,15 @@ for (let anchor of anchors) {
     });
   });
 }
+
+buttonChoice.addEventListener("click", (evt) => {
+  evt.preventDefault();
+  countryButtonClose.style.display = "none";
+  countryModal.classList.remove("country__modal--closed");
+});
+
+countryModalClose.addEventListener("click", (evt) => {
+  evt.preventDefault();
+  countryModal.classList.add("country__modal--closed");
+  countryButtonClose.style.display = "block";
+});
