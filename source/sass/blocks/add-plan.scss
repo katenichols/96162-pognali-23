@@ -5,7 +5,7 @@
   margin-top: -29px;
   padding-top: 28px;
   padding-right: 0;
-  padding-bottom: 72px;
+  padding-bottom: 73px;
   padding-left: 0;
 
   background-color: $special-color;
@@ -14,11 +14,13 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
+    padding-bottom: 123px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -53px;
     padding-top: 52px;
+    padding-bottom: 134px;
 
     border-top-left-radius: 55px;
     border-top-right-radius: 55px;

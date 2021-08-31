@@ -19,6 +19,10 @@
   width: 100%;
   margin-bottom: 22px;
 
+  &--third {
+    z-index: 40;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -549,6 +553,45 @@
   }
 }
 
+.country__modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 60;
+
+  display: block;
+  width: 100%;
+}
+
 .country__modal--closed {
   display: none;
+}
+
+.country__modal-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 13px;
+  padding-right: 17px;
+  padding-bottom: 11px;
+  padding-left: 17px;
+
+  @include font-group-medium($size-14, $line-18);
+  color: $basic-white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  background-color: $special-dark-color;
+}
+
+.country__modal-close {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+
+  width: 9px;
+  height: 9px;
+
+  background-image: url("../../img/icons/icon_modal-close-mobile.svg");
+  background-repeat: no-repeat;
 }

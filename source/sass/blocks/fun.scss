@@ -1,0 +1,207 @@
+.fun {
+  position: relative;
+  z-index: 40;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -13px;
+
+    width: 17px;
+    height: 287px;
+
+    background-image: url("../../img/progress-line-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+
+    border-top: 1px solid $profile-border-color;
+
+    &::before {
+      top: 45px;
+      right: -3px;
+      left: auto;
+      z-index: 10;
+
+      background-image: url("../../img/progress-line-tablet.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 78px;
+
+    &::before {
+      top: 89px;
+      right: 216px;
+
+    }
+  }
+}
+
+.fun__input-wrapper {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
+
+    &:last-of-type {
+      margin-bottom: 41px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+
+    &:last-of-type {
+      margin-bottom: 52px;
+    }
+  }
+}
+
+.fun__label {
+  position: relative;
+
+  display: block;
+  width: 206px;
+  margin-bottom: 17px;
+  margin-left: 12px;
+
+  @include font-group-medium($size-18, $line-18);
+  color: $special-dark-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    z-index: 10;
+
+    width: 35px;
+    height: 24px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--first::before {
+    background-image: url("../../img/flag-bosnia-mobile.jpg");
+  }
+
+  &--last::before {
+    background-image: url("../../img/flag-czech-mobile.png");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 72px;
+    height: 100%;
+
+    background-image: $form-input-gradient-small;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 3px;
+    padding-right: 115px;
+
+    @include font-group-bold($size-30, $line-30);
+    letter-spacing: 0.5px;
+
+    &::before {
+      top: -7px;
+      right: 36px;
+
+      width: 70px;
+      height: 47px;
+    }
+
+    &--first::before {
+      background-image: url("../../img/flag-bosnia-tablet.jpg");
+    }
+
+    &--last::before {
+      background-image: url("../../img/flag-czech-tablet.png");
+    }
+
+    &::after {
+      right: 40px;
+
+      width: 150px;
+      height: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+    margin-left: -2px;
+    padding-right: 240px;
+
+    letter-spacing: 0;
+
+    &--last {
+      margin-bottom: 40px;
+    }
+
+    &::before {
+      top: -3px;
+      right: 113px;
+    }
+
+    &::after {
+      right: 115px;
+      z-index: 0;
+
+      width: 200px;
+    }
+  }
+}
+
+.fun__textarea {
+  width: 100%;
+  height: 220px;
+  padding-top: 8px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  text-align: left;
+
+  @include font-group($size-16, $line-22);
+  color: $basic-text-color;
+
+  border: 1px solid $form-border-color;
+  border-radius: 4px;
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    height: 142px;
+    margin-left: 5px;
+    padding-top: 16px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    padding-left: 17px;
+
+    @include font-group-small($size-20, $line-23);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    height: 142px;
+    margin-left: 0;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+  }
+}

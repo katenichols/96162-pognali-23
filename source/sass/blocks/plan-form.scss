@@ -18,6 +18,10 @@
     padding-top: 21px;
   }
 
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
     padding-top: 45px;
@@ -38,7 +42,8 @@
     }
 
     &:last-of-type {
-      padding-bottom: 53px;
+      padding-top: 44px;
+      padding-bottom: 42px;
     }
   }
 
@@ -61,6 +66,11 @@
       padding-bottom: 104px;
       padding-left: 159px;
     }
+
+    &:last-of-type {
+      padding-top: 97px;
+      padding-bottom: 92px;
+    }
   }
 }
 
@@ -77,6 +87,11 @@
     margin-left: 0;
   }
 
+  &--step3 {
+    margin-bottom: 16px;
+    margin-left: 0;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 36px;
     margin-left: 0;
@@ -86,6 +101,11 @@
     &--step2 {
       margin-bottom: 35px;
     }
+
+    &--step3 {
+      margin-bottom: 35px;
+      margin-left: 2px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -94,6 +114,11 @@
 
     &--step2 {
       margin-bottom: 36px;
+    }
+
+    &--step3 {
+      margin-bottom: 35px;
+      margin-left: -1px;
     }
   }
 }
@@ -112,6 +137,11 @@
     margin-bottom: 22px;
   }
 
+  &--third {
+    margin-bottom: 23px;
+    margin-left: 1px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 62px;
 
@@ -120,12 +150,26 @@
     &--second {
       margin-bottom: 34px;
     }
+
+    &--third {
+      margin-bottom: 35px;
+      margin-left: 2px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 112px;
 
     &--second {
+      margin-bottom: 56px;
+    }
+
+    &--third {
+      margin-bottom: 112px;
+      margin-left: 0;
+    }
+
+    &--third {
       margin-bottom: 56px;
     }
   }
@@ -190,6 +234,10 @@
 
     @include font-group-small($size-24, $line-24);
     text-transform: none;
+
+    &--second {
+      width: 286px;
+    }
 
     &::before {
       content: "";
@@ -277,5 +325,70 @@
   @media (min-width: $desktop-width) {
     margin-top: 27px;
     margin-right: 2px;
+
+    &--last {
+      margin-top: 29px;
+    }
+  }
+}
+
+.plan-form__submit {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 11px;
+
+  @include font-group-bold($size-17, $line-30);
+  color: $special-dark-color;
+  text-transform: uppercase;
+
+  background-color: $light-invert-color;
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 286px;
+    height: 80px;
+    text-align: left;
+    margin-left: 3px;
+    padding-top: 27px;
+    padding-right: 33px;
+    padding-bottom: 29px;
+    padding-left: 33px;
+
+    @include font-group-small($size-24, $line-24);
+    text-transform: none;
+
+    &:hover {
+      background-color: $invert-color;
+      cursor: pointer;
+    }
+
+    &:active {
+      padding-left: 33px;
+      color: $special-dark-color-fade;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    right: 33px;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("../../img/icons/icon_arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::before {
+    background-image: url("../../img/icons/icon_arrow-right-active.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -1px;
   }
 }
