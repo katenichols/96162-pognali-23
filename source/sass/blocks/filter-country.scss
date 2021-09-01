@@ -14,12 +14,17 @@
 }
 
 .filter-country__choice {
-  padding-top: 42px;
+  position: relative;
+
+  margin-bottom: 22px;
+  padding-top: 41px;
   padding-right: 0;
   padding-bottom: 15px;
   padding-left: 0;
 
   background-color: $special-light-light-color;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 121px;
@@ -35,20 +40,101 @@
 }
 
 .filter-country__title {
-  display: flex;
+  width: 200px;
+  margin-left: 27px;
+
+  @include font-group-bold($size-16, $line-18);
+  color: $basic-dark;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 4px;
+    left: 25px;
+
+    width: 15px;
+    height: 10px;
+
+    background-image: url("../../img/icons/icon_filter-image-mobile.svg");
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.filter-country__toggle {
+  width: 17px;
+  height: 17px;
+  margin-right: 4px;
+
+  background-image: url("../../img/icons/icon_filter-toggle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &:hover {
+    background-image: url("../../img/icons/icon_filter-toggle-mobile-hover.svg");
+    cursor: pointer;
+  }
+
+  &:active {
+    background-image: url("../../img/icons/icon_filter-toggle-mobile-active.svg");
+  }
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    position: relative;
+    width: 185px;
+    height: 17px;
+
+    @include font-group-bold($size-20, $line-20);
+    color: $basic-dark;
+    text-transform: uppercase;
+
+    background-image: url("../../img/icons/icon_filter-toggle-tablet.svg");
+
+    &:hover {
+      background-image: url("../../img/icons/icon_filter-toggle-tablet-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../../img/icons/icon_filter-toggle-tablet-active.svg");
+    }
+
+    &--click::before {
+      content: "Показать все";
+      position: absolute;
+      top: -2px;
+      left: 10px;
+
+      width: 135px;
+    }
+
+    &--clicked {
+      height: 23px;
+
+      background-image: url("../../img/icons/icon_filter-close.svg");
+
+      &::before {
+        content: "Свернуть";
+      }
+    }
   }
 }
 
 .filter-country__letters {
-  padding-right: 26px;
-  padding-left: 25px;
+  display: none;
+}
+
+.filter-country__button {
+  &--hide {
+    display: none;
+  }
 }
 
 .filter-country__continent-list {

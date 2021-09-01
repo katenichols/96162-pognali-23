@@ -117,10 +117,8 @@
 }
 
 .container--title {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
 }
 
 .container--plans {
@@ -145,4 +143,9 @@
     padding-right: 60px;
     padding-left: 60px;
   }
+}
+
+.container--filter {
+  display: flex;
+  justify-content: space-between;
 }

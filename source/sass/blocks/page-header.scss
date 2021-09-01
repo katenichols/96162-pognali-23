@@ -24,7 +24,8 @@
   }
 }
 
-.page-header--form {
+.page-header--form,
+.page-header--catalog {
   background-color: $alt-background;
 }
 
@@ -36,9 +37,11 @@
   }
 }
 
-.page-header--modif {
+.page-header--catalog {
+  padding-bottom: 53px;
+
   @media (min-width: $tablet-width) {
-    padding-bottom: 134px;
+    padding-bottom: 126px;
   }
 
   @media (min-width: $desktop-width) {

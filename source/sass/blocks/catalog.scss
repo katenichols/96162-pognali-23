@@ -9,24 +9,118 @@
   z-index: 10;
 
   width: 100%;
+  height: auto;
 
   background-color: $alt-background;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+
+    border-bottom-right-radius: 56px;
+    border-bottom-left-radius: 56px;
+  }
 }
 
 .catalog__title {
+  position: relative;
+
   margin: 0;
   padding-top: 0;
   padding-right: 0;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
   padding-left: 0;
 
+  @include font-group-bold($size-36, $line-36);
   color: $basic-white;
 
-  @media (min-width: $tablet-width) {
-    width: calc(100% - 210px);
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+
+    display: block;
+    width: 173px;
+    height: 5px;
+
+    background-color: $dark-invert-color;
+    border-radius: 4px;
+
+    @media (min-width: $tablet-width) {
+      width: 288px;
+      height: 8px;
+
+      bottom: -61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -4px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 240px);
+    margin-left: 34px;
+
+    @include font-group-small($size-60, $line-60);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 69px;
+    margin-left: 64px;
+    padding-bottom: 0;
+  }
+}
+
+.catalog__link {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: block;
+    width: 176px;
+    margin-top: 24px;
+    margin-right: 34px;
+
+    @include font-group-bold($size-20, $line-20);
+    color: $basic-white;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 0;
+
+      width: 32px;
+      height: 16px;
+
+      background-image: url("../../img/icons/icon_back-index.svg");
+    }
+
+    &:hover {
+      color: $basic-white-halffade;
+
+      &::before {
+        background-image: url("../../img/icons/icon_back-index-hover.svg");
+      }
+    }
+
+    &:active {
+      color: $basic-white-fade;
+
+      &::before {
+        background-image: url("../../img/icons/icon_back-index-active.svg");
+      }
+    }
   }
 }
