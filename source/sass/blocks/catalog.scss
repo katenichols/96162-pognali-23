@@ -74,9 +74,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 69px;
-    margin-left: 64px;
-    padding-bottom: 0;
+    margin-top: 44px;
+    margin-left: 66px;
+    padding-bottom: 71px;
+
+    &::before {
+      bottom: -5px;
+    }
   }
 }
 
@@ -122,5 +126,10 @@
         background-image: url("../../img/icons/icon_back-index-active.svg");
       }
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 68px;
+    margin-right: 63px;
   }
 }
