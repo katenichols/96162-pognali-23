@@ -28,7 +28,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 119px;
-    padding-bottom: 49px;
+    padding-bottom: 78px;
 
     border-bottom-right-radius: 55px;
     border-bottom-left-radius: 55px;
@@ -169,7 +169,7 @@
       content: "Показать все";
       position: absolute;
       top: -2px;
-      left: -3px;
+      left: 0;
     }
 
     &--clicked {
@@ -202,12 +202,6 @@
   }
 }
 
-.filter-country__button {
-  &--hide {
-    display: none;
-  }
-}
-
 .filter-country__letters {
   position: relative;
   z-index: 50;
@@ -219,14 +213,17 @@
   position: absolute;
 
   display: block;
-  margin-top: 33px;
-  margin-bottom: 21px;
-  margin-left: 50px;
-  padding: 0;
+  width: 100%;
+  margin: 0;
+  padding-top: 33px;
+  padding-bottom: 19px;
+  padding-left: 50px;
 
   @include font-group-bold($size-16, $line-18);
   color: $basic-dark-fade;
   text-transform: uppercase;
+
+  background-color: $special-light-light-color;
 
   &--nojs {
     position: relative;
@@ -237,7 +234,7 @@
     flex-direction: row;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 32px;
+    margin-left: 72px;
 
     @include font-group-small($size-20, $line-20);
   }
@@ -286,5 +283,73 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 32px;
+  }
+}
+
+.filter-country__button-hide {
+  position: absolute;
+  top: 643px;
+  z-index: 60;
+
+  display: block;
+  width: calc(100% - 50px);
+  height: 39px;
+  margin-right: 25px;
+  margin-left: 25px;
+
+  background-color: $filter-modal-button;
+  border-radius: 20px;
+
+  &--modal {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.filter-country__button-hide-text {
+  position: relative;
+  z-index: 50;
+
+  margin-left: 25px;
+
+  @include font-group-bold($size-16, $line-20);
+  color: $basic-dark;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -24px;
+    z-index: 70;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("../../img/icons/icon_filter-hide-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
+    color: $basic-dark-halffade;
+
+    cursor: pointer;
+
+    &::before {
+      background-image: url("../../img/icons/icon_filter-hide-mobile-hover.svg");
+    }
+  }
+
+  &:active {
+    color: $basic-dark-fade;
+
+    &::before {
+      background-image: url("../../img/icons/icon_filter-hide-mobile-active.svg");
+    }
   }
 }

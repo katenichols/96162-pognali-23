@@ -1,10 +1,24 @@
 .catalog-table {
   position: absolute;
+  top: 151px;
+  left: 0;
 
   display: block;
+  width: 100%;
+  height: auto;
+  padding-right: 50px;
+  padding-bottom: 14px;
+  padding-left: 50px;
+
+  background-color: $special-light-light-color;
+  border-collapse: collapse;
 
   &--nojs {
     position: relative;
+    top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
   }
 
   @media (min-width: $desktop-width) {
@@ -21,28 +35,55 @@
 }
 
 .catalog-table__col-width {
-  width: 251px;
-  height: 0;
+  width: 45px;
 
-  &--second {
-    width: 252px;
-  }
+  @media (min-width: $desktop-width) {
+    width: 251px;
+    height: 0;
 
-  &--third {
-    width: 250px;
-  }
+    &--second {
+      width: 252px;
+    }
 
-  &--forth {
-    width: 241px;
-  }
+    &--third {
+      width: 250px;
+    }
 
-  &--fifth {
-    width: 249px;
+    &--forth {
+      width: 241px;
+    }
+
+    &--fifth {
+      width: 249px;
+    }
   }
 }
 
 .catalog-table__cell {
   vertical-align: top;
+  padding-top: 13px;
+  padding-right: 16px;
+  padding-bottom: 13px;
+  padding-left: 16px;
+
+  @include font-group-medium($size-14, $line-14);
+  color: $special-dark-color;
+  text-transform: uppercase;
+
+  background-color: $basic-white;
+  border: 1px solid $form-border-color;
+
+  &:hover {
+    border-color: $special-dark-color;
+    cursor: pointer;
+  }
+
+  &:active,
+  &--current {
+    color: $basic-white;
+
+    background-color: $special-dark-color;
+  }
 }
 
 .catalog-table__list {
@@ -50,12 +91,25 @@
 
   display: none;
   margin: 0;
-  padding: 0;
+
+  @include font-group($size-16, $line-22);
+  color: $basic-text-color;
+  text-transform: none;
 
   &--current {
     position: absolute;
+    top: 220px;
+    left: 0;
 
     display: block;
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 96px;
+    padding-left: 50px;
+
+    background-color: $special-light-light-color;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,10 +117,12 @@
   }
 }
 
+.catalog-table__list-item {
+  &:hover {
+    color: $special-dark-color;
+  }
 
-
-// .catalog-table__letter {
-//   @media (min-width: $desktop-width) {
-
-//   }
-// }
+  &:active {
+    color: $special-dark-color-fade;
+  }
+}
