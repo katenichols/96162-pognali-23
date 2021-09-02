@@ -1,7 +1,72 @@
 .catalog-table {
+  position: absolute;
+
+  display: block;
+
+  &--nojs {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+  }
+}
+
+.catalog-table--closed {
   display: none;
 
   @media (min-width: $desktop-width) {
     display: block;
   }
 }
+
+.catalog-table__col-width {
+  width: 251px;
+  height: 0;
+
+  &--second {
+    width: 252px;
+  }
+
+  &--third {
+    width: 250px;
+  }
+
+  &--forth {
+    width: 241px;
+  }
+
+  &--fifth {
+    width: 249px;
+  }
+}
+
+.catalog-table__cell {
+  vertical-align: top;
+}
+
+.catalog-table__list {
+  position: relative;
+
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  &--current {
+    position: absolute;
+
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+
+
+// .catalog-table__letter {
+//   @media (min-width: $desktop-width) {
+
+//   }
+// }
