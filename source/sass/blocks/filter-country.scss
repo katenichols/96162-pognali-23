@@ -232,9 +232,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    width: calc(100% - 72px);
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 72px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 
     @include font-group-small($size-20, $line-20);
   }
@@ -300,8 +304,17 @@
   background-color: $filter-modal-button;
   border-radius: 20px;
 
+  &:hover {
+    background-color: $filter-modal-button-active;
+    cursor: pointer;
+  }
+
   &--modal {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+
   }
 
   @media (min-width: $desktop-width) {
@@ -334,22 +347,12 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+}
 
-  &:hover {
-    color: $basic-dark-halffade;
+.filter-country__button-hide:active .filter-country__button-hide-text {
+  color: $basic-dark-fade;
 
-    cursor: pointer;
-
-    &::before {
-      background-image: url("../../img/icons/icon_filter-hide-mobile-hover.svg");
-    }
-  }
-
-  &:active {
-    color: $basic-dark-fade;
-
-    &::before {
-      background-image: url("../../img/icons/icon_filter-hide-mobile-active.svg");
-    }
+  &::before {
+    background-image: url("../../img/icons/icon_filter-hide-mobile-active.svg");
   }
 }

@@ -19,6 +19,14 @@
   }
 
   @media (min-width: $tablet-width) {
+    top: 18px;
+
+    padding-top: 61px;
+    padding-bottom: 224px;
+    padding-left: 54px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,10 +44,26 @@
 
 .catalog-table__col-width {
   width: 45px;
+  height: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 81px;
+
+    &--second {
+      width: 68px;
+    }
+
+    &--third {
+      width: 87px;
+    }
+
+    &--forth {
+      width: 70px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     width: 251px;
-    height: 0;
 
     &--second {
       width: 252px;
@@ -60,7 +84,7 @@
 }
 
 .catalog-table__cell {
-  vertical-align: top;
+  text-align: center;
   padding-top: 13px;
   padding-right: 16px;
   padding-bottom: 13px;
@@ -83,6 +107,36 @@
     color: $basic-white;
 
     background-color: $special-dark-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    vertical-align: middle;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 23px;
+    padding-left: 0;
+
+    @include font-group-bold($size-60, $line-60);
+    color: $basic-color-fade;
+
+    background-color: transparent;
+    border: none;
+
+    &:nth-of-type(6n) {
+      padding-bottom: 30px;
+    }
+
+    &:hover {
+      border-color: transparent;
+      cursor: pointer;
+    }
+
+    &:active,
+    &--current {
+      color: $basic-dark;
+
+      background-color: transparent;
+    }
   }
 }
 
@@ -110,6 +164,15 @@
     background-color: $special-light-light-color;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 61px;
+    right: 125px;
+    left: auto;
+
+    width: auto;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
