@@ -11,6 +11,9 @@ const catalogTable = document.querySelector(".catalog-table");
 const filterCountryButton = document.querySelector(
   ".filter-country__button-hide"
 );
+const userChoiceButtons = document.querySelectorAll(".user-choice__button");
+const userChoiceFieldsets = document.querySelectorAll(".user-choice__fieldset");
+const userLevelWrapper = document.querySelector(".user-choice__level-wrapper");
 
 pageHeader.classList.remove("page-header--nojs");
 logoWrapper.classList.remove("logo-wrapper--nojs");
@@ -60,3 +63,32 @@ filterCountryToggle.addEventListener("click", (evt) => {
     filterCountryButton.classList.add("filter-country__button-hide--modal");
   }
 });
+
+filterCountryButton.addEventListener("click", () => {
+  filterContinentList.classList.add("filter-country__continent-list--closed");
+  catalogTable.classList.add("catalog-table--closed");
+  filterCountryButton.classList.add("filter-country__button-hide--modal");
+  filterCountryToggle.classList.remove("filter-country__toggle--clicked");
+});
+
+for (let i = 0; i < userChoiceButtons.length; i++) {
+  if (i < userChoiceButtons.length - 1) {
+    userChoiceButtons[i].addEventListener("click", () => {
+      userChoiceButtons[i].classList.toggle("user-choice__button--clicked");
+      if (userChoiceFieldsets[i].classList.contains("user-choice__fieldset--closed")) {
+        userChoiceFieldsets[i].classList.remove("user-choice__fieldset--closed");
+      } else {
+        userChoiceFieldsets[i].classList.add("user-choice__fieldset--closed");
+      }
+    });
+  } else {
+    userChoiceButtons[i].addEventListener("click", () => {
+      userChoiceButtons[i].classList.toggle("user-choice__button--clicked");
+      if (userLevelWrapper.classList.contains("user-choice__level-wrapper--closed")) {
+        userLevelWrapper.classList.remove("user-choice__level-wrapper--closed");
+      } else {
+        userLevelWrapper.classList.add("user-choice__level-wrapper--closed");
+      }
+    });
+  }
+}

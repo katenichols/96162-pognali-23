@@ -1,0 +1,133 @@
+.level-graph {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  height: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 281px;
+    margin-top: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 36px;
+  }
+}
+
+.level-graph__general-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 4px;
+
+  background-color: $special-dark-color-fade;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 3px;
+  }
+}
+
+.level-graph__active-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+  width: 150px;
+  height: 2px;
+
+  background-color: $special-dark-color;
+
+  @media (min-width: $tablet-width) {
+    top: 4px;
+
+    width: 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+
+    width: 125px;
+  }
+}
+
+.level-graph__marker {
+  position: absolute;
+  top: -4px;
+
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  background-color: $special-dark-color;
+  border-radius: 50%;
+
+  &--left {
+    left: 67px;
+  }
+
+  &--right {
+    right: 0;
+  }
+
+  &:hover {
+    top: -7px;
+
+    width: 15px;
+    height: 15px;
+
+    cursor: pointer;
+  }
+
+  &--left:hover {
+    left: 64px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -1px;
+
+    width: 13px;
+    height: 13px;
+
+    &--left {
+      left: 100px;
+    }
+
+    &:hover {
+      width: 19px;
+      height: 19px;
+    }
+
+    &--left:hover {
+      top: -4px;
+      left: 98px;
+    }
+
+    &--right:hover {
+      top: -4px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -5px;
+
+    &--left {
+      left: 59px;
+    }
+
+    &:hover {
+      top: -8px;
+    }
+
+    &--left:hover {
+      left: 56px;
+    }
+  }
+}
