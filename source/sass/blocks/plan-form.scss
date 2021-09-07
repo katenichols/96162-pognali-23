@@ -160,7 +160,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 112px;
+    width: 581px;
+    margin-bottom: 56px;
 
     &--second {
       margin-bottom: 56px;
@@ -367,23 +368,23 @@
       padding-left: 33px;
       color: $special-dark-color-fade;
     }
-  }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 33px;
-    right: 33px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 33px;
+      right: 33px;
 
-    width: 14px;
-    height: 14px;
+      width: 14px;
+      height: 14px;
 
-    background-image: url("../../img/icons/icon_arrow-right.svg");
-    background-repeat: no-repeat;
-  }
+      background-image: url("../../img/icons/icon_arrow-right.svg");
+      background-repeat: no-repeat;
+    }
 
-  &:active::before {
-    background-image: url("../../img/icons/icon_arrow-right-active.svg");
+    &:active::before {
+      background-image: url("../../img/icons/icon_arrow-right-active.svg");
+    }
   }
 
   @media (min-width: $desktop-width) {

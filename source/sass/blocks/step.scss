@@ -7,6 +7,12 @@
       position: absolute;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+
+    border-top: 1px solid $profile-border-color;
+  }
 }
 
 .step__input-wrapper {
@@ -40,23 +46,6 @@
       background-color: $profile-border-color;
     }
 
-    &:nth-of-type(2) {
-      margin-bottom: 59px;
-
-      &::after {
-        content: "";
-        position: absolute;
-
-        top: 26px;
-        right: -40px;
-
-        width: 40px;
-        height: 15px;
-
-        background-color: $die-color;
-      }
-    }
-
     &--children {
       position: absolute;
       top: 140px;
@@ -72,28 +61,22 @@
 
   @media (min-width: $desktop-width) {
     width: 478px;
+    margin-top: 25px;
     margin-bottom: 66px;
 
     @include font-group-small($size-20, $line-18);
 
     &::before {
-      top: -56px;
-    }
-
-    &:nth-of-type(2) {
-      margin-bottom: 60px;
-
-      &::after {
-        display: none;
-      }
+      display: none;
     }
 
     &--children {
-      top: -9px;
+      top: 46px;
       right: -2px;
       left: auto;
 
       width: 244px;
+      margin-top: 0;
       margin-bottom: 0;
     }
   }

@@ -82,9 +82,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-
     display: block;
     width: 278px;
     margin-left: 65px;
@@ -215,6 +212,10 @@
   z-index: 50;
 
   height: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -20px;
+  }
 }
 
 .filter-country__continent-list {

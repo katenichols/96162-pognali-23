@@ -46,7 +46,8 @@
     background-color: $special-dark-color;
 
     &-point {
-      border: 2px solid $contrast-color;
+      outline: 2px solid $contrast-color;
+      outline-offset: -1px;
     }
   }
 
@@ -62,7 +63,8 @@
     color: $basic-white;
 
     background-color: $special-dark-color;
-    border: 2px solid $contrast-color;
+    outline: 2px solid $contrast-color;
+    outline-offset: -1px;
     cursor: pointer;
   }
 

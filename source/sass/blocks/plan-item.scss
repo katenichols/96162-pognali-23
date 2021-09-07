@@ -61,6 +61,8 @@
 }
 
 .plan-item__number {
+  color: $special-dark-color;
+
   @media (min-width: $desktop-width) {
     margin-right: 26px;
   }
