@@ -1,7 +1,242 @@
 .catalog-table {
-  display: none;
+  position: absolute;
+  top: 151px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-right: 50px;
+  padding-bottom: 14px;
+  padding-left: 50px;
+
+  background-color: $special-light-light-color;
+  border-collapse: collapse;
+
+  &--nojs {
+    position: relative;
+    top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+
+    padding-top: 61px;
+    padding-bottom: 224px;
+    padding-left: 54px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
+    padding-top: 53px;
+    padding-right: 95px;
+    padding-bottom: 180px;
+    padding-left: 95px;
+
+    background-color: transparent;
+  }
+}
+
+.catalog-table--closed {
+  display: none;
+}
+
+.catalog-table__col-width {
+  width: 45px;
+  height: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 81px;
+
+    &--second {
+      width: 68px;
+    }
+
+    &--third {
+      width: 87px;
+    }
+
+    &--forth {
+      width: 70px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 252px;
+
+    &--second {
+      width: 254px;
+    }
+
+    &--third {
+      width: 252px;
+    }
+
+    &--forth {
+      width: 242px;
+    }
+
+    &--fifth {
+      width: 249px;
+    }
+  }
+}
+
+.catalog-table__cell {
+  text-align: center;
+  padding-top: 13px;
+  padding-right: 16px;
+  padding-bottom: 13px;
+  padding-left: 16px;
+
+  @include font-group-medium($size-14, $line-14);
+  color: $special-dark-color;
+  text-transform: uppercase;
+
+  background-color: $basic-white;
+  border: 1px solid $form-border-color;
+
+  &:hover {
+    border-color: $special-dark-color;
+    cursor: pointer;
+  }
+
+  &:active,
+  &--current {
+    color: $basic-white;
+
+    background-color: $special-dark-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    vertical-align: middle;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 23px;
+    padding-left: 0;
+
+    @include font-group-bold($size-60, $line-60);
+    color: $basic-color-fade;
+
+    background-color: transparent;
+    border: none;
+
+    &:nth-of-type(6n) {
+      padding-bottom: 30px;
+    }
+
+    &:hover {
+      border-color: transparent;
+      cursor: pointer;
+    }
+
+    &:active,
+    &--current {
+      color: $basic-dark;
+
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    vertical-align: baseline;
+    text-align: left;
+    padding-bottom: 0;
+  }
+}
+
+.catalog-table__row--first > .catalog-table__cell,
+.catalog-table__row--second > .catalog-table__cell {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
+  }
+}
+
+.catalog-table__row--third > .catalog-table__cell {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 88px;
+  }
+}
+
+.catalog-table__row--forth > .catalog-table__cell {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 46px;
+  }
+}
+
+.catalog-table__list {
+  position: relative;
+
+  display: none;
+  margin: 0;
+
+  @include font-group($size-16, $line-22);
+  color: $basic-text-color;
+  text-transform: none;
+
+  &--current {
+    position: absolute;
+    top: 220px;
+    left: 0;
+
     display: block;
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 96px;
+    padding-left: 50px;
+    text-align: left;
+
+    background-color: $special-light-light-color;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 61px;
+    right: 95px;
+    left: auto;
+
+    width: auto;
+    padding: 0;
+
+    @include font-group-small($size-20, $line-30);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    right: 0;
+
+    display: block;
+    margin-top: 30px;
+
+    &--current {
+      position: relative;
+      top: 0;
+      right: 0;
+
+      background-color: transparent;
+    }
+
+    &--last {
+      margin-top: 40px;
+    }
+
+    &--right {
+      margin-left: 7px;
+    }
+  }
+}
+
+.catalog-table__list-item {
+  &:hover {
+    color: $special-dark-color;
+  }
+
+  &:active {
+    color: $special-dark-color-fade;
   }
 }

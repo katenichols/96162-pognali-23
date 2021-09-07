@@ -68,11 +68,7 @@
 }
 
 .logo__toggle-modal--nojs {
-  display: block;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+  display: none;
 }
 
 .logo__toggle::before {

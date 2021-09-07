@@ -1,0 +1,522 @@
+.step {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+
+    border-top: 1px solid $profile-border-color;
+  }
+}
+
+.step__input-wrapper {
+  position: relative;
+
+  margin-bottom: 19px;
+
+  @include font-group-medium($size-16, $line-16);
+  text-transform: uppercase;
+
+  &--children {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 109px;
+
+    @include font-group-small($size-22, $line-22);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -23px;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $profile-border-color;
+    }
+
+    &--children {
+      position: absolute;
+      top: 140px;
+      left: 0;
+
+      margin-bottom: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+    margin-top: 25px;
+    margin-bottom: 66px;
+
+    @include font-group-small($size-20, $line-18);
+
+    &::before {
+      display: none;
+    }
+
+    &--children {
+      top: 46px;
+      right: -2px;
+      left: auto;
+
+      width: 244px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.step__input-wrapper-inner {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.step__label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+
+  letter-spacing: 1.5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+
+    letter-spacing: 0;
+  }
+}
+
+.step__desc {
+  color: $special-dark-color-fade;
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 4px;
+    letter-spacing: 1px;
+
+    &--days {
+      margin-right: 0;
+      letter-spacing: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+
+    color: $special-dark-color;
+
+    &--days {
+      margin-right: 11px;
+    }
+  }
+}
+
+.step__label-checkbox {
+  position: relative;
+
+  margin-top: 8px;
+  margin-left: 39px;
+
+  @include font-group-small($size-15, $line-15);
+  text-transform: none;
+  letter-spacing: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -38px;
+
+    width: 26px;
+    height: 26px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid $form-border-color;
+    border-radius: 4px;
+  }
+
+  &:hover::before {
+    border-color: $form-border-color-fade;
+  }
+
+  &:active::before {
+    background-color: $form-border-light-color;
+    border-color: $form-border-light-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--on {
+    &::before {
+      background-image: url("../../img/icons/icon_checkbox-mark-mobile.svg");
+
+      @media (min-width: $tablet-width) {
+        background-image: url("../../img/icons/icon_checkbox-mark-desktop.svg");
+      }
+    }
+  }
+
+  &--on:active::before {
+    background-image: url("../../img/icons/icon_checkbox-mark-mobile-active.svg");
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/icons/icon_checkbox-mark-desktop-active.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+
+    @include font-group-small($size-20, $line-20);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &::before {
+      left: -58px;
+
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 2px;
+  }
+}
+
+.step__input {
+  width: 100%;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 10px;
+
+  @include font-group-medium($size-15, $line-14);
+  border: 1px solid $form-border-color;
+  border-radius: 4px;
+
+  &:hover {
+    border-color: $form-border-color-fade;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $special-dark-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 21px;
+    padding-bottom: 23px;
+
+    @include font-group-small($size-20, $line-20);
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -43px;
+    left: 221px;
+
+    width: 180px;
+    height: 70px;
+  }
+}
+
+.step__button-count-wrapper {
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    top: -43px;
+    left: 221px;
+
+    width: 180px;
+    height: 70px;
+  }
+}
+
+.step__button-count {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 14px;
+    height: 14px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--minus::before {
+    top: 15px;
+    left: 15px;
+
+    background-image: url("../../img/icons/icon_minus-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+      left: 22px;
+
+      background-image: url("../../img/icons/icon_minus-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 20px;
+    }
+  }
+
+  &--minus:hover::before {
+    background-image: url("../../img/icons/icon_minus-mobile-hover.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_minus-tablet-hover.svg");
+    }
+  }
+
+  &--minus:active::before {
+    background-image: url("../../img/icons/icon_minus-mobile-active.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_minus-tablet-active.svg");
+    }
+  }
+
+  &--plus::before {
+    top: 15px;
+    right: 14px;
+
+    background-image: url("../../img/icons/icon_plus-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+      right: 23px;
+
+      background-image: url("../../img/icons/icon_plus-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 20px;
+    }
+  }
+
+  &--plus:hover::before {
+    background-image: url("../../img/icons/icon_plus-mobile-hover.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_plus-tablet-hover.svg");
+    }
+  }
+
+  &--plus:active::before {
+    background-image: url("../../img/icons/icon_plus-mobile-active.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_plus-tablet-active.svg");
+    }
+  }
+}
+
+.step__input:focus + .step__button-count-wrapper.step__button-count {
+  &--minus::before {
+    background-image: url("../../img/icons/icon_minus-mobile-focus.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_minus-tablet-focus.svg");
+    }
+  }
+
+  &--plus::before {
+    background-image: url("../../img/icons/icon_plus-mobile-focus.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_plus-tablet-focus.svg");
+    }
+  }
+}
+
+.step__calendar-month-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  @include font-group-bold($size-20, $line-20);
+  color: $special-dark-color;
+
+  border-top: 1px solid $form-calendar-border;
+  border-bottom: 1px solid $form-calendar-border;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    @include font-group-small($size-36, $line-36);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-bottom: 24px;
+  }
+}
+
+.step__calendar-month-button {
+  position: relative;
+
+  width: 13px;
+  height: 23px;
+
+  color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 9px;
+    height: 19px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover::before {
+    cursor: pointer;
+  }
+
+  &--left::before {
+    top: 3px;
+    left: 2px;
+
+    background-image: url("../../img/icons/icon_month-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 18px;
+
+      background-image: url("../../img/icons/icon_month-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+
+      background-image: url("../../img/icons/icon_month-desktop.svg");
+    }
+  }
+
+  &--left:hover::before {
+    background-image: url("../../img/icons/icon_month-mobile-hover.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_month-tablet-hover.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_month-desktop-hover.svg");
+    }
+  }
+
+  &--left:active::before {
+    background-image: url("../../img/icons/icon_month-mobile-active.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_month-tablet-active.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_month-desktop-active.svg");
+    }
+  }
+
+  &--right::before {
+    top: 3px;
+    right: 0;
+
+    background-image: url("../../img/icons/icon_month-mobile.svg");
+    transform: scale(-1);
+
+    @media (min-width: $tablet-width) {
+      right: 17px;
+
+      background-image: url("../../img/icons/icon_month-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 0;
+
+      background-image: url("../../img/icons/icon_month-desktop.svg");
+    }
+  }
+
+  &--right:hover::before {
+    background-image: url("../../img/icons/icon_month-mobile-hover.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_month-tablet-hover.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/icons/icon_month-desktop-hover.svg");
+    }
+  }
+
+  &--right:active::before {
+    background-image: url("../../img/icons/icon_month-mobile-active.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/icons/icon_month-tablet-active.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/icons/icon_month-desktop-active.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+
+    &::before {
+      width: 19px;
+      height: 34px;
+    }
+  }
+}

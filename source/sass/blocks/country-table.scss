@@ -1,0 +1,71 @@
+.country-table {
+  width: 220px;
+
+  border-collapse: collapse;
+
+  @include font-group-medium($size-14, $line-18);
+  color: $special-dark-color;
+
+  @media (min-width: $tablet-width) {
+    width: 262px;
+    margin-top: 35px;
+    margin-right: 80px;
+    margin-bottom: 33px;
+    margin-left: 27px;
+
+    @include font-group-small($size-20, $line-20);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 84px;
+    margin-bottom: 24px;
+    margin-left: 10px;
+
+    border-collapse: separate;
+    border-spacing: 16px 14px;
+  }
+}
+
+.country-table__cell {
+  width: 20%;
+  height: 41px;
+  text-align: center;
+
+  border: 1px solid $form-border-color;
+
+  &:hover {
+    outline: 1px solid $form-border-color-fade;
+    outline-offset: -1px;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $basic-white;
+    background-color: $special-dark-color;
+    border-color: $special-dark-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 70px;
+
+    border-radius: 4px;
+  }
+}
+
+.country-table__cell--checked {
+  background-color: $body-background;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-white;
+
+    background-color: $special-dark-color;
+  }
+}

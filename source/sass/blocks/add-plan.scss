@@ -3,20 +3,27 @@
   z-index: 30;
 
   margin-top: -29px;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-right: 0;
-  padding-bottom: 72px;
+  padding-bottom: 73px;
   padding-left: 0;
 
   background-color: $special-color;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 57px;
+    padding-top: 50px;
+    padding-bottom: 123px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -53px;
-    padding-top: 54px;
+    padding-top: 52px;
+    padding-bottom: 134px;
+
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
   }
 }
 
@@ -25,19 +32,146 @@
   justify-content: space-between;
 
   @media (min-width: $desktop-width) {
-    padding-left: 69px;
+    padding-left: 70px;
   }
 }
 
 .add-plan__title {
   margin-top: 0;
+  margin-bottom: 31px;
+
+  @include font-group-bold($size-24, $line-24);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+    margin-left: -1px;
+
+    @include font-group-small($size-36, $line-36);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .add-plan__markers {
+  position: absolute;
+  top: -55px;
+  right: -24px;
+
   display: flex;
   margin: 0;
+  padding-left: 0;
+
+  &--step2,
+  &--step3 {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -95px;
+    right: -75px;
+  }
 
   @media (min-width: $desktop-width) {
+    top: 106px;
+    right: 207px;
+
     flex-direction: column;
+    justify-content: space-between;
+    height: 111px;
+
+    @include font-group($size-20, $line-24);
+    color: $basic-black-halffade;
+    text-transform: uppercase;
+
+    &--step2,
+    &--step3 {
+      display: flex;
+    }
+  }
+}
+
+.add-plan__markers-item {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 85px;
+    z-index: 20;
+
+    display: block;
+    width: 5px;
+    height: 5px;
+
+    background-color: $special-dark-color;
+    border-radius: 50%;
+    opacity: 1;
+
+    @media (min-width: $tablet-width) {
+      top: 16px;
+      right: 143px;
+
+      width: 6px;
+      height: 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 7px;
+      right: auto;
+      left: -41px;
+
+      background-color: $special-dark-color-fade;
+    }
+  }
+
+  &--second::before {
+    right: 63px;
+
+    background-color: $special-dark-color-fade;
+
+    @media (min-width: $tablet-width) {
+      right: 108px;
+    }
+  }
+
+  &--third::before {
+    right: 42px;
+
+    background-color: $special-dark-color-fade;
+
+    @media (min-width: $tablet-width) {
+      right: 73px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &--current {
+      color: $basic-black;
+
+      &::before {
+        background-color: $special-dark-color;
+      }
+    }
+  }
+}
+
+.add-plans__markers-text {
+  position: relative;
+
+  display: block;
+  width: 0;
+  height: 0;
+  opacity: 0;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+    opacity: 1;
+
+    font-weight: 400;
+    letter-spacing: 2px;
   }
 }

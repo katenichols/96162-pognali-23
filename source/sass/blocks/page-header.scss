@@ -1,16 +1,17 @@
 .page-header {
   position: relative;
-  z-index: 100;
+  z-index: 200;
 
   margin: 0;
   padding-top: 0;
   padding-right: 0;
-  padding-bottom: 51px;
+  padding-bottom: 52px;
   padding-left: 0;
 
   color: $basic-white;
 
   background-color: $basic-color;
+
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
@@ -19,8 +20,13 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
-    padding-bottom: 7px;
+    padding-bottom: 0;
   }
+}
+
+.page-header--form,
+.page-header--catalog {
+  background-color: $alt-background;
 }
 
 .page-header--nojs {
@@ -31,9 +37,11 @@
   }
 }
 
-.page-header--modif {
+.page-header--catalog {
+  padding-bottom: 53px;
+
   @media (min-width: $tablet-width) {
-    padding-bottom: 134px;
+    padding-bottom: 126px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,11 +152,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -3px;
+    margin-right: 1px;
     margin-left: 0;
     padding-top: 14px;
     padding-right: 28px;
     padding-bottom: 16px;
-    padding-left: 29px;
+    padding-left: 30px;
 
     font-size: 20px;
   }
@@ -160,5 +169,13 @@
 
   &:active {
     color: $basic-color-fade;
+  }
+}
+
+.page-header__contacts-link-signin--form {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
