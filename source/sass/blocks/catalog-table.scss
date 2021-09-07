@@ -43,10 +43,6 @@
 
 .catalog-table--closed {
   display: none;
-
-  @media (min-width: $desktop-width) {
-    // display: block;
-  }
 }
 
 .catalog-table__col-width {

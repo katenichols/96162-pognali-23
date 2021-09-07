@@ -36,7 +36,6 @@
     &::before {
       top: 89px;
       right: 216px;
-
     }
   }
 }
@@ -126,6 +125,10 @@
       height: 47px;
     }
 
+    &--first {
+      letter-spacing: 0;
+    }
+
     &--first::before {
       background-image: url("../../img/flag-bosnia-tablet.jpg");
     }
@@ -199,7 +202,7 @@
     width: 730px;
     height: 142px;
     margin-left: 0;
-    padding-top: 24px;
+    padding-top: 22px;
     padding-right: 20px;
     padding-bottom: 24px;
     padding-left: 24px;

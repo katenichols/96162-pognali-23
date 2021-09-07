@@ -472,12 +472,7 @@
             <h2 class="user-choice__title">Подберите идеального попутчика</h2>
             <div class="user-choice__field">
               <div class="user-choice__field-wrapper">
-                <div class="user-choice__field-wrapper-inner">
-                  <span class="user-choice__field-title">Хобби:</span>
-                  <button class="user-choice__button" type="button">
-                    <span class="visually-hidden">Развернуть фильтр</span>
-                  </button>
-                </div>
+                <span class="user-choice__field-title">Хобби:</span>
                 <fieldset class="user-choice__fieldset user-choice__fieldset--closed">
                   <legend class="visually-hidden"></legend>
                   <input class="visually-hidden user-choice__checkbox" type="checkbox" id="gym" name="gym" checked>
@@ -489,12 +484,7 @@
                 </fieldset>
               </div>
               <div class="user-choice__field-wrapper">
-                <div class="user-choice__field-wrapper-inner">
-                  <span class="user-choice__field-title">Музыка:</span>
-                  <button class="user-choice__button" type="button">
-                    <span class="visually-hidden">Развернуть фильтр</span>
-                  </button>
-                </div>
+                <span class="user-choice__field-title">Музыка:</span>
                 <fieldset class="user-choice__fieldset user-choice__fieldset--closed">
                   <legend class="visually-hidden"></legend>
                   <input class="visually-hidden user-choice__checkbox" type="checkbox" id="rock" name="rock" checked>
@@ -506,12 +496,7 @@
                 </fieldset>
               </div>
               <div class="user-choice__field-wrapper">
-                <div class="user-choice__field-wrapper-inner">
-                  <span class="user-choice__field-title">Еда:</span>
-                  <button class="user-choice__button" type="button">
-                    <span class="visually-hidden">Развернуть фильтр</span>
-                  </button>
-                </div>
+                <span class="user-choice__field-title">Еда:</span>
                 <fieldset class="user-choice__fieldset user-choice__fieldset--closed">
                   <legend class="visually-hidden"></legend>
                   <input class="visually-hidden user-choice__checkbox" type="checkbox" id="meet" name="meet" checked>
@@ -523,12 +508,7 @@
                 </fieldset>
               </div>
               <div class="user-choice__field-wrapper">
-                <div class="user-choice__field-wrapper-inner">
-                  <span class="user-choice__field-title user-choice__field-title--transport">Транспорт:</span>
-                  <button class="user-choice__button" type="button">
-                    <span class="visually-hidden">Развернуть фильтр</span>
-                  </button>
-                </div>
+                <span class="user-choice__field-title user-choice__field-title--transport">Транспорт:</span>
                 <fieldset class="user-choice__fieldset user-choice__fieldset--transport user-choice__fieldset--closed">
                   <legend class="visually-hidden"></legend>
                   <input class="visually-hidden user-choice__checkbox-transport" type="checkbox" id="plane" name="plane"
@@ -553,12 +533,7 @@
                 </fieldset>
               </div>
               <div class="user-choice__field-wrapper">
-                <div class="user-choice__field-wrapper-inner user-choice__field-wrapper-inner--level">
-                  <span class="user-choice__field-title user-choice__field-title--level">Левел:</span>
-                  <button class="user-choice__button" type="button">
-                    <span class="visually-hidden">Развернуть фильтр</span>
-                  </button>
-                </div>
+                <span class="user-choice__field-title user-choice__field-title--level">Левел:</span>
                 <div class="user-choice__level-wrapper user-choice__level-wrapper--closed">
                   <div class="user-choice__level-range level-range">
                     <input class="level-range__input level-range__input--min" type="text" id="level-min"
@@ -624,7 +599,7 @@
                 </li>
               </ul>
             </div>
-            <div class="user-card__level">
+            <div class="user-card__level user-card__level--first">
               <span class="user-card__label user-card__label--level">Левел:</span>
               <span class="user-card__number-level">99</span>
               <span class="user-card__text-level">level</span>
@@ -632,16 +607,16 @@
           </div>
           <div class="user-card__link-wrapper">
             <a class="filter-country__button user-card__link" href="">Позвать!</a>
-            <span class="user-card__likes">1,5 M</span>
+            <span class="user-card__likes user-card__likes--hot">1,5 M</span>
           </div>
         </article>
 
         <article class="user-call__card user-card">
-          <div class="user-card__name-wrapper">
+          <div class="user-card__name-wrapper user-card__name-wrapper--second">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/user-catalog-desktop2.jpg">
               <source media="(min-width: 768px)" srcset="img/user-catalog-tablet2.jpg">
-              <img class="user-card__photo" src="img/user-catalog-mobile2.jpg" width="70" height="70"
+              <img class="user-card__photo user-card__photo--second" src="img/user-catalog-mobile2.jpg" width="70" height="70"
                 alt="Фото попутчика">
             </picture>
             <h3 class="user-card__title">Петя <br class="user-card__br">Демин</h3>
@@ -649,7 +624,7 @@
           <span class="user-card__tags">#бургер #бар #футбол #концерт #крафт</span>
           <div class="user-card__country-wrapper">
             <span class="user-card__label">Хочет посетить:</span>
-            <ul class="user-card__country-list">
+            <ul class="user-card__country-list user-card__country-list--second">
               <li class="user-card__country-item user-card__country-item--belgium">Бельгия</li>
               <li class="user-card__country-item user-card__country-item--czech">Чехия</li>
             </ul>
@@ -675,7 +650,7 @@
                 </li>
               </ul>
             </div>
-            <div class="user-card__level">
+            <div class="user-card__level user-card__level--second">
               <span class="user-card__label  user-card__label--level">Левел:</span>
               <span class="user-card__number-level">80</span>
               <span class="user-card__text-level">level</span>
@@ -726,8 +701,8 @@
                 </li>
               </ul>
             </div>
-            <div class="user-card__level">
-              <span class="user-card__label user-card__label--level">Левел:</span>3
+            <div class="user-card__level user-card__level--third">
+              <span class="user-card__label user-card__label--level">Левел:</span>
               <span class="user-card__number-level">25</span>
               <span class="user-card__text-level">level</span>
             </div>
@@ -751,7 +726,7 @@
           <span class="user-card__tags">#образование #карьера #учеба #линкедин</span>
           <div class="user-card__country-wrapper">
             <span class="user-card__label">Хочет посетить:</span>
-            <ul class="user-card__country-list">
+            <ul class="user-card__country-list user-card__country-list--fourth">
               <li class="user-card__country-item user-card__country-item--uk">Великобритания</li>
               <li class="user-card__country-item user-card__country-item--germany">Германия</li>
             </ul>
@@ -776,8 +751,8 @@
                 </li>
               </ul>
             </div>
-            <div class="user-card__level">
-              <span class="user-card__label user-card__label--level">Левел:</span>3
+            <div class="user-card__level user-card__level--forth">
+              <span class="user-card__label user-card__label--level">Левел:</span>
               <span class="user-card__number-level">50</span>
               <span class="user-card__text-level">level</span>
             </div>
@@ -795,8 +770,14 @@
             <li class="user-call__pagination-item">3</li>
             <li class="user-call__pagination-item">4</li>
           </ul>
-          <button class="user-call__pagination-button user-call__pagination-button--prev">Назад</button>
-          <button class="user-call__pagination-button user-call__pagination-button--next">Вперед</button>
+          <div class="user-call__pagination-wrapper">
+            <button class="user-call__pagination-button user-call__pagination-button--prev">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="user-call__pagination-button user-call__pagination-button--next">
+              <span class="visually-hidden">Вперед</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>

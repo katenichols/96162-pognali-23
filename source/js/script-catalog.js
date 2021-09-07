@@ -11,7 +11,7 @@ const catalogTable = document.querySelector(".catalog-table");
 const filterCountryButton = document.querySelector(
   ".filter-country__button-hide"
 );
-const userChoiceButtons = document.querySelectorAll(".user-choice__button");
+const userChoiceFieldTitle = document.querySelectorAll(".user-choice__field-title");
 const userChoiceFieldsets = document.querySelectorAll(".user-choice__fieldset");
 const userLevelWrapper = document.querySelector(".user-choice__level-wrapper");
 
@@ -71,10 +71,10 @@ filterCountryButton.addEventListener("click", () => {
   filterCountryToggle.classList.remove("filter-country__toggle--clicked");
 });
 
-for (let i = 0; i < userChoiceButtons.length; i++) {
-  if (i < userChoiceButtons.length - 1) {
-    userChoiceButtons[i].addEventListener("click", () => {
-      userChoiceButtons[i].classList.toggle("user-choice__button--clicked");
+for (let i = 0; i < userChoiceFieldTitle.length; i++) {
+  if (i < userChoiceFieldTitle.length - 1) {
+    userChoiceFieldTitle[i].addEventListener("click", () => {
+      userChoiceFieldTitle[i].classList.toggle("user-choice__field-title--clicked");
       if (userChoiceFieldsets[i].classList.contains("user-choice__fieldset--closed")) {
         userChoiceFieldsets[i].classList.remove("user-choice__fieldset--closed");
       } else {
@@ -82,8 +82,8 @@ for (let i = 0; i < userChoiceButtons.length; i++) {
       }
     });
   } else {
-    userChoiceButtons[i].addEventListener("click", () => {
-      userChoiceButtons[i].classList.toggle("user-choice__button--clicked");
+    userChoiceFieldTitle[i].addEventListener("click", () => {
+      userChoiceFieldTitle[i].classList.toggle("user-choice__field-title--clicked");
       if (userLevelWrapper.classList.contains("user-choice__level-wrapper--closed")) {
         userLevelWrapper.classList.remove("user-choice__level-wrapper--closed");
       } else {

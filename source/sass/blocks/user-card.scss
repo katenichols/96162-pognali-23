@@ -8,6 +8,14 @@
   background-color: $basic-white;
   border-radius: 20px;
 
+  &:nth-of-type(2) {
+    padding-top: 12px;
+  }
+
+  &:nth-of-type(4) {
+    margin-bottom: 18px;
+  }
+
   &:hover {
     box-shadow: 0 4px 9px rgba(0, 0, 0, 0.16);
   }
@@ -17,6 +25,14 @@
     margin-bottom: 40px;
     padding-top: 31px;
     padding-bottom: 26px;
+
+    &:nth-of-type(2) {
+      padding-top: 31px;
+    }
+
+    &:nth-of-type(4) {
+      margin-bottom: 49px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +43,14 @@
     padding-right: 43px;
     padding-bottom: 42px;
     padding-left: 0;
+
+    &:nth-of-type(2) {
+      padding-top: 0;
+    }
+
+    &:nth-of-type(4) {
+      margin-bottom: 64px;
+    }
   }
 }
 
@@ -35,6 +59,10 @@
   display: flex;
   margin-bottom: 7px;
   margin-left: 18px;
+
+  &--second {
+    margin-bottom: 8px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -52,6 +80,10 @@
   margin-top: 2px;
 
   border-radius: 50%;
+
+  &--second {
+    margin-top: 3px;
+  }
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -177,6 +209,7 @@
 
   @media (min-width: $tablet-width) {
     width: 226px;
+    margin-bottom: 47px;
     margin-left: 261px;
 
     @include font-group-small($size-20, $line-23);
@@ -184,6 +217,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
     margin-left: 347px;
   }
 }
@@ -249,13 +283,21 @@
 }
 
 .user-card__country-list {
-  margin-top: 29px;
+  margin-top: 28px;
   margin-bottom: 20px;
   padding-left: 65px;
 
   @include font-group-medium($size-15, $line-16);
   color: $special-dark-color;
   text-transform: uppercase;
+
+  &--second {
+    margin-bottom: 24px;
+  }
+
+  &--fourth {
+    margin-bottom: 26px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -436,6 +478,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 22px;
+
   border-top: 1px solid $body-background;
 
   @media (min-width: $tablet-width) {
@@ -450,10 +494,11 @@
 
   @media (min-width: $desktop-width) {
     top: auto;
-    right: 43px;
-    bottom: 42px;
-    flex-direction: row;
+    right: 42px;
+    bottom: 55px;
 
+    flex-direction: row;
+    margin-bottom: 0;
   }
 }
 
@@ -467,8 +512,7 @@
     flex-direction: column;
     width: 32px;
     margin-top: 32px;
-    margin-right: 39px;
-    margin-bottom: 12px;
+    margin-left: 12px;
     padding-left: 0;
   }
 
@@ -583,8 +627,6 @@
     height: 45px;
 
     border-top: 3px solid $dark-invert-color;
-    border-right: 3px solid $dark-invert-color;
-    border-bottom: 3px solid $dark-invert-color;
     border-left: 3px solid transparent;
     border-radius: 50%;
     transform: rotate(45deg);
@@ -600,30 +642,254 @@
     height: 45px;
 
     border-top: 3px solid transparent;
+    border-radius: 50%;
+  }
+
+  &--first::after,
+  &--second::after {
+    border-right: 3px solid $dark-invert-color;
+    border-bottom: 3px solid $dark-invert-color;
+  }
+
+  &--first::before {
+    border-left: 3px solid $dark-invert-color;
+    transform: rotate(38deg);
+  }
+
+  &--second::before {
+    border-left: 3px solid $dark-invert-color;
+    transform: rotate(-25deg);
+  }
+
+  &--third::after {
     border-right: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    border-radius: 50%;
+  }
+
+  &--third::before {
+    border-left: 3px solid transparent;
+  }
+
+  &--forth::after {
+    border-right: 3px solid $dark-invert-color;
+    border-bottom: 3px solid transparent;
   }
 
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
+
+    margin-top: 0;
+    margin-right: 24px;
+    padding-top: 16px;
+
+    &::after,
+    &::before {
+      top: 2px;
+      left: -3px;
+
+      width: 64px;
+      height: 64px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 10px;
+    margin-right: 0;
+    margin-left: 50px;
+    padding-top: 29px;
+
+    &::after,
+    &::before {
+      top: 16px;
+    }
   }
 }
 
 .user-card__number-level {
   @include font-group-bold($size-24, $line-24);
   color: $special-dark-color;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 1px;
+  }
 }
 
 .user-card__text-level {
   display: none;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     display: block;
+    margin-right: 1px;
+
+    @include font-group($size-14, $line-14);
+    color: $basic-black-fade;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 13px;
+
+      display: block;
+      width: 32px;
+      height: 1px;
+
+      background-color: $basic-black-fullfade;
+    }
+  }
+}
+
+.user-card__link-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: flex;
+    width: 260px;
+    margin-left: 254px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 339px;
+  }
+}
+
+.user-card__link {
+  display: block;
+  width: calc(100% - 40px);
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 13px;
+  text-align: center;
+
+  @include font-group-bold($size-17, $line-17);
+  color: $basic-dark;
+  text-transform: uppercase;
+
+  background-color: $light-invert-color;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: $invert-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $basic-dark-fade;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    height: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 16px;
+
+    @include font-group-small($size-20, $line-20);
+  }
+}
+
+.user-card__likes {
+  position: absolute;
+  top: 63px;
+  left: 104px;
+
+  @include font-group-bold($size-14, $line-16);
+  color: $basic-dark;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -36px;
+
+    width: 31px;
+    height: 31px;
+
+    background-image: url("../../img/icons/icon_heart-off-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $special-light-light-color;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    background-image: url("../../img/icons/icon_heart-off-mobile-hover.svg");
+  }
+
+  &:active::before {
+    background-image: url("../../img/icons/icon_heart-off-mobile-active.svg");
+  }
+
+  &--hot::before {
+    background-image: url("../../img/icons/icon_heart-on-mobile.svg");
+    background-color: $heart-background;
+  }
+
+  &--hot:hover::before {
+    background-image: url("../../img/icons/icon_heart-on-mobile.svg");
+    background-color: $heart-background-hover;
+  }
+
+  &--hot:active::before {
+    background-image: url("../../img/icons/icon_heart-on-mobile-active.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    margin-left: 57px;
+    padding-top: 15px;
+
+    @include font-group-small($size-20, $line-20);
+
+    &::before {
+      top: 0;
+      left: -56px;
+
+      width: 50px;
+      height: 50px;
+
+      background-image: url("../../img/icons/icon_heart-off-tablet.svg");
+    }
+
+    &:hover::before {
+      background-image: url("../../img/icons/icon_heart-off-tablet-hover.svg");
+    }
+
+    &:active::before {
+      background-image: url("../../img/icons/icon_heart-off-tablet-active.svg");
+    }
+
+    &--hot::before {
+      background-image: url("../../img/icons/icon_heart-on-tablet.svg");
+      background-color: $heart-background;
+    }
+
+    &--hot:hover::before {
+      background-image: url("../../img/icons/icon_heart-on-tablet.svg");
+      background-color: $heart-background-hover;
+    }
+
+    &--hot:active::before {
+      background-image: url("../../img/icons/icon_heart-on-tablet-active.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+
+    &::before {
+      left: -57px;
+    }
   }
 }
