@@ -10,6 +10,10 @@
   background-position: center center;
   background-attachment: scroll;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/global-back-desktop@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 66px;
   }
@@ -71,12 +75,20 @@
 
   background-image: url("../../img/traveler-mobile.png");
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/traveler-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     width: 372px;
     height: 451px;
     margin-right: 111px;
 
     background-image: url("../../img/traveler-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/traveler-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -86,6 +98,10 @@
     margin-left: 82px;
 
     background-image: url("../../img/traveler-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/traveler-desktop@2x.png");
+    }
   }
 }
 

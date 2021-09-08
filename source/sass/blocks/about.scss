@@ -14,6 +14,10 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/about-back-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 37px;
     padding-bottom: 89px;
@@ -23,6 +27,10 @@
     background-position-x: 40px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/about-back-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +59,10 @@
     padding-left: 70px;
 
     background-image: url("../../img/about-back-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/about-back-desktop@2x.png");
+    }
   }
 }
 

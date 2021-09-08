@@ -236,6 +236,29 @@
   }
 }
 
+@media (min-resolution: 2dppx) {
+  .user-block__countries-flag--srilanka {
+    background-image: url("../../img/user-flag-srilanka-mobile@2x.jpg");
+  }
+
+  .user-block__countries-flag--thailand {
+    background-image: url("../../img/user-flag-thailand-mobile@2x.jpg");
+  }
+
+  .user-block__countries-flag--seychelles {
+    background-image: url("../../img/user-flag-seychelles-mobile@2x.jpg");
+  }
+
+  .user-block__countries-flag--belgium {
+    background-image: url("../../img/user-flag-belgium-mobile@2x.jpg");
+  }
+
+  .user-block__countries-flag--czech {
+    background-image: url("../../img/user-flag-czech-mobile@2x.jpg");
+  }
+}
+
+
 .user-block__title {
   position: relative;
 
