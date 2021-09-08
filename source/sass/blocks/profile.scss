@@ -40,6 +40,10 @@
 
     background-image: url("../../img/profile-rates-mobile.png");
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/profile-rates-mobile@2x.png");
+    }
+
     @media (min-width: $tablet-width) {
       top: 470px;
       right: 85px;
@@ -53,6 +57,10 @@
       height: 198px;
 
       background-image: url("../../img/profile-rates-desktop.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/profile-rates-desktop@2x.png");
+      }
     }
   }
 }

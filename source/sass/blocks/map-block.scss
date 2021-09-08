@@ -9,6 +9,10 @@
   background-size: cover;
   background-position: top 90px center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/map@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: -60px;
   }

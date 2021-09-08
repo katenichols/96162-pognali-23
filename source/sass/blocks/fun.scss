@@ -96,6 +96,16 @@
     background-image: url("../../img/flag-czech-mobile.png");
   }
 
+  @media (min-resolution: 2dppx) {
+    &--first::before {
+      background-image: url("../../img/flag-bosnia-mobile@2x.jpg");
+    }
+
+    &--last::before {
+      background-image: url("../../img/flag-czech-mobile@2x.png");
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -135,6 +145,16 @@
 
     &--last::before {
       background-image: url("../../img/flag-czech-tablet.png");
+    }
+
+    @media (min-resolution: 2dppx) {
+      &--first::before {
+        background-image: url("../../img/flag-bosnia-tablet@2x.jpg");
+      }
+
+      &--last::before {
+        background-image: url("../../img/flag-czech-tablet@2x.png");
+      }
     }
 
     &::after {

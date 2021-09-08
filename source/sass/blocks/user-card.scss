@@ -377,6 +377,48 @@
     background-image: url("../../img/user-flag-germany-mobile.jpg");
   }
 
+  @media (min-resolution: 2dppx) {
+    &--srilanka::before {
+      background-image: url("../../img/user-flag-srilanka-mobile1@2x.jpg");
+    }
+
+    &--thailand::before {
+      background-image: url("../../img/user-flag-thailand-mobile1@2x.jpg");
+    }
+
+    &--seychelles::before {
+      background-image: url("../../img/user-flag-seychelles-mobile1@2x.jpg");
+    }
+
+    &--belgium::before {
+      background-image: url("../../img/user-flag-belgium-mobile1@2x.jpg");
+    }
+
+    &--czech::before {
+      background-image: url("../../img/user-flag-czech-mobile1@2x.jpg");
+    }
+
+    &--usa::before {
+      background-image: url("../../img/user-flag-usa-mobile@2x.jpg");
+    }
+
+    &--australia::before {
+      background-image: url("../../img/user-flag-australia-mobile@2x.jpg");
+    }
+
+    &--dominica::before {
+      background-image: url("../../img/user-flag-dominica-mobile@2x.jpg");
+    }
+
+    &--uk::before {
+      background-image: url("../../img/user-flag-england-mobile@2x.jpg");
+    }
+
+    &--germany::before {
+      background-image: url("../../img/user-flag-germany-mobile@2x.jpg");
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 74px;
     margin-bottom: 0;
@@ -451,6 +493,59 @@
     &--germany::before {
       left: -48px;
       background-image: url("../../img/user-flag-germany-tablet.jpg");
+    }
+
+    @media (min-resolution: 2dppx) {
+      &--srilanka::before {
+        background-image: url("../../img/user-flag-srilanka-mobile@2x.jpg");
+      }
+
+      &--thailand::before {
+        left: -47px;
+        background-image: url("../../img/user-flag-thailand-mobile@2x.jpg");
+      }
+
+      &--seychelles::before {
+        left: -47px;
+        background-image: url("../../img/user-flag-seychelles-mobile@2x.jpg");
+      }
+
+
+      &--belgium::before {
+        left: -46px;
+        background-image: url("../../img/user-flag-belgium-mobile@2x.jpg");
+      }
+
+      &--czech::before {
+        background-image: url("../../img/user-flag-czech-mobile@2x.jpg");
+      }
+
+
+      &--usa::before {
+        left: -46px;
+        background-image: url("../../img/user-flag-usa-tablet@2x.jpg");
+      }
+
+
+      &--australia::before {
+        left: -46px;
+        background-image: url("../../img/user-flag-australia-tablet@2x.jpg");
+      }
+
+      &--dominica::before {
+        left: -46px;
+        background-image: url("../../img/user-flag-dominica-tablet@2x.jpg");
+      }
+
+      &--uk::before {
+        left: -46px;
+        background-image: url("../../img/user-flag-england-tablet@2x.jpg");
+      }
+
+      &--germany::before {
+        left: -48px;
+        background-image: url("../../img/user-flag-germany-tablet@2x.jpg");
+      }
     }
   }
 
