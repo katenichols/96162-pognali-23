@@ -1,14 +1,19 @@
-let pageHeader = document.querySelector(".page-header");
-let logoWrapper = document.querySelector(".logo-wrapper");
-let modalMenu = document.querySelector(".modal-menu");
-let logoToggle = document.querySelector(".logo__toggle");
-let logoToggleModal = document.querySelector(".logo__toggle-modal");
-let profileModal = document.querySelector(".profile__modal");
-let profileButton = document.querySelector(".profile__button");
-let profileButtonModal = document.querySelector(".profile__modal-button");
-let feedbackForm = document.querySelector(".feedback__form");
-let feedbackInput = feedbackForm.querySelector(".feedback__input");
-let feedbackButton = document.querySelector(".feedback__button");
+const pageHeader = document.querySelector(".page-header");
+const pageHeaderContacts = document.querySelector(".page-header__contacts");
+const logoWrapper = document.querySelector(".logo-wrapper");
+const logoWrapperModal = document.querySelector(".logo-wrapper--modal");
+const logo = document.querySelector(".logo");
+const logoScroll = document.querySelector(".logo-scroll");
+const modalMenu = document.querySelector(".modal-menu");
+const logoToggle = document.querySelector(".logo__toggle");
+const navLink = document.querySelector(".modal-menu__nav-link");
+const logoToggleModal = document.querySelector(".logo__toggle-modal");
+const profileModal = document.querySelector(".profile__modal");
+const profileButton = document.querySelector(".profile__button");
+const profileButtonModal = document.querySelector(".profile__modal-button");
+const feedbackForm = document.querySelector(".feedback__form");
+const feedbackInput = feedbackForm.querySelector(".feedback__input");
+const feedbackButton = document.querySelector(".feedback__button");
 
 pageHeader.classList.remove("page-header--nojs");
 logoWrapper.classList.remove("logo-wrapper--nojs");
@@ -46,9 +51,9 @@ profileButtonModal.addEventListener("click", () => {
 });
 
 feedbackForm.addEventListener("submit", (evt) => {
-  let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+  let reg = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
 
-  if (re.test(feedbackInput.value) === false) {
+  if (reg.test(feedbackInput.value) === false) {
     evt.preventDefault();
     feedbackInput.placeholder = "Введите email";
     feedbackInput.value = "";
@@ -63,16 +68,26 @@ feedbackInput.addEventListener("click", () => {
   }
 });
 
-// function initMap() {
-//   let coordinates = { lat: 59.938635, lng: 30.323118 },
-//     map = new google.maps.Map(document.querySelector("map-block__map"), {
-//       center: coordinates,
-//     }),
-//     image = "../img/icons/icon_baloon.svg",
-//     marker = new google.maps.Marker({
-//       position: coordinates,
-//       map: map,
-//       icon: image,
-//       animation: google.maps.Animation.BOUNCE,
-//     });
-// }
+window.addEventListener("scroll", () => {
+  let scrolled = window.scrollY;
+
+  if (scrolled >= 200) {
+    pageHeader.classList.add("page-header--scroll");
+    pageHeaderContacts.classList.add("page-header__contacts--scroll");
+    logo.classList.add("logo--noscroll");
+    logoScroll.classList.remove("logo-scroll--hide");
+    logoToggle.classList.add("logo__toggle--scroll");
+    logoWrapper.classList.add("logo-wrapper--scroll");
+    logoWrapperModal.classList.add("logo-wrapper--scroll");
+    modalMenu.classList.add("modal-menu--scroll");
+  } else if (scrolled < 200) {
+    pageHeader.classList.remove("page-header--scroll");
+    pageHeaderContacts.classList.remove("page-header__contacts--scroll");
+    logo.classList.remove("logo--noscroll");
+    logoScroll.classList.add("logo-scroll--hide");
+    logoToggle.classList.remove("logo__toggle--scroll");
+    logoWrapper.classList.remove("logo-wrapper--scroll");
+    logoWrapperModal.classList.remove("logo-wrapper--scroll");
+    modalMenu.classList.remove("modal-menu--scroll");
+  }
+});

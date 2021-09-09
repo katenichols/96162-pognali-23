@@ -11,6 +11,16 @@
 
   background-color: $basic-white;
 
+  &--nojs {
+    position: relative;
+
+    display: block;
+  }
+
+  &--opened {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 40px;
   }
@@ -24,17 +34,18 @@
     padding-bottom: 48px;
 
     background-color: transparent;
+
+    &--scroll {
+      position: fixed;
+      top: 200;
+
+      display: block;
+      padding-top: 18px;
+      padding-bottom: 19px;
+
+      background-color: $basic-white;
+    }
   }
-}
-
-.modal-menu--nojs {
-  position: relative;
-
-  display: block;
-}
-
-.modal-menu--opened {
-  display: block;
 }
 
 .modal-menu__contacts {
@@ -192,6 +203,10 @@
 
     &:active {
       color: $light-invert-color-fade;
+    }
+
+    &--scroll {
+      color: $basic-dark;
     }
   }
 }

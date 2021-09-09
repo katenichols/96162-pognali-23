@@ -12,40 +12,57 @@
 
   background-color: $basic-color;
 
+  &--form,
+  &--catalog {
+    background-color: $alt-background;
+  }
+
+  &--nojs {
+    padding-bottom: 0;
+  }
+
+  &--catalog {
+    padding-bottom: 53px;
+  }
+
+  &--scroll {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    padding-bottom: 24px;
+
+    background-color: $basic-white;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     padding-bottom: 65px;
+
+    &--nojs {
+      padding-top: 0;
+    }
+
+    &--catalog {
+      padding-bottom: 126px;
+    }
+
+    &--scroll {
+      padding-bottom: 39px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 0;
-  }
-}
 
-.page-header--form,
-.page-header--catalog {
-  background-color: $alt-background;
-}
+    &--catalog {
+      padding-bottom: 24px;
+    }
 
-.page-header--nojs {
-  padding-bottom: 0;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-  }
-}
-
-.page-header--catalog {
-  padding-bottom: 53px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 126px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 24px;
+    &--scroll {
+      display: none;
+    }
   }
 }
 
@@ -55,11 +72,19 @@
 
   margin-left: calc(50% - 135px);
 
+  &--scroll {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     top: 0;
 
     margin-left: calc(50% - 175px);
+
+    &--scroll {
+      display: block;
+    }
   }
 }
 
