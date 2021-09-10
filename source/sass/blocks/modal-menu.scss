@@ -31,7 +31,7 @@
     display: block;
     flex-direction: row;
     padding-top: 46px;
-    padding-bottom: 48px;
+    padding-bottom: 7px;
 
     background-color: transparent;
 
@@ -210,6 +210,15 @@
 
     &--scroll {
       color: $basic-dark;
+
+      &:visited,
+      &:hover {
+        color: $basic-dark;
+      }
+
+      &:active {
+        color: $basic-dark-fade;
+      }
     }
   }
 }

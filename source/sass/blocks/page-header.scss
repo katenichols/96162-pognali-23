@@ -56,14 +56,14 @@
     padding-top: 0;
     padding-bottom: 0;
 
+    &--catalog {
+      padding-bottom: 24px;
+    }
+
     &--scroll {
       position: relative;
       padding-top: 0;
       padding-bottom: 0;
-    }
-
-    &--catalog {
-      padding-bottom: 24px;
     }
   }
 }

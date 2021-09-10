@@ -1,4 +1,5 @@
-.logo {
+.logo,
+.logo-modal {
   position: relative;
 
   &--footer {
@@ -35,7 +36,7 @@
       content: "";
       position: absolute;
       left: 240px;
-      top: 27px;
+      top: -8px;
 
       display: block;
       width: 60px;
@@ -46,7 +47,8 @@
   }
 }
 
-.logo-scroll {
+.logo-scroll,
+.logo-modal-scroll {
   position: relative;
 
   &--hide {
@@ -56,15 +58,21 @@
   @media (min-width: $tablet-width) {
     margin-right: 22px;
   }
+}
 
+.logo-scroll {
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
 
+.logo-modal-scroll {
+  @media (min-width: $desktop-width) {
     &::before {
       content: "";
       position: absolute;
       left: 240px;
-      top: 27px;
+      top: -8px;
 
       display: block;
       width: 60px;
@@ -75,6 +83,14 @@
 
     &--hide {
       display: block;
+    }
+  }
+}
+
+.logo-modal-scroll {
+  @media (min-width: $desktop-width) {
+    &--hide {
+      display: none;
     }
   }
 }

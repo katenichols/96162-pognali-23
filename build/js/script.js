@@ -1,13 +1,13 @@
 const pageHeader = document.querySelector(".page-header");
 const pageHeaderContacts = document.querySelector(".page-header__contacts");
 const logoWrapper = document.querySelector(".logo-wrapper");
-const logoWrapperModal = document.querySelector(".logo-wrapper--modal");
-const logo = document.querySelectorAll(".logo");
+const logo = document.querySelector(".logo");
+const logoModal = document.querySelector(".logo-modal");
 const logoScroll = document.querySelector(".logo-scroll");
-const logoScrollDesktop = document.querySelector(".logo-scroll--desktop");
+const logoModalScroll = document.querySelector(".logo-modal-scroll");
 const modalMenu = document.querySelector(".modal-menu");
 const logoToggle = document.querySelector(".logo__toggle");
-const navLink = document.querySelector(".modal-menu__nav-link");
+const navLinks = document.querySelectorAll(".modal-menu__nav-link");
 const logoToggleModal = document.querySelector(".logo__toggle-modal");
 const profileModal = document.querySelector(".profile__modal");
 const profileButton = document.querySelector(".profile__button");
@@ -72,23 +72,34 @@ feedbackInput.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   let scrolled = window.scrollY;
 
-  if (scrolled >= 200) {
+  if (scrolled >= 120) {
     pageHeader.classList.add("page-header--scroll");
     pageHeaderContacts.classList.add("page-header__contacts--scroll");
-    logo.classList.add("logo--noscroll");
-    logoScroll.classList.remove("logo-scroll--hide");
-    logoToggle.classList.add("logo__toggle--scroll");
     logoWrapper.classList.add("logo-wrapper--scroll");
-    logoWrapperModal.classList.add("logo-wrapper--scroll");
+    logo.classList.add("logo--noscroll");
+    logoModal.classList.add("logo-modal--noscroll");
+    logoScroll.classList.remove("logo-scroll--hide")
+    logoModalScroll.classList.remove("logo-modal-scroll--hide");
+    logoToggle.classList.add("logo__toggle--scroll");
     modalMenu.classList.add("modal-menu--scroll");
-  } else if (scrolled < 200) {
+
+    for (let i=0; i < navLinks.length; i++) {
+      navLinks[i].classList.add("modal-menu__nav-link--scroll");
+    }
+
+  } else if (scrolled < 120) {
     pageHeader.classList.remove("page-header--scroll");
     pageHeaderContacts.classList.remove("page-header__contacts--scroll");
-    logo.classList.remove("logo--noscroll");
-    logoScroll.classList.add("logo-scroll--hide");
-    logoToggle.classList.remove("logo__toggle--scroll");
     logoWrapper.classList.remove("logo-wrapper--scroll");
-    logoWrapperModal.classList.remove("logo-wrapper--scroll");
+    logo.classList.remove("logo--noscroll");
+    logoModal.classList.remove("logo-modal--noscroll");
+    logoScroll.classList.add("logo-scroll--hide");
+    logoModalScroll.classList.add("logo-modal-scroll--hide");
+    logoToggle.classList.remove("logo__toggle--scroll");
     modalMenu.classList.remove("modal-menu--scroll");
+
+    for (let i=0; i < navLinks.length; i++) {
+      navLinks[i].classList.remove("modal-menu__nav-link--scroll");
+    }
   }
 });
