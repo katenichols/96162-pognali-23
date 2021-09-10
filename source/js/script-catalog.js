@@ -1,5 +1,10 @@
 const pageHeader = document.querySelector(".page-header");
+const pageHeaderContacts = document.querySelector(".page-header__contacts");
 const logoWrapper = document.querySelector(".logo-wrapper");
+const logo = document.querySelector(".logo");
+const logoModal = document.querySelector(".logo-modal");
+const logoScroll = document.querySelector(".logo-scroll");
+const logoModalScroll = document.querySelector(".logo-modal-scroll");
 const modalMenu = document.querySelector(".modal-menu");
 const logoToggle = document.querySelector(".logo__toggle");
 const logoToggleModal = document.querySelector(".logo__toggle-modal");
@@ -14,6 +19,7 @@ const filterCountryButton = document.querySelector(
 const userChoiceFieldTitle = document.querySelectorAll(".user-choice__field-title");
 const userChoiceFieldsets = document.querySelectorAll(".user-choice__fieldset");
 const userLevelWrapper = document.querySelector(".user-choice__level-wrapper");
+const navLinks = document.querySelectorAll(".modal-menu__nav-link");
 
 pageHeader.classList.remove("page-header--nojs");
 logoWrapper.classList.remove("logo-wrapper--nojs");
@@ -92,3 +98,38 @@ for (let i = 0; i < userChoiceFieldTitle.length; i++) {
     });
   }
 }
+
+window.addEventListener("scroll", () => {
+  let scrolled = window.scrollY;
+
+  if (scrolled >= 120) {
+    pageHeader.classList.add("page-header--scroll");
+    pageHeaderContacts.classList.add("page-header__contacts--scroll");
+    logoWrapper.classList.add("logo-wrapper--scroll");
+    logo.classList.add("logo--noscroll");
+    logoModal.classList.add("logo-modal--noscroll");
+    logoScroll.classList.remove("logo-scroll--hide")
+    logoModalScroll.classList.remove("logo-modal-scroll--hide");
+    logoToggle.classList.add("logo__toggle--scroll");
+    modalMenu.classList.add("modal-menu--scroll");
+
+    for (let i=0; i < navLinks.length; i++) {
+      navLinks[i].classList.add("modal-menu__nav-link--scroll");
+    }
+
+  } else if (scrolled < 120) {
+    pageHeader.classList.remove("page-header--scroll");
+    pageHeaderContacts.classList.remove("page-header__contacts--scroll");
+    logoWrapper.classList.remove("logo-wrapper--scroll");
+    logo.classList.remove("logo--noscroll");
+    logoModal.classList.remove("logo-modal--noscroll");
+    logoScroll.classList.add("logo-scroll--hide");
+    logoModalScroll.classList.add("logo-modal-scroll--hide");
+    logoToggle.classList.remove("logo__toggle--scroll");
+    modalMenu.classList.remove("modal-menu--scroll");
+
+    for (let i=0; i < navLinks.length; i++) {
+      navLinks[i].classList.remove("modal-menu__nav-link--scroll");
+    }
+  }
+});
