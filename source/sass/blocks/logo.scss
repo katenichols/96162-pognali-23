@@ -87,14 +87,6 @@
   }
 }
 
-.logo-modal-scroll {
-  @media (min-width: $desktop-width) {
-    &--hide {
-      display: none;
-    }
-  }
-}
-
 .logo-image {
   position: relative;
 
