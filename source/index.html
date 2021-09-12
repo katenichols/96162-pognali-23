@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>HTML Academy: Погнали</title>
   <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-medium.woff" as="font">
+  <link rel="preload" href="fonts/bloggersans-bold.woff" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
   <svg style="display: none;">
     <symbol viewBox="0 0 14 28" id="social-fb">
-    <path
-      d="M9.53 27.75H2.71V14.85H0V8.47H2.63C2.43 5.58 2.93 3.47 4.15 2.03C4.73171 1.39087 5.44042 0.8802 6.23079 0.530647C7.02116 0.181094 7.87578 0.000357734 8.74 0L13.52 0V6.15H9.76C9.53848 6.90214 9.4538 7.68794 9.51 8.47H13.51V14.85H9.51L9.53 27.75ZM4.22 26.25H8V13.35H12V10H8V9.24C8 7.24 8 5.45 9 4.78L9.19 4.65H12V1.5H8.78C8.12565 1.49154 7.47682 1.62071 6.87559 1.87911C6.27436 2.13752 5.73416 2.5194 5.29 3C4.29 4.23 3.88 6.29 4.19 9.14L4.29 9.97H1.5V13.35H4.22V26.25Z" />
+      <path
+        d="M9.53 27.75H2.71V14.85H0V8.47H2.63C2.43 5.58 2.93 3.47 4.15 2.03C4.73171 1.39087 5.44042 0.8802 6.23079 0.530647C7.02116 0.181094 7.87578 0.000357734 8.74 0L13.52 0V6.15H9.76C9.53848 6.90214 9.4538 7.68794 9.51 8.47H13.51V14.85H9.51L9.53 27.75ZM4.22 26.25H8V13.35H12V10H8V9.24C8 7.24 8 5.45 9 4.78L9.19 4.65H12V1.5H8.78C8.12565 1.49154 7.47682 1.62071 6.87559 1.87911C6.27436 2.13752 5.73416 2.5194 5.29 3C4.29 4.23 3.88 6.29 4.19 9.14L4.29 9.97H1.5V13.35H4.22V26.25Z" />
     </symbol>
     <symbol viewBox="0 0 30 16" id="social-vk">
       <path
@@ -30,7 +34,7 @@
     <symbol viewBox="0 0 27 34" id="icon-academy">
       <path
         d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-        fill="#192144"/>
+        fill="#192144" />
     </symbol>
   </svg>
 
@@ -77,14 +81,14 @@
               <source media="(min-width: 768px)" srcset="img/icons/logo_tablet-modal.svg">
               <source media="(max-width: 767px)" srcset="img/icons/logo_mobile-modal.svg">
               <img class="logo-image logo-image--modal" src="img/icons/logo_mobile-modal.svg" width="96" height="15"
-                alt="Сервис поиска попутчиков Погнали"/>
+                alt="Сервис поиска попутчиков Погнали" />
             </picture>
           </a>
           <a class="logo-modal-scroll logo-modal-scroll--hide" href="#">
             <picture>
               <source media="(min-width: 768px)" srcset="img/icons/logo_tablet-modal.svg">
               <img class="logo-image logo-image--modal" src="img/icons/logo_mobile-modal.svg" width="96" height="15"
-                alt="Сервис поиска попутчиков Погнали"/>
+                alt="Сервис поиска попутчиков Погнали" />
             </picture>
           </a>
           <button class="logo__toggle-modal logo__toggle-modal--nojs" type="button">
