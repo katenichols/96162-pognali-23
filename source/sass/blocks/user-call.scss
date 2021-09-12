@@ -25,45 +25,29 @@
   &::before {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 6px;
     left: -1px;
 
     width: 18px;
-    height: 2px;
+    height: 18px;
 
-    background-color: $special-dark-color;
-    border-radius: 2px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    left: -1px;
-
-    width: 18px;
-    height: 2px;
-
-    background-color: $special-dark-color;
-    border-radius: 2px;
-    transform: rotate(90deg);
+    background-image: url("../../img/icons/icon_user-call-button-mobile.svg");
+    background-repeat: no-repeat;
   }
 
   &:hover {
     color: $special-dark-color-halffade;
 
-    &::before,
-    &::after {
-      background-color: $special-dark-color-halffade;
+    &::before {
+      background-image: url("../../img/icons/icon_user-call-button-mobile-hover.svg");
     }
   }
 
   &:active {
     color: $special-dark-color-fade;
 
-    &::before,
-    &::after {
-      background-color: $special-dark-color-fade;
+    &::before {
+      background-image: url("../../img/icons/icon_user-call-button-mobile-active.svg");
     }
   }
 
@@ -74,23 +58,28 @@
 
     @include font-group-small($size-20, $line-20);
 
-    &::before,
-    &::after {
-      top: 9px;
+    &::before {
+      top: -3px;
       left: -2px;
+
       width: 26px;
+      height: 26px;
+
+      background-image: url("../../img/icons/icon_user-call-button.svg");
+    }
+
+    &:hover::before {
+      background-image: url("../../img/icons/icon_user-call-button-hover.svg");
+    }
+
+    &:active::before {
+      background-image: url("../../img/icons/icon_user-call-button-active.svg");
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 75px;
     margin-left: 346px;
-
-    &::before,
-    &::after {
-      top: 10px;
-      left: 0;
-    }
   }
 }
 
@@ -164,8 +153,10 @@
 }
 
 .user-call__pagination-wrapper {
+  display: flex;
+  width: 100%;
+
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: space-between;
     width: 57px;
     margin-top: 15px;
@@ -178,6 +169,8 @@
 
 .user-call__pagination-button {
   position: relative;
+
+  display: block;
   width: 50%;
   height: 51px;
 
