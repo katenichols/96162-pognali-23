@@ -41,6 +41,7 @@
 }
 
 .fun__input-wrapper {
+  position: relative;
   margin-bottom: 20px;
 
   &:last-of-type {
@@ -86,6 +87,7 @@
     height: 24px;
 
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &--first::before {
@@ -206,6 +208,18 @@
   border-radius: 4px;
   resize: none;
 
+  &:hover {
+    border-color: $form-border-color-fade;
+  }
+
+  &:focus {
+    border-color: $special-dark-color;
+  }
+
+  &--invalid {
+    border-color: $error-border-color;
+  }
+
   @media (min-width: $tablet-width) {
     width: 500px;
     height: 142px;
@@ -226,5 +240,47 @@
     padding-right: 20px;
     padding-bottom: 24px;
     padding-left: 24px;
+  }
+}
+
+.fun__input-wrapper-error {
+  display: none;
+
+  &--show {
+    position: absolute;
+    bottom: 7px;
+
+    display: block;
+    width: calc(100% - 2px);
+    margin-left: 1px;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+
+    @include font-group($size-16, $line-18);
+    color: $error-text-color;
+
+    background-color: $error-background-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--show {
+      width: 498px;
+      margin-left: 6px;
+      padding-top: 12px;
+      padding-right: 12px;
+      padding-bottom: 12px;
+      padding-left: 12px;
+
+      @include font-group-small($size-20, $line-20);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--show {
+      width: 728px;
+      margin-left: 1px;
+    }
   }
 }

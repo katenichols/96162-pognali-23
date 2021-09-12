@@ -39,6 +39,8 @@
     height: 100px;
 
     background-image: url("../../img/profile-rates-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/profile-rates-mobile@2x.png");
@@ -306,6 +308,20 @@
   border-radius: 20px;
   box-shadow: 0 2px 22px $modal-shadow-color;
 
+  &--closed {
+    display: none;
+  }
+
+  &--nojs {
+    position: relative;
+    top: 0;
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 1px;
+  }
+
   @media (min-width: $tablet-width) {
     top: -70px;
 
@@ -313,6 +329,10 @@
     padding-top: 51px;
 
     box-shadow: 0 4px 22px $modal-shadow-color;
+
+    &--nojs {
+      top: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -323,16 +343,11 @@
     padding-top: 52px;
 
     border-radius: 30px;
+
+    &--nojs {
+      top: 0;
+    }
   }
-}
-
-.profile__modal--closed {
-  display: none;
-}
-
-.profile__modal--nojs {
-  position: relative;
-  display: block;
 }
 
 .profile__modal-wrapper {

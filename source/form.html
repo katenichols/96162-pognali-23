@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>HTML Academy: Погнали</title>
-  <link href="favicon.ico" rel="icon" type="x-icon">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -37,11 +37,20 @@
   <header class="page-header page-header--form page-header--nojs">
     <div class="container">
       <div class="logo-wrapper logo-wrapper--non-modal logo-wrapper--nojs">
-        <a class="logo" href="index.html">
+        <a class="logo" href="#">
           <picture>
             <source media="(min-width: 768px)" srcset="img/icons/logo_tablet.svg">
             <source media="(max-width: 767px)" srcset="img/icons/logo_mobile.svg">
             <img class="logo-image" src="img/icons/logo_mobile.svg" width="96" height="15"
+              alt="Сервис поиска попутчиков Погнали" />
+          </picture>
+        </a>
+        <a class="logo-scroll logo-scroll--hide" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/icons/logo_tablet.svg">
+            <source media="(min-width: 768px)" srcset="img/icons/logo_tablet-modal.svg">
+            <source media="(max-width: 767px)" srcset="img/icons/logo_mobile-modal.svg">
+            <img class="logo-image logo-image--modal" src="img/icons/logo_mobile-modal.svg" width="96" height="15"
               alt="Сервис поиска попутчиков Погнали" />
           </picture>
         </a>
@@ -56,13 +65,20 @@
     <div class="page-header__modal-menu modal-menu modal-menu--nojs">
       <div class="container container--modal">
         <div class="logo-wrapper logo-wrapper--modal">
-          <a class="logo" href="index.html">
+          <a class="logo-modal" href="#">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/icons/logo_tablet.svg">
               <source media="(min-width: 768px)" srcset="img/icons/logo_tablet-modal.svg">
               <source media="(max-width: 767px)" srcset="img/icons/logo_mobile-modal.svg">
               <img class="logo-image logo-image--modal" src="img/icons/logo_mobile-modal.svg" width="96" height="15"
-                alt="Сервис поиска попутчиков Погнали" />
+                alt="Сервис поиска попутчиков Погнали"/>
+            </picture>
+          </a>
+          <a class="logo-modal-scroll logo-modal-scroll--hide" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/icons/logo_tablet-modal.svg">
+              <img class="logo-image logo-image--modal" src="img/icons/logo_mobile-modal.svg" width="96" height="15"
+                alt="Сервис поиска попутчиков Погнали"/>
             </picture>
           </a>
           <button class="logo__toggle-modal logo__toggle-modal--nojs" type="button">
@@ -645,11 +661,13 @@
                 <label class="fun__label fun__label--first" for="fun-country#1">Босния и Герцеговина</label>
                 <textarea class="fun__textarea" id="fun-country#1" name="fun-country#1"
                   placeholder="План действий"></textarea>
+                  <span class="fun__input-wrapper-error">Это поле должно быть заполнено</span>
               </div>
               <div class="fun__input-wrapper">
                 <label class="fun__label fun__label--last" for="fun-country#2">Чехия</label>
                 <textarea class="fun__textarea" id="fun-country#2" name="fun-country#2">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
                   </textarea>
+                  <span class="fun__input-wrapper-error">Это поле должно быть заполнено</span>
               </div>
             </div>
             <div class="plan-form__link-wrapper">
@@ -700,7 +718,7 @@
       </a>
     </div>
   </footer>
-  <script src="js/script-form.js"></script>
+  <script src="js/script-form.min.js"></script>
 </body>
 
 </html>
