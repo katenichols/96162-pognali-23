@@ -13,10 +13,18 @@
 
   &:first-of-type {
     background-image: url("../../img/back-thailand-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-size: contain;
+    }
   }
 
   &:nth-of-type(2) {
     background-image: url("../../img/back-france-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-size: contain;
+    }
   }
 
   &:last-of-type {
@@ -42,6 +50,7 @@
 
         @media (min-resolution: 2dppx) {
           background-image: url("../../img/fade@2x.png");
+          background-size: contain;
         }
       }
     }
