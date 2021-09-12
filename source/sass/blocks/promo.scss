@@ -74,6 +74,8 @@
   margin-left: auto;
 
   background-image: url("../../img/traveler-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/traveler-mobile@2x.png");

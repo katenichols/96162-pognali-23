@@ -39,6 +39,8 @@
     height: 100px;
 
     background-image: url("../../img/profile-rates-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/profile-rates-mobile@2x.png");

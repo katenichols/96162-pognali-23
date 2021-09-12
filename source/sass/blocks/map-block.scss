@@ -73,6 +73,7 @@
 
     background-image: url("../../img/icons/icon_map-mark-mobile.svg");
     background-repeat: no-repeat;
+    background-size: contain;
 
     @media (min-width: $tablet-width) {
       top: -20px;
