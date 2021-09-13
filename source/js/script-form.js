@@ -8,7 +8,7 @@ const logoModalScroll = document.querySelector(".logo-modal-scroll");
 const modalMenu = document.querySelector(".modal-menu");
 const logoToggle = document.querySelector(".logo__toggle");
 const logoToggleModal = document.querySelector(".logo__toggle-modal");
-const userTransportsIcon = document.querySelectorAll(".user__transports-icon");
+const userTransportsItem = document.querySelectorAll(".user__transports-item");
 const anchors = document.querySelectorAll("scroll-to");
 const buttonChoice = document.querySelector(".country__button-choice");
 const countryButtonClose = document.querySelector(
@@ -42,14 +42,14 @@ logoToggleModal.addEventListener("click", () => {
   }
 });
 
-for (let i = 0; i < userTransportsIcon.length; i++) {
-  userTransportsIcon[i].addEventListener("click", () => {
+for (let i = 0; i < userTransportsItem.length; i++) {
+  userTransportsItem[i].addEventListener("click", () => {
     if (
-      userTransportsIcon[i].classList.contains("user__transports-icon--off")
+      userTransportsItem[i].classList.contains("user__transports-item--off")
     ) {
-      userTransportsIcon[i].classList.remove("user__transports-icon--off");
+      userTransportsItem[i].classList.remove("user__transports-item--off");
     } else {
-      userTransportsIcon[i].classList.add("user__transports-icon--off");
+      userTransportsItem[i].classList.add("user__transports-item--off");
     }
   });
 }
