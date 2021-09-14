@@ -80,7 +80,7 @@ window.addEventListener("scroll", () => {
     logoModal.classList.add("logo-modal--noscroll");
     logoScroll.classList.remove("logo-scroll--hide")
     logoModalScroll.classList.remove("logo-modal-scroll--hide");
-    logoToggle.classList.add("logo__toggle--scroll");
+    logoToggle.classList.add("logo-toggle--scroll");
     modalMenu.classList.add("modal-menu--scroll");
 
     for (let i=0; i < navLinks.length; i++) {

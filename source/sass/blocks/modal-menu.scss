@@ -31,7 +31,7 @@
     display: block;
     flex-direction: row;
     padding-top: 46px;
-    padding-bottom: 7px;
+    padding-bottom: 48px;
 
     background-color: transparent;
 
@@ -94,6 +94,7 @@
       display: block;
       margin-top: -3px;
       margin-right: 0;
+      margin-bottom: 0;
       margin-left: auto;
       padding-top: 14px;
       padding-right: 28px;
@@ -158,6 +159,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    width: calc(100% - 110px);
     margin-bottom: 0;
     padding-top: 19px;
     padding-left: 0;
@@ -401,16 +403,4 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 84px;
   }
-}
-
-.modal-menu__social .social__item {
-  margin-right: 27px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 28px;
-  }
-}
-
-.modal-menu__social .social__item:last-child {
-  margin-right: 0;
 }

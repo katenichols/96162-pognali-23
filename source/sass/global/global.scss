@@ -12,16 +12,70 @@ a {
   text-decoration: none;
 }
 
-button,
-button:active,
-input {
+.logo-toggle,
+.logo-toggle:active,
+.logo-toggle-modal,
+.logo-toggle-modal:active,
+.profile__button,
+.profile__button:active,
+.profile__modal-button,
+.profile__modal-button:active,
+.feedback__button,
+.feedback__button:active,
+.page-form__title-button,
+.page-form__title-button:active,
+.user__button,
+.user__button:active,
+.step__button-count,
+.step__button-count:active,
+.step__calendar-month-button,
+.step__calendar-month-button:active,
+.country__button-list,
+.country__button-list:active,
+.country__button-close,
+.country__button-close:active,
+.country__button-choice,
+.country__button-choice:active,
+.country__modal-close,
+.country__modal-close:active,
+.country__button-add,
+.country__button-add:active,
+.plan-form__submit,
+.plan-form__submit:active,
+.filter-country__toggle,
+.filter-country__toggle:active,
+.filter-country__button-hide,
+.filter-country__button-hide:active,
+.filter-country__button-submit,
+.filter-country__button-submit:active,
+.level-range__input,
+.step__input,
+.country__input,
+.feedback__input {
   padding: 0;
   border: 0;
   outline: none;
   background-color: transparent;
 }
 
-ul {
+ul
+.modal-menu__nav-list,
+.social,
+.promo__list,
+.countries__cards,
+.user-block__countries,
+.user-block__transports,
+.profile__list,
+.profile__modal-list,
+.page-footer__social,
+.user__transports,
+.add-plan__markers,
+.country__modal-list,
+.filter-country__continent-list,
+.catalog-table__list,
+.user-card__country-list,
+.user-call__pagination-list,
+.user-card__transport-list {
   list-style: none;
 }
 

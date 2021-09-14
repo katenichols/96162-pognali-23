@@ -174,9 +174,6 @@
   display: none;
   margin: 0;
 
-  @include font-group($size-16, $line-22);
-  color: $basic-text-color;
-  text-transform: none;
 
   &--current {
     position: absolute;
@@ -202,8 +199,6 @@
 
     width: auto;
     padding: 0;
-
-    @include font-group-small($size-20, $line-30);
   }
 
   @media (min-width: $desktop-width) {
@@ -231,12 +226,28 @@
   }
 }
 
-.catalog-table__list-item {
+// .catalog-table__list-item {
+//   display: block;
+//   height: auto;
+//   padding: 0;
+// }
+
+.catalog-table__list-item-link {
+  display: block;
+
+  @include font-group($size-16, $line-22);
+  color: $basic-text-color;
+  text-transform: none;
+
   &:hover {
     color: $special-dark-color;
   }
 
   &:active {
     color: $special-dark-color-fade;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-group-small($size-20, $line-30);
   }
 }

@@ -1,0 +1,30 @@
+.logo-modal-scroll {
+  position: relative;
+
+  &--hide {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 240px;
+      top: -8px;
+
+      display: block;
+      width: 60px;
+      height: 2px;
+
+      background-color: $basic-dark;
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+}

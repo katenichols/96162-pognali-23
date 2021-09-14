@@ -1,0 +1,22 @@
+.logo-image {
+  position: relative;
+
+  width: 96px;
+  height: 15px;
+  margin-top: 5px;
+
+  &--footer {
+    margin-top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 50px;
+    margin-top: 0;
+  }
+}

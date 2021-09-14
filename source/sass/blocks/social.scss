@@ -44,3 +44,15 @@
     height: 28px;
   }
 }
+
+.social__item {
+  margin-right: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
+  }
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}

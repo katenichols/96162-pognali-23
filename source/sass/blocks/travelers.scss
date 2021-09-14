@@ -24,6 +24,7 @@
     padding-bottom: 87px;
 
     background-image: url("../../img/travelers-back-tablet.png");
+    background-size: 85%;
     background-position: top 71px right 74px;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
@@ -35,9 +36,10 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 126px;
-    padding-bottom: 53px;
+    padding-bottom: 134px;
 
     background-image: url("../../img/travelers-back-desktop.png");
+    background-size: 44%;
     background-position: top 70px right 750px;
     border-bottom-right-radius: 56px;
     border-bottom-left-radius: 56px;
@@ -126,6 +128,10 @@
 
     @include font-group-small($size-21, $line-24);
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 85px;
+  }
 }
 
 .travelers__cards {
@@ -149,6 +155,7 @@
     width: 630px;
     margin-top: 8px;
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -209,8 +216,9 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 411px;
+    top: auto;
     right: auto;
+    bottom: 0;
     left: 131px;
 
     width: 280px;

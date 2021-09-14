@@ -6,8 +6,8 @@ const logoModal = document.querySelector(".logo-modal");
 const logoScroll = document.querySelector(".logo-scroll");
 const logoModalScroll = document.querySelector(".logo-modal-scroll");
 const modalMenu = document.querySelector(".modal-menu");
-const logoToggle = document.querySelector(".logo__toggle");
-const logoToggleModal = document.querySelector(".logo__toggle-modal");
+const logoToggle = document.querySelector(".logo-toggle");
+const logoToggleModal = document.querySelector(".logo-toggle-modal");
 const filterCountryToggle = document.querySelector(".filter-country__toggle");
 const filterContinentList = document.querySelector(
   ".filter-country__continent-list"
@@ -24,7 +24,7 @@ const navLinks = document.querySelectorAll(".modal-menu__nav-link");
 pageHeader.classList.remove("page-header--nojs");
 logoWrapper.classList.remove("logo-wrapper--nojs");
 modalMenu.classList.remove("modal-menu--nojs");
-logoToggleModal.classList.remove("logo__toggle-modal--nojs");
+logoToggleModal.classList.remove("logo-toggle-modal--nojs");
 filterCountryToggle.classList.remove("filter-country__toggle--nojs");
 filterContinentList.classList.remove("filter-country__continent-list--nojs");
 filterContinentList.classList.add("filter-country__continent-list--closed");
@@ -110,7 +110,7 @@ window.addEventListener("scroll", () => {
     logoModal.classList.add("logo-modal--noscroll");
     logoScroll.classList.remove("logo-scroll--hide")
     logoModalScroll.classList.remove("logo-modal-scroll--hide");
-    logoToggle.classList.add("logo__toggle--scroll");
+    logoToggle.classList.add("logo-toggle--scroll");
     modalMenu.classList.add("modal-menu--scroll");
 
     for (let i=0; i < navLinks.length; i++) {
@@ -125,7 +125,7 @@ window.addEventListener("scroll", () => {
     logoModal.classList.remove("logo-modal--noscroll");
     logoScroll.classList.add("logo-scroll--hide");
     logoModalScroll.classList.add("logo-modal-scroll--hide");
-    logoToggle.classList.remove("logo__toggle--scroll");
+    logoToggle.classList.remove("logo-toggle--scroll");
     modalMenu.classList.remove("modal-menu--scroll");
 
     for (let i=0; i < navLinks.length; i++) {
