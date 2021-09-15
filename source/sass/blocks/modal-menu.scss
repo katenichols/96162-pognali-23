@@ -1,7 +1,7 @@
 .modal-menu {
   position: absolute;
   top: 0;
-  z-index: 5;
+  z-index: 400;
 
   display: none;
   min-width: 100%;
@@ -34,6 +34,10 @@
     padding-bottom: 48px;
 
     background-color: transparent;
+
+    &--index {
+      padding-bottom: 7px;
+    }
 
     &--scroll {
       position: fixed;

@@ -12,14 +12,8 @@
 .filter-country__form {
   position: relative;
 
-  margin-bottom: 28px;
-
   @media (min-width: $tablet-width) {
     margin-bottom: 41px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
   }
 }
 
@@ -157,6 +151,7 @@
     text-transform: uppercase;
 
     background-image: url("../../img/icons/icon_filter-toggle-tablet.svg");
+    background-position-x: right;
 
     &:hover {
       background-image: url("../../img/icons/icon_filter-toggle-tablet-hover.svg");
@@ -183,17 +178,17 @@
 
     &--clicked {
       top: 0;
-      right: -7px;
 
       height: 23px;
 
       background-image: url("../../img/icons/icon_filter-close.svg");
+      background-position-x: top 0 right 4px;
 
       &::before {
         content: "Свернуть";
         position: absolute;
         top: 1px;
-        left: -69px;
+        left: 11px;
       }
 
       &:hover {

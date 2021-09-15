@@ -153,7 +153,7 @@
       <h2 class="visually-hidden">Выберите страну</h2>
       <form class="filter-country__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="filter-country__choice">
-          <div class="container container--filter">
+          <div class="container container--filter-country">
             <span class="filter-country__title">Фильтрация по странам:</span>
             <button class="filter-country__toggle filter-country__toggle--nojs" type="button">
               <span class="visually-hidden">Показать все</span>
@@ -829,7 +829,7 @@
             </button>
           </div>
         </div>
-        <div class="container">
+        <div class="container container--filter">
           <div class="filter-country__user-choice user-choice">
             <h2 class="user-choice__title">Подберите идеального попутчика</h2>
             <div class="user-choice__field">
@@ -916,249 +916,249 @@
             </div>
             <button class="filter-country__button-submit" type="submit">Показать</button>
           </div>
+
+          <section class="catalog__user-call user-call">
+            <h2 class="visually-hidden">Выбрать попутчика</h2>
+            <article class="user-call__card user-card">
+              <a class="user-card__name-link" href="/traveler#1">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/user-catalog-desktop1.jpg, img/user-catalog-desktop1@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/user-catalog-tablet1.jpg, img/user-catalog-tablet1@2x.jpg 2x">
+                  <img class="user-card__photo" src="img/user-catalog-mobile1.jpg"
+                    srcset="img/user-catalog-mobile1@2x.jpg 2x" width="70" height="70" alt="Фото попутчика">
+                </picture>
+                <span class="user-card__title">Таня&#160;<br class="user-card__br">Фирсова</span>
+              </a>
+              <span class="user-card__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
+              <div class="user-card__country-wrapper">
+                <span class="user-card__label user-card__label--country">Хочет посетить:</span>
+                <ul class="user-card__country-list">
+                  <li class="user-card__country-item user-card__country-item--srilanka">Шри-Ланка</li>
+                  <li class="user-card__country-item user-card__country-item--thailand">Таиланд</li>
+                  <li class="user-card__country-item user-card__country-item--seychelles">Сейшелы</li>
+                </ul>
+              </div>
+              <div class="user-card__transport-wrapper">
+                <div class="user-card__transport">
+                  <span class="user-card__label user-card__label--transport">Транспорт:</span>
+                  <ul class="user-card__transport-list">
+                    <li
+                      class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--plane-current">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="user-card__transport-item user-card__transport-item--bus">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="user-card__transport-item user-card__transport-item--bike">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="user-card__transport-item user-card__transport-item--walk">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-card__level user-card__level--first">
+                  <span class="user-card__label user-card__label--level">Левел:</span>
+                  <span class="user-card__number-level">99</span>
+                  <span class="user-card__text-level">level</span>
+                </div>
+              </div>
+              <div class="user-card__link-wrapper">
+                <a class="user-card__link" href="">Позвать!</a>
+                <span class="user-card__likes user-card__likes--hot">1,5 M</span>
+              </div>
+            </article>
+
+            <article class="user-call__card user-card">
+              <a class="user-card__name-link user-card__name-link--second" href="/traveler#2">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/user-catalog-desktop2.jpg, img/user-catalog-desktop2@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/user-catalog-tablet2.jpg, img/user-catalog-tablet2@2x.jpg 2x">
+                  <img class="user-card__photo user-card__photo--second" src="img/user-catalog-mobile2.jpg"
+                    srcset="img/user-catalog-mobile2@2x.jpg 2x" width="70" height="70" alt="Фото попутчика">
+                </picture>
+                <span class="user-card__title">Петя&#160;<br class="user-card__br">Демин</span>
+              </a>
+              <span class="user-card__tags">#бургер #бар #футбол #концерт #крафт</span>
+              <div class="user-card__country-wrapper">
+                <span class="user-card__label">Хочет посетить:</span>
+                <ul class="user-card__country-list user-card__country-list--second">
+                  <li class="user-card__country-item user-card__country-item--belgium">Бельгия</li>
+                  <li class="user-card__country-item user-card__country-item--czech">Чехия</li>
+                </ul>
+              </div>
+              <div class="user-card__transport-wrapper">
+                <div class="user-card__transport">
+                  <span class="user-card__label user-card__label--transport">Транспорт:</span>
+                  <ul class="user-card__transport-list">
+                    <li
+                      class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--plane-current">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li
+                      class="user-card__transport-item user-card__transport-item--bus user-card__transport-item--bus-current">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="user-card__transport-item user-card__transport-item--bike">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li
+                      class="user-card__transport-item user-card__transport-item--walk user-card__transport-item--walk-current">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-card__level user-card__level--second">
+                  <span class="user-card__label  user-card__label--level">Левел:</span>
+                  <span class="user-card__number-level">80</span>
+                  <span class="user-card__text-level">level</span>
+                </div>
+              </div>
+              <div class="user-card__link-wrapper">
+                <a class="user-card__link" href="#">Позвать!</a>
+                <span class="user-card__likes">1500</span>
+              </div>
+            </article>
+
+            <article class="user-call__card user-card">
+              <a class="user-card__name-link" href="/traveler#3">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/user-catalog-desktop3.jpg, img/user-catalog-desktop3@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/user-catalog-tablet3.jpg, img/user-catalog-tablet3@2x.jpg 2x">
+                  <img class="user-card__photo" src="img/user-catalog-mobile3.jpg"
+                    srcset="img/user-catalog-mobile3@2x.jpg 2x" width="70" height="70" alt="Фото попутчика">
+                </picture>
+                <span class="user-card__title">Марк&#160;<br class="user-card__br">Смолов</span>
+              </a>
+              <span class="user-card__tags">#рэп #тату #хайпбист #кроссовки #суприм</span>
+              <div class="user-card__country-wrapper">
+                <span class="user-card__label">Хочет посетить:</span>
+                <ul class="user-card__country-list user-card__country-list--third">
+                  <li class="user-card__country-item user-card__country-item--usa">США</li>
+                  <li class="user-card__country-item user-card__country-item--australia">Австралия</li>
+                  <li class="user-card__country-item user-card__country-item--dominica">Доминика</li>
+                </ul>
+              </div>
+              <div class="user-card__transport-wrapper user-card__transport-wrapper--third">
+                <div class="user-card__transport">
+                  <span class="user-card__label user-card__label--transport">Транспорт:</span>
+                  <ul class="user-card__transport-list">
+                    <li
+                      class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--plane-current">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="user-card__transport-item user-card__transport-item--bus">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li
+                      class="user-card__transport-item user-card__transport-item--bike user-card__transport-item--bike-current">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="user-card__transport-item user-card__transport-item--walk">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-card__level user-card__level--third">
+                  <span class="user-card__label user-card__label--level">Левел:</span>
+                  <span class="user-card__number-level">25</span>
+                  <span class="user-card__text-level">level</span>
+                </div>
+              </div>
+              <div class="user-card__link-wrapper">
+                <a class="user-card__link" href="#">Позвать!</a>
+                <span class="user-card__likes">170</span>
+              </div>
+            </article>
+
+            <article class="user-call__card user-card">
+              <a class="user-card__name-link" href="/traveler#4">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/user-catalog-desktop4.jpg, img/user-catalog-desktop4@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/user-catalog-tablet4.jpg, img/user-catalog-tablet4@2x.jpg 2x">
+                  <img class="user-card__photo" src="img/user-catalog-mobile4.jpg"
+                    srcset="img/user-catalog-mobile4@2x.jpg 2x" width="70" height="70" alt="Фото попутчика">
+                </picture>
+                <span class="user-card__title user-card__title--online">Лариса&#160;<br class="user-card__br">Роговая</span>
+              </a>
+              <span class="user-card__tags">#образование #карьера #учеба #линкедин</span>
+              <div class="user-card__country-wrapper">
+                <span class="user-card__label">Хочет посетить:</span>
+                <ul class="user-card__country-list user-card__country-list--fourth">
+                  <li class="user-card__country-item user-card__country-item--uk">Великобритания</li>
+                  <li class="user-card__country-item user-card__country-item--germany">Германия</li>
+                </ul>
+              </div>
+              <div class="user-card__transport-wrapper">
+                <div class="user-card__transport">
+                  <span class="user-card__label user-card__label--transport">Транспорт:</span>
+                  <ul class="user-card__transport-list">
+                    <li
+                      class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--plane-current">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li
+                      class="user-card__transport-item user-card__transport-item--bus user-card__transport-item--bus-current">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="user-card__transport-item user-card__transport-item--bike">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="user-card__transport-item user-card__transport-item--walk">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-card__level user-card__level--forth">
+                  <span class="user-card__label user-card__label--level">Левел:</span>
+                  <span class="user-card__number-level">50</span>
+                  <span class="user-card__text-level">level</span>
+                </div>
+              </div>
+              <div class="user-card__link-wrapper">
+                <a class="user-card__link" href="#">Позвать!</a>
+                <span class="user-card__likes">23</span>
+              </div>
+            </article>
+            <a class="user-call__button" href="#">Показать еще</a>
+            <div class="user-call__pagination">
+              <ul class="user-call__pagination-list">
+                <li class="user-call__pagination-item">
+                  <a class="user-call__pagination-item-link user-call__pagination-item-link--current" href="#">1</a>
+                </li>
+                <li class="user-call__pagination-item">
+                  <a class="user-call__pagination-item-link" href="#">2</a>
+                </li>
+                <li class="user-call__pagination-item">
+                  <a class="user-call__pagination-item-link" href="#">3</a>
+                </li>
+                <li class="user-call__pagination-item">
+                  <a class="user-call__pagination-item-link" href="#">4</a>
+                </li>
+              </ul>
+              <div class="user-call__pagination-wrapper">
+                <a class="user-call__pagination-link user-call__pagination-link--prev" href="#">
+                  <span class="visually-hidden">Назад</span>
+                </a>
+                <a class="user-call__pagination-link user-call__pagination-link--next" href="#">
+                  <span class="visually-hidden">Вперед</span>
+                </button>
+              </div>
+            </div>
+          </section>
         </div>
       </form>
     </section>
 
-    <section class="catalog__user-call user-call">
-      <h2 class="visually-hidden">Выбрать попутчика</h2>
-      <div class="container container--user">
-        <article class="user-call__card user-card">
-          <a class="user-card__name-link" href="/traveler#1">
-            <picture>
-              <source media="(min-width: 1440px)"
-                srcset="img/user-catalog-desktop1.jpg, img/user-catalog-desktop1@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/user-catalog-tablet1.jpg, img/user-catalog-tablet1@2x.jpg 2x">
-              <img class="user-card__photo" src="img/user-catalog-mobile1.jpg"
-                srcset="img/user-catalog-mobile1@2x.jpg 2x" width="70" height="70" alt="Фото попутчика">
-            </picture>
-            <span class="user-card__title">Таня&#160;<br class="user-card__br">Фирсова</span>
-          </a>
-          <span class="user-card__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
-          <div class="user-card__country-wrapper">
-            <span class="user-card__label user-card__label--country">Хочет посетить:</span>
-            <ul class="user-card__country-list">
-              <li class="user-card__country-item user-card__country-item--srilanka">Шри-Ланка</li>
-              <li class="user-card__country-item user-card__country-item--thailand">Таиланд</li>
-              <li class="user-card__country-item user-card__country-item--seychelles">Сейшелы</li>
-            </ul>
-          </div>
-          <div class="user-card__transport-wrapper">
-            <div class="user-card__transport">
-              <span class="user-card__label user-card__label--transport">Транспорт:</span>
-              <ul class="user-card__transport-list">
-                <li
-                  class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--plane-current">
-                  <span class="visually-hidden">Самолет</span>
-                </li>
-                <li class="user-card__transport-item user-card__transport-item--bus">
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li class="user-card__transport-item user-card__transport-item--bike">
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li class="user-card__transport-item user-card__transport-item--walk">
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-            </div>
-            <div class="user-card__level user-card__level--first">
-              <span class="user-card__label user-card__label--level">Левел:</span>
-              <span class="user-card__number-level">99</span>
-              <span class="user-card__text-level">level</span>
-            </div>
-          </div>
-          <div class="user-card__link-wrapper">
-            <a class="user-card__link" href="">Позвать!</a>
-            <span class="user-card__likes user-card__likes--hot">1,5 M</span>
-          </div>
-        </article>
 
-        <article class="user-call__card user-card">
-          <a class="user-card__name-link user-card__name-link--second" href="/traveler#2">
-            <picture>
-              <source media="(min-width: 1440px)"
-                srcset="img/user-catalog-desktop2.jpg, img/user-catalog-desktop2@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/user-catalog-tablet2.jpg, img/user-catalog-tablet2@2x.jpg 2x">
-              <img class="user-card__photo user-card__photo--second" src="img/user-catalog-mobile2.jpg"
-                srcset="img/user-catalog-mobile2@2x.jpg 2x" width="70" height="70" alt="Фото попутчика">
-            </picture>
-            <span class="user-card__title">Петя&#160;<br class="user-card__br">Демин</span>
-          </a>
-          <span class="user-card__tags">#бургер #бар #футбол #концерт #крафт</span>
-          <div class="user-card__country-wrapper">
-            <span class="user-card__label">Хочет посетить:</span>
-            <ul class="user-card__country-list user-card__country-list--second">
-              <li class="user-card__country-item user-card__country-item--belgium">Бельгия</li>
-              <li class="user-card__country-item user-card__country-item--czech">Чехия</li>
-            </ul>
-          </div>
-          <div class="user-card__transport-wrapper">
-            <div class="user-card__transport">
-              <span class="user-card__label user-card__label--transport">Транспорт:</span>
-              <ul class="user-card__transport-list">
-                <li
-                  class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--plane-current">
-                  <span class="visually-hidden">Самолет</span>
-                </li>
-                <li
-                  class="user-card__transport-item user-card__transport-item--bus user-card__transport-item--bus-current">
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li class="user-card__transport-item user-card__transport-item--bike">
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li
-                  class="user-card__transport-item user-card__transport-item--walk user-card__transport-item--walk-current">
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-            </div>
-            <div class="user-card__level user-card__level--second">
-              <span class="user-card__label  user-card__label--level">Левел:</span>
-              <span class="user-card__number-level">80</span>
-              <span class="user-card__text-level">level</span>
-            </div>
-          </div>
-          <div class="user-card__link-wrapper">
-            <a class="user-card__link" href="#">Позвать!</a>
-            <span class="user-card__likes">1500</span>
-          </div>
-        </article>
-
-        <article class="user-call__card user-card">
-          <a class="user-card__name-link" href="/traveler#3">
-            <picture>
-              <source media="(min-width: 1440px)"
-                srcset="img/user-catalog-desktop3.jpg, img/user-catalog-desktop3@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/user-catalog-tablet3.jpg, img/user-catalog-tablet3@2x.jpg 2x">
-              <img class="user-card__photo" src="img/user-catalog-mobile3.jpg"
-                srcset="img/user-catalog-mobile3@2x.jpg 2x" width="70" height="70" alt="Фото попутчика">
-            </picture>
-            <span class="user-card__title">Марк&#160;<br class="user-card__br">Смолов</span>
-          </a>
-          <span class="user-card__tags">#рэп #тату #хайпбист #кроссовки #суприм</span>
-          <div class="user-card__country-wrapper">
-            <span class="user-card__label">Хочет посетить:</span>
-            <ul class="user-card__country-list">
-              <li class="user-card__country-item user-card__country-item--usa">США</li>
-              <li class="user-card__country-item user-card__country-item--australia">Австралия</li>
-              <li class="user-card__country-item user-card__country-item--dominica">Доминика</li>
-            </ul>
-          </div>
-          <div class="user-card__transport-wrapper">
-            <div class="user-card__transport">
-              <span class="user-card__label user-card__label--transport">Транспорт:</span>
-              <ul class="user-card__transport-list">
-                <li
-                  class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--plane-current">
-                  <span class="visually-hidden">Самолет</span>
-                </li>
-                <li class="user-card__transport-item user-card__transport-item--bus">
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li
-                  class="user-card__transport-item user-card__transport-item--bike user-card__transport-item--bike-current">
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li class="user-card__transport-item user-card__transport-item--walk">
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-            </div>
-            <div class="user-card__level user-card__level--third">
-              <span class="user-card__label user-card__label--level">Левел:</span>
-              <span class="user-card__number-level">25</span>
-              <span class="user-card__text-level">level</span>
-            </div>
-          </div>
-          <div class="user-card__link-wrapper">
-            <a class="user-card__link" href="#">Позвать!</a>
-            <span class="user-card__likes">170</span>
-          </div>
-        </article>
-
-        <article class="user-call__card user-card">
-          <a class="user-card__name-link" href="/traveler#4">
-            <picture>
-              <source media="(min-width: 1440px)"
-                srcset="img/user-catalog-desktop4.jpg, img/user-catalog-desktop4@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/user-catalog-tablet4.jpg, img/user-catalog-tablet4@2x.jpg 2x">
-              <img class="user-card__photo" src="img/user-catalog-mobile4.jpg"
-                srcset="img/user-catalog-mobile4@2x.jpg 2x" width="70" height="70" alt="Фото попутчика">
-            </picture>
-            <span class="user-card__title user-card__title--online">Лариса&#160;<br class="user-card__br">Роговая</span>
-          </a>
-          <span class="user-card__tags">#образование #карьера #учеба #линкедин</span>
-          <div class="user-card__country-wrapper">
-            <span class="user-card__label">Хочет посетить:</span>
-            <ul class="user-card__country-list user-card__country-list--fourth">
-              <li class="user-card__country-item user-card__country-item--uk">Великобритания</li>
-              <li class="user-card__country-item user-card__country-item--germany">Германия</li>
-            </ul>
-          </div>
-          <div class="user-card__transport-wrapper">
-            <div class="user-card__transport">
-              <span class="user-card__label user-card__label--transport">Транспорт:</span>
-              <ul class="user-card__transport-list">
-                <li
-                  class="user-card__transport-item user-card__transport-item--plane user-card__transport-item--plane-current">
-                  <span class="visually-hidden">Самолет</span>
-                </li>
-                <li
-                  class="user-card__transport-item user-card__transport-item--bus user-card__transport-item--bus-current">
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li class="user-card__transport-item user-card__transport-item--bike">
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li class="user-card__transport-item user-card__transport-item--walk">
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-            </div>
-            <div class="user-card__level user-card__level--forth">
-              <span class="user-card__label user-card__label--level">Левел:</span>
-              <span class="user-card__number-level">50</span>
-              <span class="user-card__text-level">level</span>
-            </div>
-          </div>
-          <div class="user-card__link-wrapper">
-            <a class="user-card__link" href="#">Позвать!</a>
-            <span class="user-card__likes">23</span>
-          </div>
-        </article>
-        <a class="user-call__button" href="#">Показать еще</a>
-        <div class="user-call__pagination">
-          <ul class="user-call__pagination-list">
-            <li class="user-call__pagination-item">
-              <a class="user-call__pagination-item-link user-call__pagination-item-link--current" href="#">1</a>
-            </li>
-            <li class="user-call__pagination-item">
-              <a class="user-call__pagination-item-link" href="#">2</a>
-            </li>
-            <li class="user-call__pagination-item">
-              <a class="user-call__pagination-item-link" href="#">3</a>
-            </li>
-            <li class="user-call__pagination-item">
-              <a class="user-call__pagination-item-link" href="#">4</a>
-            </li>
-          </ul>
-          <div class="user-call__pagination-wrapper">
-            <a class="user-call__pagination-link user-call__pagination-link--prev" href="#">
-              <span class="visually-hidden">Назад</span>
-            </a>
-            <a class="user-call__pagination-link user-call__pagination-link--next" href="#">
-              <span class="visually-hidden">Вперед</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="page-footer">

@@ -159,11 +159,8 @@
   padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 14px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -17px;
+    margin-top: -19px;
+    margin-bottom: 15px;
   }
 }
 
@@ -183,6 +180,7 @@
   height: 25px;
 
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 3px;
 
   &:hover::before {

@@ -40,7 +40,7 @@
 .container--countries {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 99px;
   padding-bottom: 123px;
 
   @media (min-width: $tablet-width) {
@@ -49,11 +49,11 @@
 
     background-image: url("../../img/flags-background.png");
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: top 140px right 40px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/flags-background@2x.png");
+      background-size: 38%;
     }
   }
 
@@ -63,6 +63,10 @@
     padding-bottom: 84px;
 
     background-position: top 148px right 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-size: 20%;
+    }
   }
 }
 
@@ -150,7 +154,7 @@
   }
 }
 
-.container--filter {
+.container--filter-country {
   position: relative;
 
   display: flex;
@@ -158,5 +162,14 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+  }
+}
+
+.container--filter {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }

@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  z-index: 200;
+  z-index: 500;
 
   margin: 0;
   padding-top: 0;
@@ -71,6 +71,7 @@
 .page-header__contacts {
   position: absolute;
   top: 457px;
+  z-index: 500;
 
   margin-left: calc(50% - 135px);
 

@@ -1,14 +1,14 @@
 .user-call {
   position: relative;
 
-  padding-bottom: 76px;
+  padding-bottom: 48px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -487px;
+    width: 949px;
   }
 }
 

@@ -2,9 +2,9 @@
   position: relative;
   z-index: 40;
 
-  padding-top: 31px;
+  padding-top: 40px;
   padding-right: 0;
-  padding-bottom: 82px;
+  padding-bottom: 83px;
   padding-left: 0;
 
   background-image: url("../../img/about-back-mobile.png");
@@ -93,7 +93,7 @@
 
 .about__lead {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     width: 302px;
