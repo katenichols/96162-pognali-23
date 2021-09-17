@@ -1,10 +1,15 @@
-.logo-toggle,
-.logo-toggle-modal {
+.logo-toggle {
   position: relative;
 
   display: block;
   width: 25px;
   height: 19px;
+  margin-top: 4px;
+  padding: 0;
+
+  border: 0;
+  outline: none;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     margin-left: calc(50% - 202px);
@@ -13,14 +18,6 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.logo-toggle {
-  margin-top: 4px;
 
   &::before {
     content: "";
@@ -40,50 +37,8 @@
     background-color: $close-button-color;
     box-shadow: 0 8px 0 0 $close-button-color;
   }
-}
 
-.logo-toggle-modal--nojs {
-  display: none;
-}
-
-.logo-toggle-modal {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 0;
-
-    width: 24px;
-    height: 2px;
-
-    background-color: $close-button-color;
-    border-radius: 1.5px;
-
-    transform: rotate(45deg);
-
-    @media (min-width: $tablet-width) {
-      top: 7px;
-      width: 27px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 0;
-
-    width: 24px;
-    height: 2px;
-
-    background-color: $close-button-color;
-    border-radius: 1.5px;
-
-    transform: rotate(-45deg);
-
-    @media (min-width: $tablet-width) {
-      top: 7px;
-      width: 27px;
-    }
+  &:hover {
+    cursor: pointer;
   }
 }

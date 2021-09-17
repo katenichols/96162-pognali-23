@@ -4,13 +4,13 @@
 
   margin-top: -30px;
 
-  background-image: url("../../img/map.jpg");
+  background-image: url("../../img/map.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top 90px center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/map@2x.jpg");
+    background-image: url("../../img/map@2x.webp");
   }
 
   @media (min-width: $tablet-width) {

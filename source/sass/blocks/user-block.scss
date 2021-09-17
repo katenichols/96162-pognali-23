@@ -158,6 +158,8 @@
   margin-bottom: 11px;
   padding-left: 0;
 
+  list-style: none;
+
   @media (min-width: $tablet-width) {
     margin-top: -19px;
     margin-bottom: 15px;
@@ -200,64 +202,64 @@
 }
 
 .user-block__countries-flag--srilanka {
-  background-image: url("../../img/user-flag-srilanka-mobile.jpg");
+  background-image: url("../../img/user-flag-srilanka-mobile.webp");
 
   &:hover::before {
-    background-image: url("../../img/tooltip-srilanka.png");
+    background-image: url("../../img/tooltip-srilanka.webp");
   }
 }
 
 .user-block__countries-flag--thailand {
-  background-image: url("../../img/user-flag-thailand-mobile.jpg");
+  background-image: url("../../img/user-flag-thailand-mobile.webp");
 
   &:hover::before {
-    background-image: url("../../img/tooltip-thailand.png");
+    background-image: url("../../img/tooltip-thailand.webp");
   }
 }
 
 .user-block__countries-flag--seychelles {
-  background-image: url("../../img/user-flag-seychelles-mobile.jpg");
+  background-image: url("../../img/user-flag-seychelles-mobile.webp");
 
   &:hover::before {
-    background-image: url("../../img/tooltip-seychelles.png");
+    background-image: url("../../img/tooltip-seychelles.webp");
   }
 }
 
 .user-block__countries-flag--belgium {
-  background-image: url("../../img/user-flag-belgium-mobile.jpg");
+  background-image: url("../../img/user-flag-belgium-mobile.webp");
 
   &:hover::before {
-    background-image: url("../../img/tooltip-belgium.png");
+    background-image: url("../../img/tooltip-belgium.webp");
   }
 }
 
 .user-block__countries-flag--czech {
-  background-image: url("../../img/user-flag-czech-mobile.jpg");
+  background-image: url("../../img/user-flag-czech-mobile.webp");
 
   &:hover::before {
-    background-image: url("../../img/tooltip-czech.png");
+    background-image: url("../../img/tooltip-czech.webp");
   }
 }
 
 @media (min-resolution: 2dppx) {
   .user-block__countries-flag--srilanka {
-    background-image: url("../../img/user-flag-srilanka-mobile@2x.jpg");
+    background-image: url("../../img/user-flag-srilanka-mobile@2x.webp");
   }
 
   .user-block__countries-flag--thailand {
-    background-image: url("../../img/user-flag-thailand-mobile@2x.jpg");
+    background-image: url("../../img/user-flag-thailand-mobile@2x.webp");
   }
 
   .user-block__countries-flag--seychelles {
-    background-image: url("../../img/user-flag-seychelles-mobile@2x.jpg");
+    background-image: url("../../img/user-flag-seychelles-mobile@2x.webp");
   }
 
   .user-block__countries-flag--belgium {
-    background-image: url("../../img/user-flag-belgium-mobile@2x.jpg");
+    background-image: url("../../img/user-flag-belgium-mobile@2x.webp");
   }
 
   .user-block__countries-flag--czech {
-    background-image: url("../../img/user-flag-czech-mobile@2x.jpg");
+    background-image: url("../../img/user-flag-czech-mobile@2x.webp");
   }
 }
 
@@ -397,6 +399,8 @@
   margin-left: auto;
   padding-left: 0;
 
+  list-style: none;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 27px;
   }
@@ -433,7 +437,7 @@
     background-image: url("../../img/icons/icon_plane-mobile.svg");
 
     &:hover::before {
-      background-image: url("../../img/tooltip-plane.png");
+      background-image: url("../../img/tooltip-plane.webp");
     }
   }
 
@@ -441,7 +445,7 @@
     background-image: url("../../img/icons/icon_bus-mobile.svg");
 
     &:hover::before {
-      background-image: url("../../img/tooltip-bus.png");
+      background-image: url("../../img/tooltip-bus.webp");
     }
   }
 
@@ -449,7 +453,7 @@
     background-image: url("../../img/icons/icon_bike-mobile.svg");
 
     &:hover::before {
-      background-image: url("../../img/tooltip-bike.png");
+      background-image: url("../../img/tooltip-bike.webp");
     }
   }
 
@@ -457,7 +461,7 @@
     background-image: url("../../img/icons/icon_walk-mobile.svg");
 
     &:hover::before {
-      background-image: url("../../img/tooltip-walk.png");
+      background-image: url("../../img/tooltip-walk.webp");
     }
   }
 }

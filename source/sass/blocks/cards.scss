@@ -12,7 +12,7 @@
   border-radius: 10px;
 
   &:first-of-type {
-    background-image: url("../../img/back-thailand-mobile.png");
+    background-image: url("../../img/back-thailand-mobile.webp");
 
     @media (min-resolution: 2dppx) {
       background-size: contain;
@@ -20,7 +20,7 @@
   }
 
   &:nth-of-type(2) {
-    background-image: url("../../img/back-france-mobile.png");
+    background-image: url("../../img/back-france-mobile.webp");
 
     @media (min-resolution: 2dppx) {
       background-size: contain;
@@ -30,7 +30,7 @@
   &:last-of-type {
     margin-bottom: 0;
 
-    background-image: url("../../img/back-czech-mobile.png");
+    background-image: url("../../img/back-czech-mobile.webp");
 
     @media (min-width: $desktop-width) {
       &::after {
@@ -44,12 +44,12 @@
         width: 100%;
         height: 81px;
 
-        background-image: url("../../img/fade.png");
+        background-image: url("../../img/fade.webp");
         background-repeat: no-repeat;
         background-size: cover;
 
         @media (min-resolution: 2dppx) {
-          background-image: url("../../img/fade@2x.png");
+          background-image: url("../../img/fade@2x.webp");
           background-size: contain;
         }
       }
@@ -58,15 +58,15 @@
 
   @media (min-resolution: 2dppx) {
     &:first-of-type {
-      background-image: url("../../img/back-thailand-mobile@2x.png");
+      background-image: url("../../img/back-thailand-mobile@2x.webp");
     }
 
     &:nth-of-type(2) {
-      background-image: url("../../img/back-france-mobile@2x.png");
+      background-image: url("../../img/back-france-mobile@2x.webp");
     }
 
     &:last-of-type {
-      background-image: url("../../img/back-czech-mobile@2x.png");
+      background-image: url("../../img/back-czech-mobile@2x.webp");
     }
   }
 
@@ -78,28 +78,28 @@
     background-size: auto;
 
     &:first-of-type {
-      background-image: url("../../img/back-thailand-tablet.png");
+      background-image: url("../../img/back-thailand-tablet.webp");
     }
 
     &:nth-of-type(2) {
-      background-image: url("../../img/back-france-tablet.png");
+      background-image: url("../../img/back-france-tablet.webp");
     }
 
     &:last-of-type {
-      background-image: url("../../img/back-czech-tablet.png");
+      background-image: url("../../img/back-czech-tablet.webp");
     }
 
     @media (min-resolution: 2dppx) {
       &:first-of-type {
-        background-image: url("../../img/back-thailand-tablet@2x.png");
+        background-image: url("../../img/back-thailand-tablet@2x.webp");
       }
 
       &:nth-of-type(2) {
-        background-image: url("../../img/back-france-tablet@2x.png");
+        background-image: url("../../img/back-france-tablet@2x.webp");
       }
 
       &:last-of-type {
-        background-image: url("../../img/back-czech-tablet@2x.png");
+        background-image: url("../../img/back-czech-tablet@2x.webp");
       }
     }
   }
@@ -165,51 +165,51 @@
   }
 
   &--thailand::before {
-    background-image: url("../../img/flag-thailand-mobile.png");
+    background-image: url("../../img/flag-thailand-mobile.webp");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/flag-thailand-tablet.png");
+      background-image: url("../../img/flag-thailand-tablet.webp");
     }
   }
 
   &--france::before {
-    background-image: url("../../img/flag-france-mobile.png");
+    background-image: url("../../img/flag-france-mobile.webp");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/flag-france-tablet.png");
+      background-image: url("../../img/flag-france-tablet.webp");
     }
   }
 
   &--czech::before {
-    background-image: url("../../img/flag-czech-mobile.png");
+    background-image: url("../../img/flag-czech-mobile.webp");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/flag-czech-tablet.png");
+      background-image: url("../../img/flag-czech-tablet.webp");
     }
   }
 
   @media (min-resolution: 2dppx) {
     &--thailand::before {
-      background-image: url("../../img/flag-thailand-mobile@2x.png");
+      background-image: url("../../img/flag-thailand-mobile@2x.webp");
 
       @media (min-width: $tablet-width) {
-        background-image: url("../../img/flag-thailand-tablet@2x.png");
+        background-image: url("../../img/flag-thailand-tablet@2x.webp");
       }
     }
 
     &--france::before {
-      background-image: url("../../img/flag-france-mobile@2x.png");
+      background-image: url("../../img/flag-france-mobile@2x.webp");
 
       @media (min-width: $tablet-width) {
-        background-image: url("../../img/flag-france-tablet@2x.png");
+        background-image: url("../../img/flag-france-tablet@2x.webp");
       }
     }
 
     &--czech::before {
-      background-image: url("../../img/flag-czech-mobile@2x.png");
+      background-image: url("../../img/flag-czech-mobile@2x.webp");
 
       @media (min-width: $tablet-width) {
-        background-image: url("../../img/flag-czech-tablet@2x.png");
+        background-image: url("../../img/flag-czech-tablet@2x.webp");
       }
     }
   }

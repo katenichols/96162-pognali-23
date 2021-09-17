@@ -10,11 +10,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 35px;
+
     &::before {
       content: "";
       position: absolute;
       left: 240px;
-      top: -8px;
+      top: 27px;
 
       display: block;
       width: 60px;

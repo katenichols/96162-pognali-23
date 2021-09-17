@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  z-index: 500;
+  z-index: 400;
 
   margin: 0;
   padding-top: 0;
@@ -71,7 +71,7 @@
 .page-header__contacts {
   position: absolute;
   top: 457px;
-  z-index: 500;
+  z-index: 400;
 
   margin-left: calc(50% - 135px);
 
@@ -94,6 +94,10 @@
 .page-header__contacts-link {
   position: relative;
   display: block;
+
+  &:focus {
+    box-shadow: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -129,6 +133,10 @@
   &:active::before {
     background-image: url("../../img/icons/icon_call-active.svg");
   }
+
+  &:focus::before {
+    box-shadow: 0 0 0 2px #192144, 0 0 0 4px #ffffff;
+  }
 }
 
 .page-header__contacts-link-email {
@@ -159,6 +167,10 @@
 
   &:active::before {
     background-image: url("../../img/icons/icon_mail-active.svg");
+  }
+
+  &:focus::before {
+    box-shadow: 0 0 0 2px #192144, 0 0 0 4px #ffffff;
   }
 }
 

@@ -5,14 +5,14 @@
   width: 100%;
   margin-bottom: 30px;
 
-  background-image: url("../../img/global-back-desktop.png");
+  background-image: url("../../img/global-back-desktop.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: scroll;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/global-back-desktop@2x.png");
+    background-image: url("../../img/global-back-desktop@2x.webp");
   }
 
   @media (min-width: $tablet-width) {
@@ -75,12 +75,12 @@
   margin-right: 48px;
   margin-left: auto;
 
-  background-image: url("../../img/traveler-mobile.png");
+  background-image: url("../../img/traveler-mobile.webp");
   background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/traveler-mobile@2x.png");
+    background-image: url("../../img/traveler-mobile@2x.webp");
   }
 
   @media (min-width: $tablet-width) {
@@ -88,10 +88,10 @@
     height: 451px;
     margin-right: 111px;
 
-    background-image: url("../../img/traveler-tablet.png");
+    background-image: url("../../img/traveler-tablet.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/traveler-tablet@2x.png");
+      background-image: url("../../img/traveler-tablet@2x.webp");
     }
   }
 
@@ -101,10 +101,10 @@
     margin-right: auto;
     margin-left: 77px;
 
-    background-image: url("../../img/traveler-desktop.png");
+    background-image: url("../../img/traveler-desktop.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/traveler-desktop@2x.png");
+      background-image: url("../../img/traveler-desktop@2x.webp");
     }
   }
 }
@@ -171,6 +171,7 @@
   padding: 0;
 
   border-radius: 10px;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);

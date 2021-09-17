@@ -13,6 +13,10 @@
     display: none;
   }
 
+  &:focus {
+    box-shadow: 0 0 0 2px #192144, 0 0 0 4px #ffffff;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 22px;
 
@@ -26,6 +30,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 35px;
+
     &--footer {
       width: 200px;
       margin-top: 5px;
@@ -35,7 +41,7 @@
       content: "";
       position: absolute;
       left: 240px;
-      top: -8px;
+      top: 27px;
 
       display: block;
       width: 60px;

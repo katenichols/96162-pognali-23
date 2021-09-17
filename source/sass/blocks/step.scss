@@ -221,11 +221,15 @@
   padding-bottom: 10px;
 
   @include font-group-medium($size-15, $line-14);
+
+  background-color: transparent;
   border: 1px solid $form-border-color;
   border-radius: 4px;
+  outline: none;
 
   &:hover {
     border-color: $form-border-color-fade;
+    cursor: pointer;
   }
 
   &:active,
@@ -269,6 +273,12 @@
 
 .step__button-count {
   position: relative;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+  outline: none;
 
   &::before {
     content: "";
@@ -384,6 +394,7 @@
   padding-top: 11px;
   padding-bottom: 11px;
 
+
   @include font-group-bold($size-20, $line-20);
   color: $special-dark-color;
 
@@ -409,8 +420,13 @@
 
   width: 13px;
   height: 23px;
+  padding: 0;
 
   color: transparent;
+
+  background-color: transparent;
+  border: 0;
+  outline: none;
 
   &::before {
     content: "";

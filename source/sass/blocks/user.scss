@@ -235,7 +235,9 @@
   padding-bottom: 11px;
 
   background-color: $special-light-color;
+  border: 0;
   border-radius: 20px;
+  outline: none;
 
   &:hover {
     background-color: $extra-color;
@@ -433,6 +435,7 @@
 
   border: 1px solid $form-border-color;
   border-radius: 10px;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     width: 308px;

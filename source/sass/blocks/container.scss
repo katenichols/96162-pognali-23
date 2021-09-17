@@ -47,12 +47,12 @@
     padding-top: 130px;
     padding-bottom: 162px;
 
-    background-image: url("../../img/flags-background.png");
+    background-image: url("../../img/flags-background.webp");
     background-repeat: no-repeat;
     background-position: top 140px right 40px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/flags-background@2x.png");
+      background-image: url("../../img/flags-background@2x.webp");
       background-size: 38%;
     }
   }

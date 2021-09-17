@@ -8,7 +8,7 @@
   padding-left: 0;
 
   background-color: $basic-dark;
-  background-image: url("../../img/travelers-back-mobile.png");
+  background-image: url("../../img/travelers-back-mobile.webp");
   background-position: top 34px right 25px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -16,21 +16,21 @@
   border-bottom-left-radius: 30px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/travelers-back-mobile@2x.png");
+    background-image: url("../../img/travelers-back-mobile@2x.webp");
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 137px;
     padding-bottom: 87px;
 
-    background-image: url("../../img/travelers-back-tablet.png");
+    background-image: url("../../img/travelers-back-tablet.webp");
     background-size: 85%;
     background-position: top 71px right 74px;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/travelers-back-tablet@2x.png");
+      background-image: url("../../img/travelers-back-tablet@2x.webp");
     }
   }
 
@@ -38,14 +38,14 @@
     padding-top: 126px;
     padding-bottom: 134px;
 
-    background-image: url("../../img/travelers-back-desktop.png");
+    background-image: url("../../img/travelers-back-desktop.webp");
     background-size: 44%;
     background-position: top 70px right 750px;
     border-bottom-right-radius: 56px;
     border-bottom-left-radius: 56px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/travelers-back-desktop@2x.png");
+      background-image: url("../../img/travelers-back-desktop@2x.webp");
     }
   }
 }

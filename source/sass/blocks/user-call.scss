@@ -1,7 +1,7 @@
 .user-call {
   position: relative;
 
-  padding-bottom: 48px;
+  padding-bottom: 76px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 19px;
@@ -117,6 +117,8 @@
   display: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;

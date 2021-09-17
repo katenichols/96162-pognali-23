@@ -1,0 +1,15 @@
+.logo-scroll {
+  position: relative;
+
+  &--hide {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

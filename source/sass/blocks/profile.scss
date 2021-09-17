@@ -1,6 +1,5 @@
 .profile {
   position: relative;
-  z-index: 25;
 
   margin-top: -30px;
   padding-top: 81px;
@@ -38,12 +37,12 @@
     width: 100px;
     height: 100px;
 
-    background-image: url("../../img/profile-rates-mobile.png");
+    background-image: url("../../img/profile-rates-mobile.webp");
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/profile-rates-mobile@2x.png");
+      background-image: url("../../img/profile-rates-mobile@2x.webp");
     }
 
     @media (min-width: $tablet-width) {
@@ -58,10 +57,10 @@
       width: 198px;
       height: 198px;
 
-      background-image: url("../../img/profile-rates-desktop.png");
+      background-image: url("../../img/profile-rates-desktop.webp");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/profile-rates-desktop@2x.png");
+        background-image: url("../../img/profile-rates-desktop@2x.webp");
       }
     }
   }
@@ -105,6 +104,8 @@
   margin-top: 0;
   margin-bottom: 30px;
   padding-left: 0;
+
+  list-style: none;
 
   @include font-group($size-16, $line-16);
   color: $basic-text-color;
@@ -245,6 +246,10 @@
   position: relative;
 
   display: block;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
 
   @include font-group-bold($size-16, $line-16);
   color: $special-button-color;
@@ -296,7 +301,7 @@
 
 .profile__modal {
   position: absolute;
-  z-index: 100;
+  z-index: 300;
   top: -64px;
 
   width: calc(100% - 50px);
@@ -397,6 +402,7 @@
   color: $basic-text-color;
 
   border-bottom: 1px solid $profile-business-border-color;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
@@ -434,15 +440,19 @@
   display: block;
   width: 100%;
   padding-top: 21px;
+  padding-right: 0;
   padding-bottom: 15px;
+  padding-left: 0;
 
   @include font-group-bold($size-16, $line-24);
   text-transform: uppercase;
   color: $special-dark-color;
 
   background-color: $profile-business-button-color;
+  border: 0;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     padding-top: 38px;
@@ -469,7 +479,7 @@
 
   &:active {
     padding-top: 21px;
-    padding-bottom: 21px;
+    padding-bottom: 15px;
 
     color: $special-dark-color-fade;
 

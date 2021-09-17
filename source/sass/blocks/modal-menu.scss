@@ -153,6 +153,8 @@
   @include font-group-medium($size-30, $line-35);
   text-transform: uppercase;
 
+  list-style: none;
+
   @media (min-width: $tablet-width) {
     text-align: left;
     margin-bottom: 155px;
@@ -241,6 +243,10 @@
   text-transform: uppercase;
   color: $basic-dark;
 
+  &:focus {
+    box-shadow: none;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 148px;
     margin-bottom: 38px;
@@ -316,6 +322,10 @@
       background-image: url("../../img/icons/icon_call-active.svg");
     }
   }
+
+  &:focus::before {
+    box-shadow: 0 0 0 2px #192144, 0 0 0 4px #ffffff;
+  }
 }
 
 .modal-menu__contacts-link--email {
@@ -390,6 +400,10 @@
       background-color: $dark-invert-color;
       background-image: url("../../img/icons/icon_mail-active.svg");
     }
+  }
+
+  &:focus::before {
+    box-shadow: 0 0 0 2px #192144, 0 0 0 4px #ffffff;
   }
 }
 

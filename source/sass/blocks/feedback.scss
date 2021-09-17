@@ -167,8 +167,10 @@
   color: $basic-text-color-fade;
 
   background-color: $basic-white;
+  border: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  outline: none;
 
   &::placeholder {
     color: $basic-text-color-fade;
@@ -235,9 +237,12 @@
   width: 60px;
   height: 62px;
   margin-left: -10px;
+  padding: 0;
 
   background-color: $light-invert-color;
+  border: 0;
   border-radius: 10px;
+  outline: none;
 
   &::before {
     content: "";
@@ -255,6 +260,7 @@
 
   &:hover {
     background-color: $invert-color;
+    cursor: pointer;
   }
 
   &:active {

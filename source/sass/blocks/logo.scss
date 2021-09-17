@@ -1,6 +1,10 @@
 .logo {
   position: relative;
 
+  &:focus {
+    box-shadow: 0 0 0 2px #192144, 0 0 0 4px #ffffff;
+  }
+
   &--footer {
     display: block;
     width: 96px;
@@ -43,21 +47,5 @@
 
       background-color: $basic-white;
     }
-  }
-}
-
-.logo-scroll {
-  position: relative;
-
-  &--hide {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-right: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
   }
 }

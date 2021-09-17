@@ -103,10 +103,14 @@
   display: block;
   width: 17px;
   height: 17px;
+  padding: 0;
 
   background-image: url("../../img/icons/icon_filter-toggle-mobile.svg");
   background-repeat: no-repeat;
   background-position: right;
+  background-color: transparent;
+  border: 0;
+  outline: none;
 
   &--nojs {
     display: none;
@@ -228,6 +232,7 @@
   text-transform: uppercase;
 
   background-color: $special-light-light-color;
+  list-style: none;
 
   &--nojs {
     position: relative;
@@ -307,9 +312,12 @@
   height: 39px;
   margin-right: 25px;
   margin-left: 25px;
+  padding: 0;
 
   background-color: $filter-modal-button;
+  border: 0;
   border-radius: 20px;
+  outline: none;
 
   &:hover {
     background-color: $filter-modal-button-active;
@@ -409,13 +417,17 @@
   height: 41px;
   margin-left: -5px;
   text-align: center;
+  padding: 0;
+
 
   @include font-group-bold($size-17, $line-17);
   color: $special-dark-color;
   text-transform: uppercase;
 
   background-color: $basic-white;
+  border: 0;
   border-radius: 25px;
+  outline: none;
 
   &:hover {
     cursor: pointer;

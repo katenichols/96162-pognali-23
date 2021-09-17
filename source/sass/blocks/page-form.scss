@@ -99,8 +99,10 @@
     padding-bottom: 13px;
 
     background-color: $special-light-color;
+    border: 0;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    outline: none;
 
     &:hover {
       background-color: $extra-color;

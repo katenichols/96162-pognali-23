@@ -138,8 +138,10 @@
   white-space: nowrap;
   overflow: hidden;
 
+  background-color: transparent;
   border: 1px solid $form-border-color;
   border-radius: 4px;
+  outline: none;
 
   &:hover {
     border-color: $form-border-color-fade;
@@ -169,9 +171,17 @@
 
   width: 16px;
   height: 15px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
 
   background-image: url("../../img/icons/icon_arrow-back-mobile.svg");
   background-repeat: no-repeat;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @media (min-width: $tablet-width) {
     top: 27px;
@@ -230,22 +240,22 @@
   border-radius: 4px;
 
   &--country1 {
-    background-image: url("../../img/flag-bosnia-mobile.jpg");
+    background-image: url("../../img/flag-bosnia-mobile.webp");
   }
 
   &--country2 {
-    background-image: url("../../img/flag-czech-mobile.png");
+    background-image: url("../../img/flag-czech-mobile.webp");
   }
 
   @media (min-resolution: 2dppx) {
     background-size: 73%;
 
     &--country1 {
-      background-image: url("../../img/flag-bosnia-mobile@2x.jpg");
+      background-image: url("../../img/flag-bosnia-mobile@2x.webp");
     }
 
     &--country2 {
-      background-image: url("../../img/flag-czech-mobile@2x.png");
+      background-image: url("../../img/flag-czech-mobile@2x.webp");
     }
   }
 
@@ -277,26 +287,26 @@
     border: none;
 
     &--country1 {
-      background-image: url("../../img/flag-bosnia-tablet.jpg");
+      background-image: url("../../img/flag-bosnia-tablet.webp");
     }
 
     &--country2 {
       margin-top: -1px;
 
-      background-image: url("../../img/flag-czech-tablet.png");
+      background-image: url("../../img/flag-czech-tablet.webp");
     }
 
     @media (min-resolution: 2dppx) {
       background-size: 63%;
 
       &--country1 {
-        background-image: url("../../img/flag-bosnia-tablet@2x.jpg");
+        background-image: url("../../img/flag-bosnia-tablet@2x.webp");
       }
 
       &--country2 {
         margin-top: -1px;
 
-        background-image: url("../../img/flag-czech-tablet@2x.png");
+        background-image: url("../../img/flag-czech-tablet@2x.webp");
       }
     }
 
@@ -328,10 +338,14 @@
 
   width: 21px;
   height: 21px;
+  padding: 0;
 
   background-image: url("../../img/icons/icon_button-close-mobile.svg");
   background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
   border-radius: 50%;
+  outline: none;
 
   &:hover {
     background-image: url("../../img/icons/icon_button-close-mobile-hover.svg");
@@ -380,8 +394,10 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
 
+  background-color: transparent;
   border: 1px solid $form-border-color;
   border-radius: 4px;
+  outline: none;
 
   &::before {
     content: "";
@@ -501,7 +517,9 @@
   text-transform: uppercase;
 
   background-color: $body-background;
+  border: 0;
   border-radius: 4px;
+  outline: none;
 
   &::before {
     content: "";
@@ -646,9 +664,13 @@
 
   width: 9px;
   height: 9px;
+  padding: 0;
 
   background-image: url("../../img/icons/icon_modal-close-mobile.svg");
   background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  outline: none;
 
   &:hover {
     background-image: url("../../img/icons/icon_modal-close-mobile-hover.svg");
@@ -725,6 +747,8 @@
   padding-right: 19px;
   padding-bottom: 16px;
   padding-left: 19px;
+
+  list-style: none;
 
   @include font-group($size-16, $line-22);
   color: $basic-text-color;

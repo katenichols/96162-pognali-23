@@ -91,20 +91,20 @@
   }
 
   &--first::before {
-    background-image: url("../../img/flag-bosnia-mobile.jpg");
+    background-image: url("../../img/flag-bosnia-mobile.webp");
   }
 
   &--last::before {
-    background-image: url("../../img/flag-czech-mobile.png");
+    background-image: url("../../img/flag-czech-mobile.webp");
   }
 
   @media (min-resolution: 2dppx) {
     &--first::before {
-      background-image: url("../../img/flag-bosnia-mobile@2x.jpg");
+      background-image: url("../../img/flag-bosnia-mobile@2x.webp");
     }
 
     &--last::before {
-      background-image: url("../../img/flag-czech-mobile@2x.png");
+      background-image: url("../../img/flag-czech-mobile@2x.webp");
     }
   }
 
@@ -142,20 +142,20 @@
     }
 
     &--first::before {
-      background-image: url("../../img/flag-bosnia-tablet.jpg");
+      background-image: url("../../img/flag-bosnia-tablet.webp");
     }
 
     &--last::before {
-      background-image: url("../../img/flag-czech-tablet.png");
+      background-image: url("../../img/flag-czech-tablet.webp");
     }
 
     @media (min-resolution: 2dppx) {
       &--first::before {
-        background-image: url("../../img/flag-bosnia-tablet@2x.jpg");
+        background-image: url("../../img/flag-bosnia-tablet@2x.webp");
       }
 
       &--last::before {
-        background-image: url("../../img/flag-czech-tablet@2x.png");
+        background-image: url("../../img/flag-czech-tablet@2x.webp");
       }
     }
 
